@@ -1,0 +1,97 @@
+<project name="kUpload" default="dist" basedir=".">
+    <description>
+        kFile Uploader
+    </description>
+    <!-- set global properties for this build -->
+    <property name="build.properties" value="build.local.fileupload.properties" />
+    <property file="${build.properties}" />
+    <property name="local.lib" value="C:/Users/bmurphy/java/lib" />
+   	
+    <target name="clean">
+       <delete dir="${BUILD_DIR}" />
+    </target>
+
+    <target name="init">
+    <!-- Create the time stamp -->
+        <tstamp>
+   	    <format property="build.time" pattern="MMddyyyy" />
+	</tstamp>
+    <!-- Create the build directory structure used by compile -->
+   	<mkdir dir="${BUILD_DIR}/WEB-INF/classes" />
+   	<mkdir dir="${DIST_DIR}" />
+   </target>
+
+    <target name="prepare">
+    <!--copy basic codebase-->
+    <!-- copy of codebase files which do not require filerting (no java classes)-->
+    <copy todir="${BUILD_DIR}">
+        <fileset dir="../jsp">
+            <include name="**/*.jsp" />
+            <include name="**/*.html" />            
+        </fileset>
+    </copy>
+
+    <copy todir="${BUILD_DIR}">
+        <fileset dir="../rsc/">
+            <include name="**/*.jpg" />
+       	    <include name="**/*.gif" />
+       	    <include name="**/*.wav" />
+       </fileset>
+    </copy>
+
+    <!-- Copy and filter the WEB-INF/*.xml files -->
+    <filter filtersfile="${build.properties}" />
+      
+    <copy todir="${BUILD_DIR}/WEB-INF" filtering="yes">
+    <fileset dir="../WEB-INF">
+        <include name="*.xml" />
+    </fileset>
+    </copy>
+
+    <!-- Copy and filter the properties files  -->
+    <copy todir="${BUILD_DIR}/WEB-INF/classes">
+        <fileset dir="./WEB-INF/classes">
+            <include name="**/*.properties" />
+        </fileset>
+    </copy>
+		
+    </target>
+
+    <target name="compile">
+        <!-- Compile the java code from ${src} into ${build} -->
+        <javac srcdir="${SRC_DIR1}:${SRC_DIR2}:${SRC_DIR3}" destdir="${BUILD_DIR}/WEB-INF/${CLASSES_DIR}" classpath="${BUILD_DIR}/${CLASSES_DIR}" debug="on" optimize="off" deprecation="off">
+        <classpath refid="build.classpath" />
+        </javac>
+        <delete dir="{dist.dir}"/>
+    </target>
+
+    <path id="build.classpath">
+    <pathelement location="${classpath}" />
+        <fileset dir="${local.lib}">
+            <include name="*.jar" />
+        </fileset>
+
+        <fileset dir="${TOMCAT_SERVER}/lib">
+            <include name="*.fjar" />
+        </fileset>
+
+        <fileset dir="${JAVA_HOME}">
+            <include name="*.jar" />
+            <include name="*.zip" />
+        </fileset>
+    </path>
+
+    <target name="dist" description="generate the distribution" >
+        <!-- Create the distribution directory -->
+        <!-- Put everything in into dist -->
+        <war warfile="${DIST_DIR}/${WAR_NAME}.war" basedir="${BUILD_DIR}" needxmlfile='false'>
+            <lib dir="${local.lib}" excludes="httpclient-4.2.2.jar,httpclient-cache-4.2.2.jar,httpcore-4.2.2.jar,httpmime-4.2.2.jar,fluent-hc-4.2.2.jar,servlet-api.jar" />
+        </war>
+    </target>
+
+<!--
+    <target name="deploy">
+        <copy file="${DIST_DIR}/${WAR_NAME}.war" todir="$TOMCAT_HOME}/webapps/" overwrite="yes" />  
+    </target>
+-->
+</project>
