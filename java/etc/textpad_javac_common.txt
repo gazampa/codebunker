@@ -1,0 +1,3 @@
+javac -classpath "C:/Users/bmurphy/java/lib/httpclient-4.2.2.jar";"C:/Users/bmurphy/java/lib/httpcore-4.2.2.jar";"C:/Users/bmurphy/java/lib/commons-fileupload-1.2.2.jar";"C:/Users/bmurphy/java/lib/servlet-api.jar";"C:\servers\apache-tomcat-6.0.36\webapps\examples\WEB-INF\classes"  $FILE
+
+javac -classpath "C:/Users/bmurphy/java/classes";"C:/Users/bmurphy/java/lib/httpclient-4.2.2.jar";"C:/Users/bmurphy/java/lib/httpcore-4.2.2.jar";"C:/Users/bmurphy/java/lib/json-20090211.jar" -d "C:/Users/bmurphy/java/classes"  $FILE

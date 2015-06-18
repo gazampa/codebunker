@@ -1,0 +1,117 @@
+	public static String GET_DRINK(String input, DrinksForSale drinks, Inventory inventory){
+		String result = new String();
+
+		if ( BaristaConstants.getDrinkNameAmericano().equalsIgnoreCase(input) ){
+			if ( VALIDATE_DRINK( input, inventory ) ){
+				BUILD_DRINK(input, inventory);
+				result = "Dispensing: " + "Caffe Americano";
+				
+			}else{
+				result = "Out of Stock: " + "Americano";
+			}
+		}else if( BaristaConstants.getDrinkNameCaffeLatte().equalsIgnoreCase(input) ){
+			if ( VALIDATE_DRINK( input, inventory ) ){
+				BUILD_DRINK(input, inventory);
+				result = "Dispensing: " + "Caffe Latte";
+			}else{
+				result = "Out of Stock: " + "Caffe Latte";
+			}				
+		}else if( BaristaConstants.getDrinkNameCaffeMocha().equalsIgnoreCase(input) ){
+			if ( VALIDATE_DRINK( input, inventory ) ){
+				BUILD_DRINK(input, inventory);
+				result="Dispensing: " + "Caffe Mocha";
+		}else{
+			result = "Out of Stock: " + "Caffe Mocha";
+		}
+		}else if( BaristaConstants.getDrinkNameCappuccino().equalsIgnoreCase(input) ){
+			if ( VALIDATE_DRINK( input, inventory ) ){
+				BUILD_DRINK(input, inventory);
+				result="Dispensing: " + "Cappuccino";
+			}else{
+				result = "Out of Stock: " + "Cappuccino";
+			}			
+		}else if( BaristaConstants.getDrinkNameCoffee().equalsIgnoreCase(input) ){
+			if ( VALIDATE_DRINK( input, inventory ) ){
+				BUILD_DRINK(input, inventory);
+				result="Dispensing:" + "Coffee";
+			}else{
+				result = "Out of Stock:" + "Coffee";
+			}				
+		}else if( BaristaConstants.getDrinkNameDecafCoffee().equalsIgnoreCase(input) ){
+			if ( VALIDATE_DRINK( input, inventory ) ){
+				BUILD_DRINK(input, inventory);
+				result="Dispensing: " + "Decaf Coffee";
+			}else{
+				result = "Out of Stock:" + "Decaf Coffee";
+			}
+		}else{
+			result ="Unable to Dispense";
+		}
+
+		return result;
+	}
+
+
+	public static Drink BUILD_DRINK(String input, Inventory inventory){
+		Drink result = null;
+		
+		DrinkFactory factory = new DrinkFactoryImplementation();
+
+		if ( "1".equalsIgnoreCase(input) ){
+			try{	
+				inventory.getEspressoIngredient().decrementBy(3);
+				result = factory.factoryMethod(input);
+			}catch(NoSuchElementException e){
+				System.out.println("An Exception occured during operation " + e);
+			}
+		}else if( "2".equalsIgnoreCase(input) ){
+			try{
+				inventory.getEspressoIngredient().decrementBy(2);
+				inventory.getSteamedMilkIngredient().decrementBy(1);
+				result = factory.factoryMethod(input);
+			}catch(NoSuchElementException e){
+				System.out.println("An Exception occured during operation " + e);
+			}
+		}else if( "3".equalsIgnoreCase(input) ){
+			try{
+				inventory.getEspressoIngredient().decrementBy(1);
+				inventory.getCocoaIngredient().decrementBy(1);
+				inventory.getSteamedMilkIngredient().decrementBy(1);
+				inventory.getWhippedCreamIngredient().decrementBy(1);
+				result = factory.factoryMethod(input);
+			}catch(NoSuchElementException e){
+				System.out.println("An Exception occured during operation " + e);
+			}
+		}else if( "4".equalsIgnoreCase(input) ){
+			try{
+				inventory.getEspressoIngredient().decrementBy(2);
+				inventory.getSteamedMilkIngredient().decrementBy(1);
+				inventory.getFoamedMilkIngredient().decrementBy(1);
+				result = factory.factoryMethod(input);
+			}catch(NoSuchElementException e){
+				System.out.println("An Exception occured during operation " + e);
+			}	
+		}else if( "5".equalsIgnoreCase(input) ){
+			try{
+				inventory.getCoffeeIngredient().decrementBy(3);
+				inventory.getSugarIngredient().decrementBy(1);
+				inventory.getCreamIngredient().decrementBy(1);
+				result = factory.factoryMethod(input);
+			}catch(NoSuchElementException e){
+				System.out.println("An Exception occured during operation " + e);
+			}
+		}else if( "6".equalsIgnoreCase(input) ){
+			try{
+				inventory.getDecafCoffeeIngredient().decrementBy(3);
+				inventory.getSugarIngredient().decrementBy(1);
+				inventory.getCreamIngredient().decrementBy(1);
+				result = factory.factoryMethod(input);
+			}catch(NoSuchElementException e){
+				System.out.println("An Exception occured during operation " + e);
+			}		
+		}else{
+			result=null;
+		}
+		return result;
+
+	}

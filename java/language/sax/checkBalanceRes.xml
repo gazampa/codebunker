@@ -1,0 +1,211 @@
+<checkBalanceResponse>
+   <dealer>
+      <sessionId>
+      </sessionId>
+
+      <dealerName>Test Dealer</dealerName>
+
+      <user>
+         <name>
+         </name>
+
+         <address>
+            <addr1>
+            </addr1>
+
+            <addr2>
+            </addr2>
+
+            <state>
+<!-- state code -->
+            </state>
+
+            <zip>
+            </zip>
+
+            <country>
+            </country>
+         </address>
+
+         <phone>
+         </phone>
+
+         <email>
+         </email>
+      </user>
+
+      <manager>
+         <name>
+         </name>
+
+         <address>
+            <addr1>
+            </addr1>
+
+            <addr2>
+            </addr2>
+
+            <state>
+<!-- state code -->
+            </state>
+
+            <zip>
+            </zip>
+
+            <country>
+            </country>
+         </address>
+
+         <phone>
+         </phone>
+
+         <email>
+         </email>
+      </manager>
+   </dealer>
+
+   <programs>
+      <program>
+         <name>
+         </name>
+
+         <year>
+         </year>
+
+         <currency>USD 
+<!-- CAN BE USD OR CAD -->
+         </currency>
+
+         <initialBalance>
+         </initialBalance>
+
+         <availaBlebalance>
+         </availaBlebalance>
+
+         <fundsUsed>
+         </fundsUsed>
+
+         <claims>
+            <claim>
+               <number>
+               </number>
+
+               <totalClaimed>
+               </totalClaimed>
+
+               <totalApproved>
+               </totalApproved>
+
+               <paymentAmount>
+               </paymentAmount>
+
+               <processedDate>
+               </processedDate>
+
+               <receivedDate>
+               </receivedDate>
+
+               <referenceCode>
+               </referenceCode>
+
+               <status>
+               </status>
+
+               <holdReason>
+               </holdReason>
+
+               <letterCode>
+               </letterCode>
+
+               <letterComments>
+               </letterComments>
+
+               <paymentInfo>
+                  <date>
+                  </date>
+
+                  <paymentType>
+                  </paymentType>
+
+                  <paymentNumber>
+                  </paymentNumber>
+
+                  <amountPaid>
+                  </amountPaid>
+
+                  <claimBalance>
+                  </claimBalance>
+
+                  <void>
+                  </void>
+
+                  <note>
+                  </note>
+               </paymentInfo>
+
+               <ads>
+                  <ad>
+                     <number>
+                     </number>
+
+                     <insertDate>
+                     </insertDate>
+
+                     <productType>
+                     </productType>
+
+                     <mediaName>
+<!-- same as description -->
+                     </mediaName>
+
+                     <mediaCode>
+                     </mediaCode>
+
+                     <claimRequestAmount>
+                     </claimRequestAmount>
+
+                     <approvedClaimAmount>
+                     </approvedClaimAmount>
+
+                     <paid>
+                     </paid>
+
+                     <invoiceNumber>
+                     </invoiceNumber>
+
+                     <comments>
+<!-- not present for everyone -->
+                     </comments>
+
+                     <advertisedProduct>
+                        <productCode>
+                        </productCode>
+
+                        <description>
+                        </description>
+
+                        <sizeSpec>
+                        </sizeSpec>
+
+                        <pricePoint>
+                        </pricePoint>
+
+                        <slick>
+                        </slick>
+                     </advertisedProduct>
+                  </ad>
+
+                  <ad>
+                  </ad>
+               </ads>
+            </claim>
+
+            <claim>
+            </claim>
+         </claims>
+      </program>
+
+      <program>
+      </program>
+   </programs>
+</checkBalanceResponse>

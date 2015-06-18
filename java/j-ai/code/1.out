@@ -1,0 +1,5 @@
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at heuristic.search.a.textbook.Tiles.copy(Unknown Source)
+	at heuristic.search.a.textbook.Tiles.copy(Unknown Source)
+	at heuristic.search.a.textbook.Astar.search(Unknown Source)
+	at heuristic.search.a.textbook.TileSolver.main(Unknown Source)

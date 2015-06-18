@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkBalanceResponse>
+	<dealer>
+		<sessionId>123456</sessionId>
+		<dealername>Luther West Side Volkswagen</dealername>
+		<user>
+			<name>JERRY BLOOMSTROM</name>
+			<address>
+				<addr1>2370 South Highway 100</addr1>
+				<addr2></addr2>
+				<city>Saint Louis Park</city>
+				<state>MN</state>
+				<zip>55416</zip>
+				<country></country>
+			</address>
+			<email>jerry.bloomstrom@westsidevw.com</email>
+		</user>
+		<manager>
+			<name>Area 36 - Sarah Beckman</name>
+			<address>
+				<addr1></addr1>
+				<addr2></addr2>
+				<city></city>
+				<state>.</state>
+				<zip></zip>
+				<country></country>
+			</address>
+			<phone>555</phone>
+		</manager>
+	</dealer>
+	<programs>
+		<program>
+			<name>2006 VWS&amp;P Jan-June</name>
+			<year>2006</year>
+			<currency>USD</currency>
+			<currencySymbol>$</currencySymbol>
+			<initialBalance>16999.04</initialBalance>
+			<fundsused>16999.04</fundsused>
+			<availableBalance>0</availableBalance>
+		</program>
+		<program>
+			<name>2006 VWS&amp;P July-Dec</name>
+			<year>2006</year>
+			<currency>USD</currency>
+			<currencySymbol>$</currencySymbol>
+			<initialBalance>21264.15</initialBalance>
+			<fundsused>14980.11</fundsused>
+			<availableBalance>6284.04</availableBalance>
+		</program>
+		<program>
+			<name>2007 VWSP Jan - June</name>
+			<year>2007</year>
+			<currency>USD</currency>
+			<currencySymbol>$</currencySymbol>
+			<initialBalance>13631.89</initialBalance>
+			<fundsused>13631.89</fundsused>
+			<availableBalance>0</availableBalance>
+		</program>
+		<program>
+			<name>2002 2nd Half Co-op</name>
+			<year>2003</year>
+			<currency>USD</currency>
+			<currencySymbol>$</currencySymbol>
+			<initialBalance>0</initialBalance>
+			<fundsused>0</fundsused>
+			<availableBalance>0</availableBalance>
+		</program>
+		<program>
+			<name>2003 1st Half Co-op</name>
+			<year>2003</year>
+			<currency>USD</currency>
+			<currencySymbol>$</currencySymbol>
+			<initialBalance>6196.9</initialBalance>
+			<fundsused>6196.89</fundsused>
+			<availableBalance>0.00999999999930878</availableBalance>
+		</program>
+		<program>
+			<name>2003 2nd Half Co-op</name>
+			<year>2003</year>
+			<currency>USD</currency>
+			<currencySymbol>$</currencySymbol>
+			<initialBalance>12691.74</initialBalance>
+			<fundsused>12691.73</fundsused>
+			<availableBalance>0.0100000000002183</availableBalance>
+		</program>
+		<program>
+			<name>2004 1st Half Co-op</name>
+			<year>2004</year>
+			<currency>USD</currency>
+			<currencySymbol>$</currencySymbol>
+			<initialBalance>15383.7</initialBalance>
+			<fundsused>15383.7</fundsused>
+			<availableBalance>0</availableBalance>
+		</program>
+		<program>
+			<name>2004 2nd Half Co-op</name>
+			<year>2004</year>
+			<currency>USD</currency>
+			<currencySymbol>$</currencySymbol>
+			<initialBalance>13219.88</initialBalance>
+			<fundsused>13219.87</fundsused>
+			<availableBalance>0.0100000000002183</availableBalance>
+		</program>
+		<program>
+			<name>2005 1st Half VW Co-op</name>
+			<year>2005</year>
+			<currency>USD</currency>
+			<currencySymbol>$</currencySymbol>
+			<initialBalance>13631.8</initialBalance>
+			<fundsused>13631.8</fundsused>
+			<availableBalance>0</availableBalance>
+		</program>
+		<program>
+			<name>2005 2nd Half VW Co-op</name>
+			<year>2005</year>
+			<currency>USD</currency>
+			<currencySymbol>$</currencySymbol>
+			<initialBalance>20233.14</initialBalance>
+			<fundsused>20233.14</fundsused>
+			<availableBalance>0</availableBalance>
+		</program>
+	</programs>
+</checkBalanceResponse>

@@ -1,0 +1,4 @@
+- provide an interface for creating families of related or dependant objects without specifying their concrete classes
+- provides a class library of products revealing just interfaces not implementations
+- encapsultes singleton, bulder, prorotype pattern.
+- create abstract component and abstract factory, product class takes abstract factory as constructor arguement. Factory method in calling code passes relevant concrete factory.
