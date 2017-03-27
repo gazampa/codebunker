@@ -28,7 +28,7 @@ enum PersonComparator implements Comparator<Person> {
                 return 0;
             }
         };
-    }
+    } // ...
 }
 
 
