@@ -1,6 +1,6 @@
 <project name="kUpload" default="dist" basedir=".">
     <description>
-        kFile Uploader
+        Generic Build For Tomcat
     </description>
     <!-- set global properties for this build -->
     <property name="build.properties" value="build.local.fileupload.properties" />
