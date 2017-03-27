@@ -5,6 +5,7 @@
 *.properties
 *.log
 *.txt
+*.bat
 
 # Package Files #
 *.jar

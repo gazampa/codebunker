@@ -4,7 +4,14 @@ public class Client{
 
 		/** instantiate numbers **/
 
-		BlochSingleton.INSTANCE.countTo9();
+		BlochSingleton.NUMBERS.countTo9();
+
+		int[] clientsNumbers = BlochSingleton.NUMBERS.getNumbers();
+
+		clientsNumbers[5] = 50000;
+
+		BlochSingleton.NUMBERS.countTo9();
+
 
 	}
 
