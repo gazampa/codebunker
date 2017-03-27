@@ -1,5 +1,8 @@
 # class and project files
 *.class
+*.log
+*.txt
+*.pom
 
 # Package Files #
 *.jar
