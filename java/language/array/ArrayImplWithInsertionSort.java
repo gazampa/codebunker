@@ -1,6 +1,12 @@
 import java.util.Arrays;
 public class ArrayImplWithInsertionSort extends BaseArray{
 
+
+	public ArrayImplWithInsertionSort(int siz){
+		super(siz);
+	}
+
+
 	public void sort(){
 
 		insertionSort();

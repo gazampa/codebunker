@@ -1,5 +1,9 @@
 public class ArrayImplWithSelectionSort extends BaseArray{
 
+	public ArrayImplWithSelectionSort(int siz){
+		super(siz);
+	}
+
 	public void sort(){
 		selectionSort();
 	}
