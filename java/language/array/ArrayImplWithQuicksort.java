@@ -1,11 +1,10 @@
-public class ArrayImplWithQuicksort extends ArrayImpl implements SortableArray, Randomizable{
+public class ArrayImplWithQuicksort extends BaseArray implements SortableArray, Randomizable{
 
 	private int callCounter = 0;
 
 	public ArrayImplWithQuicksort(int siz){
 		super(siz);
 	}
-
 
 	public void sort(){
 

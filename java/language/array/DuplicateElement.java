@@ -3,7 +3,7 @@ class DuplicateElement{
 
 	public static void main(String[] args){
 
-		ArrayImpl iArr = new ArrayImplWithQuicksort(40);
+		BaseArray iArr = new ArrayImplWithMergesort(40);
 
 		iArr.randomize();
 

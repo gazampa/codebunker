@@ -1,4 +1,4 @@
-public class ArrayImplWithSelectionSort extends ArrayImpl{
+public class ArrayImplWithSelectionSort extends BaseArray{
 
 	public void sort(){
 		selectionSort();

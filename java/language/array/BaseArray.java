@@ -1,13 +1,13 @@
 import java.lang.StringBuilder;
-abstract class ArrayImpl{
+abstract class BaseArray{
 
 	protected int[] intArray;
 
-	ArrayImpl(){
+	BaseArray(){
 		intArray = new int[0];
 	}
 
-	ArrayImpl(int siz){
+	BaseArray(int siz){
 		intArray = new int[siz];
 	}
 

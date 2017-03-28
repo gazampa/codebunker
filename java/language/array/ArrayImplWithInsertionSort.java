@@ -1,5 +1,5 @@
 import java.util.Arrays;
-public class ArrayImplWithInsertionSort extends ArrayImpl{
+public class ArrayImplWithInsertionSort extends BaseArray{
 
 	public void sort(){
 
