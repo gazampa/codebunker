@@ -1,49 +1,52 @@
 import java.util.*;
-
+import java.util.UUID;
 public class MyMapReduce
 {
-	List<List<String>> buckets = new ArrayList<List<String>>();
-	List<String> intermediateresults = new ArrayList<String>(1000);
-	List<String> values = new ArrayList<String>();
+	List<List<Integer>> buckets = new ArrayList<List<Integer>>();
+	List<Integer> intermediateresults = new ArrayList<Integer>(1000);
+	List<Integer> values = new ArrayList<Integer>();
 
-	public void init()
+	public void init(int n)
 	{
-		for(int i = 1; i<=1000; i++)
-		{
-			values.add("0" + new Integer(i).toString());
+		int totalNumberOfElements = n;
+
+		for(int i = 0; i < totalNumberOfElements; i++)
+		{ // randomize population using generic randomization
+			values.add( ((int)(Math.random() * totalNumberOfElements)) );
 		}
 
 		System.out.println("**STEP 1 START**-> Running Conversion into Buckets**");
 		System.out.println();
-		List<List<String>> b = step1ConvertIntoBuckets(values,100);
+		List<List<Integer>> b = step1ConvertIntoBuckets(values,100);
         System.out.println("************STEP 1 COMPLETE*************");
         System.out.println();
         System.out.println();
 
-   		System.out.println("**STEP 2 START**->Running **Map Function** concurrently for all        Buckets");
+   		System.out.println("**STEP 2 START**->Running **Map Function** concurrently for all Buckets  Sort individual lists");
 		System.out.println();
-		List<String> res = step2RunMapFunctionForAllBuckets(b);
+		List<Integer> res = step2RunMapFunctionForAllBuckets(b);
+		System.out.println("state of intermediate results : " + intermediateresults);
 		System.out.println("************STEP 2 COMPLETE*************");
 
         System.out.println();
         System.out.println();
-		System.out.println("**STEP 3 START**>;Running **Reduce Function** for collating Intermediate Results and Printing Results");
+		System.out.println("**STEP 3 START**>;Running **Reduce Function** for collating Intermediate Results and Printing Results : Receives partially sorted list");
 		System.out.println();
 		step3RunReduceFunctionForAllBuckets(res);
 		System.out.println("************STEP 3 COMPLETE*************");
 
 	}
-	public List<List<String>> step1ConvertIntoBuckets(List<String> list,int numberofbuckets)
-	{
+
+	public List<List<Integer>> step1ConvertIntoBuckets(List<Integer> list,int numberofbuckets){
 		int n = list.size();
 		int m = n / numberofbuckets;
 		int rem = n% numberofbuckets;
 
 		int count = 0;
 		System.out.println("BUCKETS");
-		for(int j =1; j<= numberofbuckets; j++)
+		for(int j = 0; j < numberofbuckets; j++)
 		{
-			List<String> temp = new ArrayList<String>();
+			List<Integer> temp = new ArrayList<Integer>();
 			for(int i=1; i<= m; i++)
 			{
 
@@ -53,11 +56,11 @@ public class MyMapReduce
 
 			}
 			buckets.add(temp);
-			temp = new ArrayList<String>();
+			temp = new ArrayList<Integer>();
 		}
 		if(rem != 0)
 		{
-			List<String> temp = new ArrayList<String>();
+			List<Integer> temp = new ArrayList<Integer>();
 			for(int i =1; i<=rem;i++)
 			{
 
@@ -73,11 +76,11 @@ public class MyMapReduce
 
 	}
 
-	public List<String> step2RunMapFunctionForAllBuckets(List<List<String>> list)
+	public List<Integer> step2RunMapFunctionForAllBuckets(List<List<Integer>> list)
 	{
 		for(int i=0; i < list.size(); i++)
 		{
-			List<String> elementList = (ArrayList<String>)list.get(i);
+			List<Integer> elementList = (ArrayList<Integer>)list.get(i);
 			new StartThread(elementList).start();
 		}
 
@@ -92,37 +95,26 @@ public class MyMapReduce
 		return intermediateresults;
 	}
 
-	public void step3RunReduceFunctionForAllBuckets(List<String> list)
+	public void step3RunReduceFunctionForAllBuckets(List<Integer> list)
 	{
-		ArrayList<String> results = new ArrayList<String>();
+		ArrayList<Integer> results = new ArrayList<Integer>();
 		//int sum =0;
 		System.out.println("-->" + list.size() + " : " + list);
 		for(int i=0; i < list.size(); i++)
 		{
 			//you can do some processing here, like finding max of all results etc
 			//int t=0;
-			try {
+			//try {
 				results.add(list.get(i));
 				//t = Integer.parseInt((String)list.get(i));
-			}catch(NumberFormatException nfe){}
+			//}catch(NumberFormatException nfe){}
 
 			//sum += t;
 		}
 
-		TreeSet<String> strings = new TreeSet<String>();
-		TreeSet<Integer> numbers = new TreeSet<Integer>();
-		for (String str : results){
-			if (null!=str)
-				strings.add(str);
-		}
-		for (String number : strings){
-			if (null!=number)
-				numbers.add(Integer.parseInt(number));
-		}
-
 		System.out.println();
-		System.out.println("Total Count is "+ strings.size() + " : " + strings);
-		System.out.println("Total Count is "+ numbers.size() + " : " + numbers);
+		System.out.println("Total Count is "+ results.size() + " : " + results);
+		//System.out.println("Total Count is "+ numbers.size() + " : " + numbers);
 
 //		for (Integer number : numbers){
 //			System.out.println(	number );
@@ -132,31 +124,30 @@ public class MyMapReduce
 
 	}
 
-		class StartThread extends Thread
+	class StartThread extends Thread
+	{
+		private List<Integer> tempList = new ArrayList<Integer>();
+		public StartThread(List<Integer> list)
 		{
-			private List<String> tempList = new ArrayList<String>();
-			public StartThread(List<String> list)
-			{
-				tempList = list;
-			}
-			public void run()
-			{
-
-				for(int i=0; i < tempList.size();i++)
-				{
-					String str = tempList.get(i);
-
-					synchronized(this)
-                     {
-						String siz = new Integer(str.length()).toString();
-						//System.out.println(str + " : " + siz );
-						intermediateresults.add(str);
-					 }
-
-
-				}
-			}
-
+			tempList = list;
 		}
+		public void run()
+		{
+			System.out.println(" before : " + tempList);
+			Collections.sort(tempList);
+			System.out.println(" after : " + tempList);
+			for(int i=0; i < tempList.size();i++)
+			{
+				Integer element = tempList.get(i);
+
+				synchronized(this)
+				 {
+					intermediateresults.add(element);
+				 }
+
+			}
+		}
+
+	}
 
 }
