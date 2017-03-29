@@ -30,7 +30,7 @@ public class MyMapReduce
 
         System.out.println();
         System.out.println();
-		System.out.println("**STEP 3 START**>;Running **Reduce Function** for collating Intermediate Results and Printing Results : Receives partially sorted list");
+		System.out.println("**STEP 3 START**>;Running **Reduce Function** for collating Intermediate Results and Printing Results : Receives partially sorted list, uses Timesort");
 		System.out.println();
 		step3RunReduceFunctionForAllBuckets(res);
 		System.out.println("************STEP 3 COMPLETE*************");
@@ -98,28 +98,17 @@ public class MyMapReduce
 	public void step3RunReduceFunctionForAllBuckets(List<Integer> list)
 	{
 		ArrayList<Integer> results = new ArrayList<Integer>();
-		//int sum =0;
 		System.out.println("-->" + list.size() + " : " + list);
 		for(int i=0; i < list.size(); i++)
 		{
 			//you can do some processing here, like finding max of all results etc
-			//int t=0;
-			//try {
-				results.add(list.get(i));
-				//t = Integer.parseInt((String)list.get(i));
-			//}catch(NumberFormatException nfe){}
-
-			//sum += t;
+			results.add(list.get(i));
 		}
+		// sorting a partially sorted list using timesort
+		Collections.sort(results);
 
 		System.out.println();
 		System.out.println("Total Count is "+ results.size() + " : " + results);
-		//System.out.println("Total Count is "+ numbers.size() + " : " + numbers);
-
-//		for (Integer number : numbers){
-//			System.out.println(	number );
-//		}
-
 		System.out.println();
 
 	}
@@ -133,9 +122,9 @@ public class MyMapReduce
 		}
 		public void run()
 		{
-			System.out.println(" before : " + tempList);
+//			System.out.println(" before : " + tempList);
 			Collections.sort(tempList);
-			System.out.println(" after : " + tempList);
+//			System.out.println(" after : " + tempList);
 			for(int i=0; i < tempList.size();i++)
 			{
 				Integer element = tempList.get(i);
