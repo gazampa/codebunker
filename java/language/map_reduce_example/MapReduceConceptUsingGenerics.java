@@ -1,6 +1,12 @@
+/**
+
+Adapted from : http://jayantkumar.in/category/java/
+
+**/
+
 import java.util.*;
 import java.util.UUID;
-public class MyMapReduce
+public class MapReduceConceptUsingGenerics
 {
 	List<List<Integer>> buckets = new ArrayList<List<Integer>>();
 	List<Integer> intermediateresults = new ArrayList<Integer>(1000);

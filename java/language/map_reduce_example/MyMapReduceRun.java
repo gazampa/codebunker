@@ -1,3 +1,9 @@
+/**
+
+Adapted from : http://jayantkumar.in/category/java/
+
+**/
+
 class MyMapReduceRun{
 
 	public static void main(String[] args){
