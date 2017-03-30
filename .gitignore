@@ -6,6 +6,7 @@
 *.log
 *.txt
 *.bat
+*.ini
 
 # Package Files #
 *.jar
