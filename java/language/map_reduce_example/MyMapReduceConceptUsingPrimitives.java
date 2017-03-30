@@ -4,54 +4,50 @@ Adapted from : http://jayantkumar.in/category/java/
 
 **/
 import java.util.*;
+import java.util.concurrent.CountDownLatch;
 import java.util.UUID;
 public class MyMapReduceConceptUsingPrimitives
 {
-
-	private	int totalNumberOfElements;
-	private	int totalNumberOfBuckets;
 	private int[] values;
 	private int[][] intermediateResults;
 	private int[] result;
+	private	int totalNumberOfElements, totalNumberOfBuckets, bucketForRemainder;
+	private boolean printDescription = false;
 
 	public MyMapReduceConceptUsingPrimitives(int n, int p){
 		totalNumberOfElements = n;
 		totalNumberOfBuckets = p;
+		values = new int[totalNumberOfElements];
+		intializeWithRandom();
+		bucketForRemainder = (totalNumberOfElements % totalNumberOfBuckets!=0) ? 1 : 0;
+		intermediateResults = new int[totalNumberOfBuckets+bucketForRemainder][];
 	}
 
 	public void init()
 	{
-		values = new int[totalNumberOfElements];
-		int compensate = (totalNumberOfElements % totalNumberOfBuckets!=0) ? 1 : 0;
-		intermediateResults = new int[totalNumberOfBuckets+compensate][];
-
-		for(int i = 0; i < totalNumberOfElements; i++)
-		{ // randomize population using generic randomization
-			values[i] = (int)(Math.random() * totalNumberOfElements);
-		}
-
 		printToScreen(values);
 
-		System.out.println("**STEP 1 START**-> Running Conversion into Buckets**");
-		System.out.println();
+		if ( printDescription ) System.out.println("**STEP 1 START**-> Running Conversion into Buckets**");
+		if ( printDescription ) System.out.println();
 		int[][] b = step1ConvertIntoBuckets(values, totalNumberOfBuckets);
-        System.out.println("************STEP 1 COMPLETE*************");
-        System.out.println();
-        System.out.println();
+        if ( printDescription ) System.out.println("************STEP 1 COMPLETE*************");
+        if ( printDescription ) System.out.println();
+        if ( printDescription ) System.out.println();
 //		printToScreen(b);
 
-   		System.out.println("**STEP 2 START**->Running **Map Function** concurrently for all Buckets  Sort individual lists");
-		System.out.println();
+   		if ( printDescription ) System.out.println("**STEP 2 START**->Running **Map Function** concurrently for all Buckets  Sort individual lists");
+		if ( printDescription ) System.out.println();
 		step2RunMapFunctionForAllBuckets(b);
-//		printToScreen(intermediateResults);
-		System.out.println("************STEP 2 COMPLETE*************");
 
-        System.out.println();
-        System.out.println();
-		System.out.println("**STEP 3 START**>;Running **Reduce Function** for collating Intermediate Results and Printing Results : Receives partially sorted list, uses Timesort");
-		System.out.println();
+//		printToScreen(intermediateResults);
+		if ( printDescription ) System.out.println("************STEP 2 COMPLETE*************");
+
+        if ( printDescription ) System.out.println();
+        if ( printDescription ) System.out.println();
+		if ( printDescription ) System.out.println("**STEP 3 START**>;Running **Reduce Function** for collating Intermediate Results and Printing Results : Receives partially sorted list, uses Timesort");
+		if ( printDescription ) System.out.println();
 		result = step3RunReduceFunctionForAllBuckets(intermediateResults);
-		System.out.println("************STEP 3 COMPLETE*************");
+		if ( printDescription ) System.out.println("************STEP 3 COMPLETE*************");
 		printToScreen(result);
 
 	}
@@ -66,7 +62,7 @@ public class MyMapReduceConceptUsingPrimitives
 		int[][] buckets = new int[adjustedNumber][];
 		int[] temp = new int[m];
 
-		System.out.println("BUCKETS");
+		if (printDescription) System.out.println("BUCKETS");
 
 		for(int i = 0, mx = buckets.length - extraBucket; i < mx; i++)
 		{
@@ -96,19 +92,17 @@ public class MyMapReduceConceptUsingPrimitives
 
 	public int[][] step2RunMapFunctionForAllBuckets(int[][] list)
 	{
+		CountDownLatch threadsFinished = new CountDownLatch(list.length);
+
 		for(int i = 0; i < list.length; i++)
 		{
 			int[] elementList = list[i];
-			new StartThread(elementList, i).start();
+			new StartThread(elementList, i, threadsFinished).start();
 		}
 
-        try
-        {
-			Thread.sleep(3000);
-		}catch(Exception e)
-		{
-			System.out.println(" Problem : " + e);
-		}
+		try{
+			threadsFinished.await();
+		}catch(InterruptedException ie){System.out.println(" a thread was interrupted ....");}
 
 		return intermediateResults;
 	}
@@ -144,11 +138,12 @@ public class MyMapReduceConceptUsingPrimitives
 	{
 		private int[] tempList;
 		private final int majorIndex;
-
-		public StartThread(int[] list, int i)
+		private CountDownLatch countDownLatch;
+		public StartThread(int[] list, int i, CountDownLatch latch)
 		{
 			tempList = list;
 			majorIndex = i;
+			countDownLatch = latch;
 		}
 		public void run()
 		{
@@ -163,14 +158,22 @@ public class MyMapReduceConceptUsingPrimitives
 //				holder[i] = tempList[i];
 //
 //			}
-			synchronized(this)
-			{
+//			synchronized(this)
+//			{
 				intermediateResults[majorIndex] = tempList;
-			}
+//			}
 
 //			System.out.println(" after : " + tempList.length);
+			countDownLatch.countDown();
 		}
 
+	}
+
+	private void intializeWithRandom(){
+		for(int i = 0; i < totalNumberOfElements; i++)
+		{ // randomize population using generic randomization
+			values[i] = (int)(Math.random() * totalNumberOfElements);
+		}
 	}
 
 	public void printToScreen(int[][] array)
