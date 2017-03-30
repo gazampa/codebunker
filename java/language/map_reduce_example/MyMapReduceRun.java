@@ -19,7 +19,7 @@ class MyMapReduceRun{
 
 	    primitives.init();
 
-		System.out.println(" time elapsed : " + clock.stopAndReport());
+		clock.stopAndReport();
 
 		MyMapReduceConceptUsingGenerics generics = new MyMapReduceConceptUsingGenerics(sampleSize, numberOfPartitions);
 
@@ -27,7 +27,7 @@ class MyMapReduceRun{
 
 		generics.init();
 
-		System.out.println(" time elapsed : " + clock.stopAndReport());
+		clock.stopAndReport();
 
 	}
 

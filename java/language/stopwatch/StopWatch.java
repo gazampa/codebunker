@@ -20,13 +20,23 @@ public class StopWatch{
 		stop = System.nanoTime();
 	}
 
-	public long stopAndReport(){
+	public long stopAndGetDuration(){
 		stop = System.nanoTime();
+		calculateDuration();
 		return getDuration();
 	}
 
-	public long getDuration(){
+	public void stopAndReport(){
+		stop = System.nanoTime();
+		calculateDuration();
+		System.out.println(" time elapsed : " + getDuration());
+	}
+
+	public void calculateDuration(){
 		duration = stop - start;
+	}
+
+	public long getDuration(){
 		return duration;
 	}
 
