@@ -127,9 +127,9 @@ public class MyMapReduceConceptUsingPrimitives
 		// sorting a partially sorted list using java library choice of sorts.
 		Arrays.sort(results);
 
-		System.out.println();
+		//System.out.println();
 		//System.out.println("Total Count is "+ results.length + " : " + Arrays.toString(results));
-		System.out.println();
+		//System.out.println();
 
 		return results;
 	}
@@ -184,6 +184,7 @@ public class MyMapReduceConceptUsingPrimitives
 			//System.out.println(array[i].length);
 		}
 	}
+
 	public void printToScreen(int[] array)
 	{
 		System.out.println(Arrays.toString(array));
