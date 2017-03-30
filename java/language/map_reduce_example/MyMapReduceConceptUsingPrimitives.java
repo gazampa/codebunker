@@ -93,7 +93,6 @@ public class MyMapReduceConceptUsingPrimitives
 	public int[][] step2RunMapFunctionForAllBuckets(int[][] list)
 	{
 		CountDownLatch threadsFinished = new CountDownLatch(list.length);
-
 		for(int i = 0; i < list.length; i++)
 		{
 			int[] elementList = list[i];
@@ -115,21 +114,15 @@ public class MyMapReduceConceptUsingPrimitives
 		for(int i=0; i < outerLength; i++)
 		{
 			int innerLength = list[i].length;
-//			System.out.println("-- >" + i + " : " + Arrays.toString(list[i]));
 			for ( int j = 0;  j < innerLength ; j++ ){
 			//you can do some processing here, like finding max of all results etc
-//				System.out.println(majorIndex + " : " + list[i][j]);
 				results[majorIndex] = list[i][j];
 				majorIndex++;
 			}
-//			System.out.println(majorIndex + " : " + innerLength + " : " + i);
-		}
-		// sorting a partially sorted list using java library choice of sorts.
-		Arrays.sort(results);
 
-		//System.out.println();
-		//System.out.println("Total Count is "+ results.length + " : " + Arrays.toString(results));
-		//System.out.println();
+		}
+		// sorting a partially sorted list using java library choice of sorts. - primitive array -- quicksort, depending on size
+		Arrays.sort(results);
 
 		return results;
 	}
@@ -148,22 +141,11 @@ public class MyMapReduceConceptUsingPrimitives
 		public void run()
 		{
 			Arrays.sort(tempList);
-//			System.out.println(" before : " + tempList);
-//			Arrays.toString(tempList);
-//			System.out.println(" after : " + tempList);
-//			System.out.println(" before : " + tempList.length);
 			int[] holder = new int[tempList.length];
-//			for(int i = 0; i < tempList.length; i++)
-//			{
-//				holder[i] = tempList[i];
-//
-//			}
-//			synchronized(this)
+//			synchronized(this) // each thread writes to a seperate index with ... //http://stackoverflow.com/questions/8978191/java-concurrency-writing-to-different-indexes-of-the-same-array
 //			{
 				intermediateResults[majorIndex] = tempList;
 //			}
-
-//			System.out.println(" after : " + tempList.length);
 			countDownLatch.countDown();
 		}
 

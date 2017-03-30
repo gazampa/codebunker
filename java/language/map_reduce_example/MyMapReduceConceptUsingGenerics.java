@@ -80,7 +80,7 @@ public class MyMapReduceConceptUsingGenerics
 			buckets.add(temp);
 		}
         System.out.println();
-		System.out.println(buckets);
+//		System.out.println(buckets);
 		System.out.println();
 		return buckets;
 

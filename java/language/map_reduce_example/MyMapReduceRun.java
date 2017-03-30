@@ -3,37 +3,31 @@
 Adapted from : http://jayantkumar.in/category/java/
 
 **/
-
+import stopwatch.StopWatch;
 class MyMapReduceRun{
 
 	public static void main(String[] args){
+
 		int sampleSize = 1005;
 		int numberOfPartitions = 100;
-		long startTime, endTime, duration;
+
+		StopWatch clock = new StopWatch();
 
 		MyMapReduceConceptUsingPrimitives primitives = new MyMapReduceConceptUsingPrimitives(sampleSize, numberOfPartitions);
 
-		startTime = System.nanoTime();
+		clock.start();
 
 	    primitives.init();
 
-		endTime = System.nanoTime();
-
-		duration = endTime - startTime;
-
-		System.out.println(" time elapsed : " + duration);
+		System.out.println(" time elapsed : " + clock.stopAndReport());
 
 		MyMapReduceConceptUsingGenerics generics = new MyMapReduceConceptUsingGenerics(sampleSize, numberOfPartitions);
 
-		startTime = System.nanoTime();
+		clock.start();
 
 		generics.init();
 
-		endTime = System.nanoTime();
-
-		duration = endTime - startTime;
-
-		System.out.println(" time elapsed : " + duration);
+		System.out.println(" time elapsed : " + clock.stopAndReport());
 
 	}
 
