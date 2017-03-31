@@ -4,7 +4,7 @@
 *.xml
 *.properties
 *.log
-*.txt
+#*.txt
 *.bat
 *.ini
 

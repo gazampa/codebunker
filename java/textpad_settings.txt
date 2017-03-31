@@ -1,2 +1,0 @@
-javac -classpath ./;C:/Users/Billy/code_tests/classes -Xlint:all -version -d  "C:/Users/Billy/code_tests/classes" $File 
-java -classpath C:/Users/Billy/code_tests/classes $BaseName
