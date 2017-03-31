@@ -1,3 +1,5 @@
+/** http://showme.physics.drexel.edu/usefulchem/Software/Drexel/Cheminformatics/Java/cdk/src/org/openscience/cdk/math/PermutationGenerator.java **/
+
 import java.math.BigInteger;
 
 public class PermutationGenerator {
