@@ -1,4 +1,9 @@
-/** http://showme.physics.drexel.edu/usefulchem/Software/Drexel/Cheminformatics/Java/cdk/src/org/openscience/cdk/math/PermutationGenerator.java **/
+/** http://showme.physics.drexel.edu/usefulchem/Software/Drexel/Cheminformatics/Java/cdk/src/org/openscience/cdk/math/PermutationGenerator.java
+*
+* @author       Michael Gilleland, Merriam Park Software
+* @cdk.created  04 February 2004
+*
+**/
 
 import java.math.BigInteger;
 
