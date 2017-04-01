@@ -30,15 +30,17 @@ public class TestMapReduce{
 
 	postSort = countIncidencesOfElements(testData);
 
-	System.out.println(isSortedAsc(resultData));
-
-	System.out.println(checkForIncidenceEquality(preSort, postSort));
-
 	preSort.forEach((keyy, value) -> System.out.println(keyy + " : " + value));
 
 	postSort.forEach((keyy, value) -> System.out.println(keyy + " : " + value));
 
-    assertEquals(true, true);
+	System.out.println(isSortedAsc(resultData));
+
+	System.out.println(checkForIncidenceEquality(preSort, postSort));
+
+    assertEquals(true, isSortedAsc(resultData));
+
+    assertEquals(true, checkForIncidenceEquality(preSort, postSort));
 
   }
 
