@@ -10,7 +10,7 @@ import mapreduceexample.MyMapReduceConceptUsingPrimitives;
 public class TestMapReduce{
 
   @Test
-  public void mapReduce() {
+  public void testMapReduceIntegrity() {
 
 	int sampleSize = 1005;
 	int numberOfPartitions = 100;
@@ -30,19 +30,30 @@ public class TestMapReduce{
 
 	postSort = countIncidencesOfElements(testData);
 
-	preSort.forEach((keyy, value) -> System.out.println(keyy + " : " + value));
-
-	postSort.forEach((keyy, value) -> System.out.println(keyy + " : " + value));
-
-	System.out.println(isSortedAsc(resultData));
-
-	System.out.println(checkForIncidenceEquality(preSort, postSort));
-
-    assertEquals(true, isSortedAsc(resultData));
-
     assertEquals(true, checkForIncidenceEquality(preSort, postSort));
 
   }
+
+  @Test
+  public void testMapReduceIsSorted() {
+
+	int sampleSize = 1005;
+	int numberOfPartitions = 100;
+	int[] testData, resultData;
+
+	MyMapReduceConceptUsingPrimitives primitives = new MyMapReduceConceptUsingPrimitives(sampleSize, numberOfPartitions);
+
+	testData = primitives.getValues();
+
+	primitives.init();
+
+	resultData = primitives.getResult();
+
+    assertEquals(true, isSortedAsc(resultData));
+
+  }
+
+	/** ToDo : Check Sort Stability **/
 
   private HashMap<Integer, Integer> countIncidencesOfElements(int[] intArray){
 	HashMap<Integer, Integer> result = new HashMap<Integer, Integer>();
@@ -103,6 +114,15 @@ public class TestMapReduce{
 
 
 /**
+
+	//preSort.forEach((keyy, value) -> System.out.println(keyy + " : " + value));
+
+	//postSort.forEach((keyy, value) -> System.out.println(keyy + " : " + value));
+
+	//System.out.println(isSortedAsc(resultData));
+
+	//System.out.println(checkForIncidenceEquality(preSort, postSort));
+
 import java.lang.reflect.Field;
 	try
 	{
