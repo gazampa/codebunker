@@ -28,7 +28,7 @@ public class TestMapReduce{
 
 	resultData = primitives.getResult();
 
-	postSort = countIncidencesOfElements(testData);
+	postSort = countIncidencesOfElements(resultData);
 
     assertEquals(true, checkForIncidenceEquality(preSort, postSort));
 
@@ -44,6 +44,8 @@ public class TestMapReduce{
 	MyMapReduceConceptUsingPrimitives primitives = new MyMapReduceConceptUsingPrimitives(sampleSize, numberOfPartitions);
 
 	testData = primitives.getValues();
+
+	assertEquals(false, isSortedAsc(testData));
 
 	primitives.init();
 
