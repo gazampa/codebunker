@@ -1,3 +1,4 @@
+package mapreduceexample;
 /**
 
 Adapted from : http://jayantkumar.in/category/java/
@@ -171,4 +172,13 @@ public class MyMapReduceConceptUsingPrimitives
 	{
 		System.out.println(Arrays.toString(array));
 	}
+
+	public int[] getValues(){
+		return Arrays.copyOf(values, values.length);
+	}
+
+	public int[] getResult(){
+		return Arrays.copyOf(result, result.length);
+	}
+
 }

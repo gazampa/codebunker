@@ -1,3 +1,4 @@
+package mapreduceexample;
 /**
 
 Adapted from : http://jayantkumar.in/category/java/

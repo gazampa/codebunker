@@ -1,10 +1,11 @@
+package mapreduceexample;
 /**
 
 Adapted from : http://jayantkumar.in/category/java/
 
 **/
 import stopwatch.StopWatch;
-class MyMapReduceRun{
+public class MyMapReduceRun{
 
 	public static void main(String[] args){
 
