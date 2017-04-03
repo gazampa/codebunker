@@ -1,10 +1,14 @@
 trigger ControllingTrigger on Contact (before insert, before update, before delete, after insert, after update, after delete) {
-
+    
+    //https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm
+    
+    BusinessLogicClass business = new BusinessLogicClass(System.Trigger.NewMap, System.Trigger.OldMap);
+    
     if ( Trigger.isBefore){
         
         if (Trigger.isInsert){
-            // recursion control
-            // service calls
+	   // recusion control important here, data update lifecycle number 10.
+           business.executeLogic();
         }
         
         if ( Trigger.isUpdate ){
@@ -29,7 +33,59 @@ trigger ControllingTrigger on Contact (before insert, before update, before dele
     
         if (Trigger.isDelete){
         
-	}
+	    }
         
     }    
 }
+/**   #### Data Change Lifecycle : Triggers and Order of Execution ####
+
+1. Loads the original record from the database or initializes the record for an upsert statement.
+
+2. System Validation : Loads the new record field values from the request and overwrites the old values.
+	If the request came from a standard UI edit page, Salesforce runs system validation to check the record for:
+	Compliance with layout-specific rules
+	Required values at the layout level and field-definition level
+	Valid field formats
+	Maximum field length
+	When the request comes from other sources, such as an Apex application or a SOAP API call, Salesforce validates only the foreign keys. Prior to executing a trigger, Salesforce verifies that any custom foreign keys do not refer to the object itself.
+	Salesforce runs user-defined validation rules if multiline items were created, such as quote line items and opportunity line items.
+
+3 . Executes all before triggers.
+
+4. System Validation :Runs most system validation steps again, such as verifying that all required fields have a non-null value, and runs any user-defined validation rules. The only system validation that Salesforce doesn't run a second time (when the request comes from a standard UI edit page) is the enforcement of layout-specific rules.
+
+5. Executes duplicate rules. If the duplicate rule identifies the record as a duplicate and uses the block action, the record is not saved and no further steps, such as after triggers and workflow rules, are taken.
+
+6. Saves the record to the database, but doesn't commit yet.
+
+7. Executes all after triggers.
+
+8. Executes assignment rules.
+
+9. Executes auto-response rules.
+
+10. Executes workflow rules.
+
+11. If there are workflow field updates, updates the record again.
+
+12. If the record was updated with workflow field updates, fires before update triggers and after update triggers one more time (and only one more time), in addition to standard validations. Custom validation rules, duplicate rules, and escalation rules are not run again.
+	Executes processes.
+
+13. If there are workflow flow triggers, executes the flows.
+
+The pilot program for flow trigger workflow actions is closed. If you've already enabled the pilot in your org, you can continue to create and edit flow trigger workflow actions. If you didn't enable the pilot in your org, use the Flows action in Process Builder instead.
+
+14. Executes escalation rules.
+
+15. Executes entitlement rules.
+
+16. If the record contains a roll-up summary field or is part of a cross-object workflow, performs calculations and updates the roll-up summary field in the parent record. Parent record goes through save procedure.
+
+17. If the parent record is updated, and a grandparent record contains a roll-up summary field or is part of a cross-object workflow, performs calculations and updates the roll-up summary field in the grandparent record. Grandparent record goes through save procedure.
+
+18. Executes Criteria Based Sharing evaluation.
+
+19. Commits all DML operations to the database.
+
+20. Executes post-commit logic, such as sending email.
+**/
