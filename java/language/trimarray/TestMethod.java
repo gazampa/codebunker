@@ -4,10 +4,10 @@ public class TestMethod{
 
 	public static void main(String[] args){
 		String testString = new String("a b c d e f g");
-		char[] arrayC = testString.toCharArray();
-		char[] arrayC_trim = trimArray(arrayC);
+		char[] cArr = testString.toCharArray();
+		char[] cArr_trim = trimArray(cArr);
 
-		for (char ch : arrayC_trim){
+		for (char ch : cArr_trim){
 			log(ch);
 		}
 
