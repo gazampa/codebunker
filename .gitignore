@@ -12,4 +12,6 @@
 *.jar
 *.war
 *.ear
-
+javascript/nodejs/node_modules/
+javascript/nodejs/node_modules/*
+javascript/nodejs/node_modules/**

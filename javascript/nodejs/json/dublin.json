@@ -1,0 +1,323 @@
+{
+   "0" : {
+      "fname" : "Gary",
+      "lname" : "Maguire",
+      "position" : "Goalkeeper",
+      "number" : "1",
+      "country" : "Ballyboden St Endas",
+      "id": 3001
+   },
+   "1" : {
+      "fname" : "Conor",
+      "lname" : "Dooley",
+      "position" : "Goalkeeper",
+      "number" : "1",
+      "country" : "Ballyboden St Endas",
+      "id": 3002
+   },
+   "2" : {
+      "fname" : "Paul",
+      "lname" : "Schutte",
+      "position" : "Defender",
+      "number" : "2",
+      "country" : "Cuala",
+      "id": 3003
+   },
+   "3" : {
+      "fname" : "Liam",
+      "lname" : "Rushe",
+      "position" : "Defender",
+      "number" : "3",
+      "country" : "St Patricks Palmerstown",
+      "id": 3004
+   },
+   "4" : {
+      "fname" : "Chris",
+      "lname" : "Crummey",
+      "position" : "Defender",
+      "number" : "4",
+      "country" : "Lucan Sarsfields",
+      "id": 3005
+   },
+   "5" : {
+      "fname" : "Eoghan",
+      "lname" : "O Donnell",
+      "position" : "Defender",
+      "number" : "4",
+      "country" : "Colmcille",
+      "id": 3006
+   },
+   "6" : {
+      "fname" : "Shane",
+      "lname" : "Barrett",
+      "position" : "Defender",
+      "number" : "4",
+      "country" : "Na Fianna",
+      "id": 3007
+   },
+   "7" : {
+      "fname" : "Ben",
+      "lname" : "Quinn",
+      "position" : "Defender",
+      "number" : "5",
+      "country" : "Crumlin",
+      "id": 3008
+   },
+   "8" : {
+      "fname" : "Cian",
+      "lname" : "O Callaghan",
+      "position" : "Defender",
+      "number" : "6",
+      "country" : "Cuala",
+      "id": 3009
+   },
+   "9" : {
+      "fname" : "James",
+      "lname" : "Madden",
+      "position" : "Defender",
+      "number" : "7",
+      "country" : "Ballyboden St. Endas",
+      "id": 3010
+   },
+   "10" : {
+      "fname" : "Sean",
+      "lname" : "Moran",
+      "position" : "Defender",
+      "number" : "7",
+      "country" : "Cuala",
+      "id": 3011
+   },
+   "11" : {
+      "fname" : "Darragh",
+      "lname" : "O Connell",
+      "position" : "Midfield",
+      "number" : "8",
+      "country" : "Cuala",
+      "id": 3012
+   },
+   "12" : {
+      "fname" : "Niall",
+      "lname" : "McMorrow",
+      "position" : "Midfield",
+      "number" : "8",
+      "country" : "Ballyboden St. Endas",
+      "id": 3013
+   },
+   "13" : {
+      "fname" : "Riain",
+      "lname" : "McBride",
+      "position" : "Midfield",
+      "number" : "9",
+      "country" : "St. Vincents",
+      "id": 3014
+   },
+   "14" : {
+      "fname" : "David",
+      "lname" : "O Callaghan",
+      "position" : "Forward",
+      "number" : "10",
+      "country" : "Ballyboden St. Endas",
+      "id": 3015
+   },
+   "15" : {
+      "fname" : "David",
+      "lname" : "Treacy",
+      "position" : "Forward",
+      "number" : "10",
+      "country" : "Cuala",
+      "id": 3016
+   },
+   "16" : {
+      "fname" : "Oisin",
+      "lname" : "O Rorke",
+      "position" : "Forward",
+      "number" : "11",
+      "country" : "Kilmacud Crokes",
+      "id": 3017
+   },
+   "17" : {
+      "fname" : "Eamonn",
+      "lname" : "Dillon",
+      "position" : "Forward",
+      "number" : "12",
+      "country" : "Naomh Fionnbarra",
+      "id": 3018
+   },
+   "18" : {
+      "fname" : "Ryan",
+      "lname" : "O Dwyer",
+      "position" : "Forward",
+      "number" : "13",
+      "country" : "Kilmacud Crokes",
+      "id": 3019
+   },
+   "19" : {
+      "fname" : "Mark",
+      "lname" : "Schutte",
+      "position" : "Forward",
+      "number" : "13",
+      "country" : "Cuala",
+      "id": 3020
+   },
+   "20" : {
+      "fname" : "Chris",
+      "lname" : "Bennet",
+      "position" : "Forward",
+      "number" : "14",
+      "country" : "Faughs",
+      "id": 3021
+   },
+   "21" : {
+          "fname" : "Fintan",
+      "lname" : "McGibb",
+      "position" : "Forward",
+      "number" : "14",
+      "country" : "Setanta",
+      "id": 3022
+   },
+   "22" : {
+      "fname" : "Fionn",
+      "lname" : "O Riain Broin",
+      "position" : "Forward",
+      "number" : "15",
+      "country" : "St. Judes",
+      "id": 3023
+   },
+   "23" : {
+      "fname" : "Ciann",
+      "lname" : "Boland",
+      "position" : "Forward",
+      "number" : "15",
+      "country" : "Eoghan Ruadh",
+      "id": 3024
+   },
+   "24" : {
+      "fname" : "Chris",
+      "lname" : "Bennett",
+      "position" : "",
+      "number" : "",
+      "country" : "Faughs",
+      "id": 3025
+   },
+   "25" : {
+      "fname" : "Donal",
+      "lname" : "Burke",
+      "position" : "",
+      "number" : "",
+      "country" : "Na Fianna",
+      "id": 3026
+   },
+   "26" : {
+      "fname" : "Tom",
+      "lname" : "Connolly",
+      "position" : "",
+      "number" : "",
+      "country" : "St Vincents",
+      "id": 3027
+   },
+   "27" : {
+      "fname" : "Eoghan",
+      "lname" : "Conroy",
+      "position" : "Defender",
+      "number" : "",
+      "country" : "St Maurs",
+      "id": 3028
+   },
+   "28" : {
+      "fname" : "Oisín",
+      "lname" : "Gough",
+      "position" : "",
+      "number" : "",
+      "country" : "Cuala",
+      "id": 3029
+   },
+   "29" : {
+      "fname" : "Canice",
+      "lname" : "Maher",
+      "position" : "",
+      "number" : "",
+      "country" : "St Judes",
+      "id": 3030
+   },
+   "30" : {
+      "fname" : "Jake",
+      "lname" : "Malone",
+      "position" : "",
+      "number" : "",
+      "country" : "Cuala",
+      "id": 3031
+   },
+   "31" : {
+      "fname" : "Cian",
+      "lname" : "MacGabhan",
+      "position" : "",
+      "number" : "",
+      "country" : "Kilmacud Crokes",
+      "id": 3032
+   },
+   "32" : {
+      "fname" : "Sean",
+      "lname" : "McGrath",
+      "position" : "",
+      "number" : "",
+      "country" : "Kilmacud Crokes",
+      "id": 3033
+   },
+   "33" : {
+      "fname" : "Cian",
+      "lname" : "O Sullivan",
+      "position" : "",
+      "number" : "",
+      "country" : "St Brigids",
+      "id": 3034
+   },
+   "34" : {
+      "fname" : "Alex",
+      "lname" : "Quinn",
+      "position" : "",
+      "number" : "",
+      "country" : "Crumlin",
+      "id": 3035
+   },
+   "35" : {
+      "fname" : "Ben",
+      "lname" : "Quinn",
+      "position" : "",
+      "number" : "",
+      "country" : "Crumlin",
+      "id": 3036
+   },
+   "36" : {
+      "fname" : "Paddy",
+      "lname" : "Smyth",
+      "position" : "",
+      "number" : "",
+      "country" : "Clontarf",
+      "id": 3037
+   },
+   "37" : {
+      "fname" : "Johnathan",
+      "lname" : "Tracey",
+      "position" : "",
+      "number" : "",
+      "country" : "Na Fianna",
+      "id": 3038
+   },
+   "38" : {
+      "fname" : "Ronan",
+      "lname" : "Walsh",
+      "position" : "",
+      "number" : "",
+      "country" : "Kilmacud Crokes",
+      "id": 3039
+   },
+   "39" : {
+      "fname" : "Fergal",
+      "lname" : "Whitely",
+      "position" : "",
+      "number" : "",
+      "country" : "Kilmacud Crokes",
+      "id": 3040
+   }
+
+}

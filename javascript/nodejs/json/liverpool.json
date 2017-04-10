@@ -1,0 +1,234 @@
+﻿{
+   "0" : {
+      "fname" : "Loris",
+      "lname" : "Karius",
+      "position" : "GoalKeeper",
+      "number" : "1",
+      "country" : "Germany",
+      "id": 1001
+   },
+   "1" : {
+      "fname" : "Nathaniel",
+      "lname" : "Clyne",
+      "position" : "Defender",
+      "number" : "2",
+      "country" : "England",
+      "id": 1002
+   },
+   "2" : {
+      "fname" : "Georginio",
+      "lname" : "Wijnaldum",
+      "position" : "MidFielder",
+      "number" : "5",
+      "country" : "Netherlands",
+      "id": 1003
+   },
+   "3" : {
+      "fname" : "Dejan",
+      "lname" : "Lovren",
+      "position" : "Defender",
+      "number" : "6",
+      "country" : "Croatia",
+      "id": 1004
+   },
+   "4" : {
+      "fname" : "James",
+      "lname" : "Milner",
+      "position" : "Midfield",
+      "number" : "7",
+      "country" : "England",
+      "id": 1005
+   },
+   "5" : {
+      "fname" : "Philippe",
+      "lname" : "Coutinho",
+      "position" : "Midfield",
+      "number" : "10",
+      "country" : "Brazil",
+      "id": 1006
+   },
+   "6" : {
+      "fname" : "Roberto",
+      "lname" : "Firminio",
+      "position" : "Forward",
+      "number" : "11",
+      "country" : "Brazil",
+      "id": 1007
+   },
+   "7" : {
+      "fname" : "Joe",
+      "lname" : "Gomez",
+      "position" : "Defender",
+      "number" : "12",
+      "country" : "England",
+      "id": 1008
+   },
+   "8" : {
+      "fname" : "Alex",
+      "lname" : "Manninger",
+      "position" : "Goalkeeper",
+      "number" : "12",
+      "country" : "Austria",
+      "id": 1009
+   },
+   "9" : {
+      "fname" : "Jordan",
+      "lname" : "Henderson",
+      "position" : "Midfield",
+      "number" : "14",
+      "country" : "England",
+      "id": 1010
+   },
+   "10" : {
+      "fname" : "Sturridge",
+      "lname" : "Daniel",
+      "position" : "Forward",
+      "number" : "15",
+      "country" : "England",
+      "id": 1011
+   },
+   "11" : {
+      "fname" : "Marko",
+      "lname" : "Grujic",
+      "position" : "Midfield",
+      "number" : "16",
+      "country" : "Brazil",
+      "id": 1012
+   },
+   "12" : {
+      "fname" : "Klavan",
+      "lname" : "Ragnar",
+      "position" : "Defender",
+      "number" : "17",
+      "country" : "Estonia",
+      "id": 1013
+   },
+   "13" : {
+      "fname" : "Moreno",
+      "lname" : "Alberto",
+      "position" : "Defender",
+      "number" : "18",
+      "country" : "Spain",
+      "id": 1014
+   },
+   "14" : {
+      "fname" : "Mane",
+      "lname" : "Sadio",
+      "position" : "Forward",
+      "number" : "19",
+      "country" : "Senegal",
+      "id": 1015
+   },
+   "15" : {
+      "fname" : "Adam",
+      "lname" : "Lallana",
+      "position" : "Midfield",
+      "number" : "20",
+      "country" : "England",
+      "id": 1016
+   },
+   "16" : {
+      "fname" : "Emre",
+      "lname" : "Can",
+      "position" : "Midfield",
+      "number" : "23",
+      "country" : "Germany",
+      "id": 1017
+   },
+   "17" : {
+      "fname" : "Simon",
+      "lname" : "Mignolet",
+      "position" : "Goalkeeper",
+      "number" : "22",
+      "country" : "Belguim",
+      "id": 1018
+   },
+   "18" : {
+      "fname" : "Lucas",
+      "lname" : "Leiva",
+      "position" : "Midfield",
+      "number" : "21",
+      "country" : "Brazil",
+      "id": 1019
+   },
+   "19" : {
+      "fname" : "Divock",
+      "lname" : "Origi",
+      "position" : "Forward",
+      "number" : "27",
+      "country" : "Belguim",
+      "id": 1020
+   },
+   "20" : {
+      "fname" : "Ings",
+      "lname" : "Danny",
+      "position" : "Forward",
+      "number" : "28",
+      "country" : "England",
+      "id": 1021
+   },
+   "21" : {
+      "fname" : "Matip",
+      "lname" : "Joel",
+      "position" : "Defender",
+      "number" : "32",
+      "country" : "Cameroon",
+      "id": 1022
+   },
+   "22" : {
+      "fname" : "Adam",
+      "lname" : "Bogdan",
+      "position" : "Goalkeeper",
+      "number" : "34",
+      "country" : "Hungary",
+      "id": 1023
+   },
+   "23" : {
+      "fname" : "Kevin",
+      "lname" : "Stewart",
+      "position" : "Midfield",
+      "number" : "35",
+      "country" : "England",
+      "id": 1024
+   },
+   "24" : {
+      "fname" : "Ovie",
+      "lname" : "Ejaria",
+      "position" : "Midfield",
+      "number" : "53",
+      "country" : "England",
+      "id": 1025
+   },
+   "25" : {
+      "fname" : "Sheyi",
+      "lname" : "Ojo",
+      "position" : "Midfield",
+      "number" : "54",
+      "country" : "England",
+      "id": 1026
+   },
+   "26" : {
+      "fname" : "Conor",
+      "lname" : "Randall",
+      "position" : "Defender",
+      "number" : "58",
+      "country" : "England",
+      "id": 1027
+   },
+   "27" : {
+      "fname" : "Ben",
+      "lname" : "Woodburn",
+      "position" : "Forward",
+      "number" : "58",
+      "country" : "Wales",
+      "id": 1028
+   },
+   "28" : {
+      "fname" : "Trent",
+      "lname" : "Alexander-Arnold",
+      "position" : "Defender",
+      "number" : "66",
+      "country" : "England",
+      "id": 1029
+   }
+}

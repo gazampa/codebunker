@@ -1,0 +1,11 @@
+var s = '';
+
+for(var i in req.body){
+   if(typeof req.body[i] == 'string'){
+       s = s + i + ': ' + req.body[i];
+    }else{
+	console.log( req.body[i] );
+    }
+}
+
+console.log( str );
