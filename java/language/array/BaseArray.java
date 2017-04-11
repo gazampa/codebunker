@@ -1,17 +1,19 @@
+package org.gazampa.array;
+
 import java.lang.StringBuilder;
-abstract class BaseArray{
+public abstract class BaseArray{
 
 	protected int[] intArray;
 
-	BaseArray(){
+	public BaseArray(){
 		intArray = new int[0];
 	}
 
-	BaseArray(int siz){
+	public BaseArray(int siz){
 		intArray = new int[siz];
 	}
 
-	abstract void sort();
+	public abstract void sort();
 
 	public void randomize(){
 		if (intArray!=null){
