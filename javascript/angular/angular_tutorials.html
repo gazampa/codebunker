@@ -10,22 +10,49 @@ AngularJS expressions do not support conditionals, loops, and exceptions, while 
 AngularJS expressions support filters, while JavaScript expressions do not.
 -->
 <html lang="en-US">
-<head><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script></head>
+<head><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
 <body>
-<div ng-app="myApp" w3-test-directive></div>
+<div ng-app="myApp" ng-controller="basicService">
+  {{theSquad}}
+</div>
 
-<script> 
-var app = angular.module("myApp", []);
+<script>
+var app = angular.module('myApp', []);
+app.controller('basicService', function($scope, $http) {
+   $http.get('http://127.0.0.1:8081/getLiverpool').then(function (response) {
+        console.log(response);
+        $scope.theSquad = response.data;
+    });
+});
 
-app.directive("w3TestDirective", function() {
+</script>
+
+</body>
+</html>
+
+<!--
+// basic service - angular likes you to use its services instead of direct access to html elements
+  var app = angular.module('myApp', []);
+app.controller('serviceMyUrl', function($scope, $location) {
+    $scope.myUrl = $location.absUrl();
+});
+
+// file linking
+ <script src="myApp.js"></script>
+ <script src="myCtrl.js"></script>
+
+// Constructors
+  var app = angular.module("myApp", []);
+
+  app.directive("w3TestDirective", function() {
     return {
       template : "<a href='http://www.yahoo.com'>I was made in a directive constructor!</a>"
     };
 });
-</script>  
 
- <script src="myApp.js"></script>
-<!-- <script src="myCtrl.js"></script> -->
+-->
+
 
 <!--
   <div ng-app="">
@@ -34,20 +61,20 @@ app.directive("w3TestDirective", function() {
   <p ng-bind="name"></p>
 </div>
 
-  
+
 <div ng-app="" ng-init="firstName='John Angular'">
   <p>The name is <span ng-bind="firstName"></span></p>
 </div>
-  
+
 <div data-ng-app="" data-ng-init="firstName='John'">
   <p>The name is <span data-ng-bind="firstName"></span></p>
-</div>  
+</div>
 
 
 <div ng-app="">
   <p>My first expression: {{ 5 + '51' }}</p>
 </div>
-  
+
 <div ng-app="myApp" ng-controller="myCtrl">
 
   First Name: <input type="text" ng-model="firstName"><br>
@@ -64,7 +91,7 @@ app.directive("w3TestDirective", function() {
     $scope.lastName= "Doe";
   });
 </script>
-  
+
 <div ng-app="" ng-init="myCol='lightblue'">
   <input style="background-color:{{myCol}}" ng-model="myCol" value="{{myCol}}">
 </div>
@@ -72,26 +99,26 @@ app.directive("w3TestDirective", function() {
 <div ng-app="" ng-init="quantity=1;cost=5">
   <p>Total in dollar: <span ng-bind="quantity * cost"></span></p>
 </div>
-  
+
 <div ng-app="" ng-init="person={firstName:'John',lastName:'Doe'}">
   <p>The name is {{ person.firstName + "&nbsp;" + person.lastName }}</p>
-</div>  
+</div>
 
 <div ng-app="" ng-init="points=[1,15,19,2,40]">
   <p>The third result is <span ng-bind="points[2]"></span></p>
 </div>
-  
+
 <div ng-app="myApp">...</div>
 
 <script>
-  var app = angular.module("myApp", []); 
+  var app = angular.module("myApp", []);
 </script>
-  
+
 <div ng-app="myApp" ng-controller="myCtrl">
   {{ "..." }}
   {{ firstName }} {{ &nbsp; }} {{ lastName }}
 </div>
-  
+
 <div>
   <script>
     document.write("<p>Hello World! Have a nice day! Its &nbsp;", Date(), "</p>");
@@ -99,6 +126,3 @@ app.directive("w3TestDirective", function() {
   </script>
 <div>
 -->
-  
-</body>
-</html>
