@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import org.gazampa.soundex.Singleton;
 
  /**	https://en.wikipedia.org/wiki/Soundex
+		https://commons.apache.org/proper/commons-codec/apidocs/src-html/org/apache/commons/codec/language/Soundex.html
 
  	Soundex is a phonetic algorithm for indexing names by sound, as pronounced
  	in English. Soundex was developed by Robert C. Russell and Margaret
