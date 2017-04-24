@@ -10,7 +10,7 @@ public enum Singleton{
 
 	private final Soundex instance = new Soundex();
 
-	public Soundex getCodecVersion1_6(){
+	public Soundex getCodecVersion1_10(){
 		return instance;
 	}
 
