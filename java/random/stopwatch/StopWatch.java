@@ -29,7 +29,7 @@ public class StopWatch{
 	public void stopAndReport(){
 		stop = System.nanoTime();
 		calculateDuration();
-		System.out.println(" time elapsed : " + getDuration());
+		System.out.println(" time elapsed : " + (double)getDuration()/1000000000 + " secs.");
 	}
 
 	public void calculateDuration(){
