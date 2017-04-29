@@ -94,11 +94,30 @@ class CreateAnIndex{
 	// javas hashcode for string is : s[0]*31^(n-1) + s[1]*31^(n-2) + ... + s[n-1]
 	@Override
 	public int hashCode(){
+		int hash = 7;
 
-		return name.hashCode() * position.hashCode() * number;
+		hash = 31 * name.hashCode();
+		hash = 31 * position.hashCode();
+		hash = 31 * number;
+
+		return  hash;
 
 	}
+/**
+			Another way to hash
 
+			//convert all the fields of the object into a single string
+			String stringToHash = name + position + number;
+
+			//pass into an encrytion grade hashing function
+			MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
+			messageDigest.update(stringToHash.getBytes());
+			String hashedString = new String(messageDigest.digest());
+
+			// get the hashcode of that string - Ma bits are jumbled
+			 return hashedString.hashCode();
+
+**/
 	public String getName(){
 		return name;
 	}
