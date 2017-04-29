@@ -23,13 +23,13 @@ class HashMapExample{
 
 	public static void main(String[] args){
 
-		HashMap<CreateAnIndex, CreateAnIndex> players = new HashMap<CreateAnIndex, CreateAnIndex>(7919, 0.75f);
+		HashMap<CreateAnIndex, CreateAnIndex> players = new HashMap<CreateAnIndex, CreateAnIndex>(100003, 0.75f);
 
-		HashMap<CreateAPoorIndex, CreateAPoorIndex> players2 = new HashMap<CreateAPoorIndex, CreateAPoorIndex>(7919, 0.75f);
+		HashMap<CreateAPoorIndex, CreateAPoorIndex> players2 = new HashMap<CreateAPoorIndex, CreateAPoorIndex>(100003, 0.75f);
 
 		StopWatch count = new StopWatch();
 
-		for (int i = 0, j = 3000; i < j; i++){
+		for (int i = 0, j = 5000; i < j; i++){
 			String name = "player " + i;
 			String position = "attacker " + i;
 			int number  = i;
@@ -41,9 +41,9 @@ class HashMapExample{
 		}
 
 
-		CreateAnIndex aPlayer = new CreateAnIndex("player 2000", "attacker 2000", 2000, 2100 );
+		CreateAnIndex aPlayer = new CreateAnIndex("player 2500", "attacker 2500", 2500, 2510 );
 
-		CreateAPoorIndex a2Player = new CreateAPoorIndex("player 2000", "attacker 2000", 2000, 2100 );
+		CreateAPoorIndex a2Player = new CreateAPoorIndex("player 2500", "attacker 2500", 2500, 2510 );
 
 		count.start();
 
