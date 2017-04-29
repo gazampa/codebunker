@@ -1,6 +1,7 @@
 package org.gazampa.datastructures;
 
 import java.util.HashMap;
+import org.apache.commons.codec.binary.Base64;
 import stopwatch.StopWatch;
 
 class HashMapExample{
@@ -19,6 +20,7 @@ class HashMapExample{
 	*					- increasing the size / capacity will involve rehashing all the entries.
 	*					- if you use the division method for codes, size the map to that of a prime.
 	*					- always maintain hashcode / equals contract, joshua block examples, effective java - also favor composition.
+	*					- the hashCode method must consistently return the same integer but only within the same execution environment
 	**/
 
 	public static void main(String[] args){
@@ -111,10 +113,10 @@ class CreateAnIndex{
 
 			//pass into an encrytion grade hashing function
 			MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
-			messageDigest.update(stringToHash.getBytes());
-			String hashedString = new String(messageDigest.digest());
+			messageDigest.update(stringToHash.getBytes("UTF-8"));
+			String hashedString = new String(messageDigest.digest(), "UTF-8");
 
-			// get the hashcode of that string - Ma bits are jumbled
+			// get the hashcode of that string
 			 return hashedString.hashCode();
 
 **/
