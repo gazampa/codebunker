@@ -16,6 +16,7 @@ class HashMapExample{
 	*					- Unsynchronized
 	*					- a little more dificult to iterate over all entries values in structure, and capacity dependant
 	*					- The add operation is O(1) for uncollided, otherwise O(1) + O(1), O(2), The retrieve operation is O(1) for uncollided, otherwise O(n)
+	*					- Java 8 uses a red black binary tree instead of a linkedlist reducing retrieve times for collided objects from o(n) to o(log n)
 	*					- The capacity is the number of buckets in the hash table, the load factor is a measure of how full the hash table is allowed to get before its capacity is automatically increased.
 	*					- increasing the size / capacity will involve rehashing all the entries.
 	*					- if you use the division method for codes, size the map to that of a prime.
