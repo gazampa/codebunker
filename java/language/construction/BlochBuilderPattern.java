@@ -38,8 +38,8 @@ public class BlochBuilderPattern {
         public Builder sodium(int val)
             { sodium = val;        return this; }
 
-        public NutritionFacts build() {
-            return new NutritionFacts(this);
+        public BlochBuilderPattern build() {
+            return new BlochBuilderPattern(this);
         }
     }
 
