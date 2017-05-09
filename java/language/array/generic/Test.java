@@ -3,13 +3,20 @@ import java.util.ArrayList;
 import java.util.List;
 class Test{
 
-	/** Arrays in java will accept subtypes of their declared type , ie, super[] ~ sub[]
+	/**
+	*	Arrays in java will accept subtypes of their declared type , ie, super[] ~ sub[]
 	*	Generic Collections will not, they are invariant, List<Super> !~ List<Sub>
 	*	Generics restrict what can be added to a collection, they dont like mixing lists of subtypes,
 	*   keep lists of the same type, dont cross the streams
 	*	Type Erasure ocurs at compile time, the compiler removes all the type tags
 	*	The generic wildcard character, ? extends, allows read only iteration of many different types
 	*	The generic wildcard character, ? super, allows modification of specified types but not iteration
+	*	List<?> != List<Object>. List<? extends Object> == List<?>
+	*
+	*	Using parametric polymorphism, a function or a data type can be written generically so that it can
+	*		handle values identically without depending on their type.[1] Such functions and data types are called
+	*			generic functions and generic datatypes respectively and form the basis of generic programming.
+	*
 	**/
 
 
