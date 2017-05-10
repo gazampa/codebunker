@@ -1,4 +1,4 @@
-package stopwatch;
+package org.gazampa.stopwatch;
 public class StopWatch{
 
 	private long start, stop, duration;
@@ -30,6 +30,12 @@ public class StopWatch{
 		stop = System.nanoTime();
 		calculateDuration();
 		System.out.println(" time elapsed : " + (double)getDuration()/1000000000 + " secs.");
+	}
+
+	public void stopAndReport(String identity){
+		stop = System.nanoTime();
+		calculateDuration();
+		System.out.println(identity + " time elapsed : " + (double)getDuration()/1000000000 + " secs.");
 	}
 
 	public void calculateDuration(){
