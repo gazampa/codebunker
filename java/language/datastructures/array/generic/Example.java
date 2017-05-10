@@ -1,7 +1,7 @@
 package generic;
 import java.util.ArrayList;
 import java.util.List;
-class Test{
+class Example{
 
 	/**
 	*	Arrays in java will accept subtypes of their declared type , ie, super[] ~ sub[]
@@ -63,7 +63,9 @@ class Test{
 		}
 
 		// -- lists however are invariant, you cant interchange different types, and you are notified when you try to compile
-
+		// -- even though they have the same super, they are not interchangeable generic types.
+		//listDog.add(dog);
+		//listOfDog.add(cat); // <------ cant compile, argument mismatch thrown at compile time -- forced to address
 		// listAnimal = listDog; // : List<Dog> cannot be converted to List<Animal>
 
 		/** explore generic methods **/
@@ -91,6 +93,20 @@ class Test{
 		// -- though only of that specific subtype and higher
 		passAListOfSuperDog(listAnimal);
 		//passAListOfSuperDog(listCat);
+
+		// -- in this method we effectively reduced typing, systematically, and blew away our polymorphic advantage
+		passAListOfType(listAnimal);
+		passAListOfType(listDog);
+		passAListOfType(listCat);
+
+		/** manipulate generic class **/
+		ItTakesAllTypes<Animal> anyOfAThing = new ItTakesAllTypes<Animal>(listAnimal);
+		// anyOfAThing.howAreYouAll(); <<-- wont compile, even though we want it to, the generic class is too broad
+
+		System.out.println(" it is taking all types ");
+		ItTakesAllTypesOfAnimal<Animal> anyOfAnimal = new ItTakesAllTypesOfAnimal<Animal>(listAnimal);
+		System.out.println(anyOfAnimal.howAreYouAll());
+
 
 	}
 
@@ -125,15 +141,17 @@ class Test{
 			//animals.add(((Animal)new Cat())); <<-- will not allow Cat as Animal
 		//}
 	}
-
-
-	// even though they have the same super, they are not interchangeable generic types.
-	//listDog.add(dog);
-	//listOfDog.add(cat); // <------ cant compile, argument mismatch thrown at compile time -- forced to address
-
-
-		List<? super Dog> listOfDogsAndAnimal = new ArrayList<Dog>(); // Producer Extends, Consumers Super
-
-
+	// Here we try to genericise the generic, take that, Object methods are ok, but you get a compiler error on user defined methods
+	// generics also were brought in to improve type safety and reduce casting, here we are casting again
+	static public <T> void passAListOfType(T animals){
+		List<T> list = (List<T>) animals; //warning: [unchecked] unchecked cast
+		for (T animal : list){
+			//System.out.println(animal.howAmI()); // wont compile
+			System.out.println(animal.toString()); // will
+		}
+	}
 
 }
+
+
+//List<? super Dog> listOfDogsAndAnimal = new ArrayList<Dog>(); // Producer Extends, Consumers Super
