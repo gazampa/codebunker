@@ -1,7 +1,7 @@
-package generic;
+package generics;
 import java.util.ArrayList;
 import java.util.List;
-class Example{
+class AnimalExamples{
 
 	/**
 	*	Arrays in java will accept subtypes of their declared type , ie, super[] ~ sub[]
@@ -12,7 +12,8 @@ class Example{
 	*	The generic wildcard character, ? extends, allows read only iteration of many different types
 	*	The generic wildcard character, ? super, allows modification of specified types but not iteration
 	*	List<?> != List<Object>. List<? extends Object> == List<?>
-	*
+	*	In an upper bounded list, we extract values and use them.
+	*	In a lower bounded list, we supply values. This combination has a traditional name: PECS. but as I read that by extending you can consume, by super, you can produce
 	*	Using parametric polymorphism, a function or a data type can be written generically so that it can
 	*		handle values identically without depending on their type.[1] Such functions and data types are called
 	*			generic functions and generic datatypes respectively and form the basis of generic programming.

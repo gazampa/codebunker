@@ -1,4 +1,4 @@
-package generic;
+package generics;
  /** a generic holder for all types of things but only that thing **/
 import java.util.List;
 public class ItTakesAllTypes<T>{

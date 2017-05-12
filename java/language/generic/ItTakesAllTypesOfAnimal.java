@@ -1,4 +1,4 @@
-package generic;
+package generics;
  /** a generic holder for all types of things but only that thing
  *   - interchanging lists for arrays throws downcast errors at runtime : arrays don’t support type erasure
  **/

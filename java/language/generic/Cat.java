@@ -1,4 +1,4 @@
-package generic;
+package generics;
 public class Cat extends Animal{
 
 	public String whoAmI(){
