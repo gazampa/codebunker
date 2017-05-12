@@ -1,0 +1,6 @@
+Collections and streams, while bearing some superficial similarities, have different goals. 
+Collections are primarily concerned with the efficient management of, and access to, their elements.
+By contrast, streams do not provide a means to directly access or manipulate their elements, and are instead concerned 
+with declaratively describing their source and the computational operations which will be performed in aggregate on that source. 
+However, if the provided stream operations do not offer the desired functionality, the BaseStream.iterator() 
+and BaseStream.spliterator() operations can be used to perform a controlled traversal.

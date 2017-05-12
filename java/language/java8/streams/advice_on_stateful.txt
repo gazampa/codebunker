@@ -1,0 +1,7 @@
+Stateful ops can be implemented by extracting a stream's Spliterator, wrapping it into a custom one 
+and rewrapping it into a new stream, but in this case that seems hardly appropriate considering that this 
+would essentially be all what your stream pipeline does.
+
+Since you're trying to run a stateful and parallelizable compute task you might want to look into 
+the fork-join framework or CompletableFuture instead. The former is also used as part of the 
+parallel stream implementation and the latter make it easier to compose computations and their results.
