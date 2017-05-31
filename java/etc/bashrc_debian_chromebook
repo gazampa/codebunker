@@ -93,7 +93,7 @@ alias jj='java -classpath $CLASSPATH'
 alias mcd='mcd' 
 
 mcd(){
-mkdir $1;
+mkdir -p $1;
 cd $1
 }
 
