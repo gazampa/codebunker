@@ -22,7 +22,7 @@ import org.bouncycastle.openpgp.operator.jcajce.JcePBESecretKeyEncryptorBuilder;
 public class PGPExporter{
 
 	KeyPair pair;
-    String identity = "billy.1.murphy@gmail.com";
+    String identity = "notanemailaddress@gmail.com";
     char[] passPhrase = {'i','m','o','n','t','h','e','l','i','s','t'};
     PGPKeyPair keyPair;
 	PGPSecretKey secret;
