@@ -79,7 +79,7 @@ public class PGPExporter{
 			PGPDigestCalculator sha1Calc = new JcaPGPDigestCalculatorProviderBuilder().build().get(HashAlgorithmTags.SHA1);
 			secretKey = new PGPSecretKey(PGPSignature.DEFAULT_CERTIFICATION,
 											keyPair, identity, sha1Calc, null, null,
-											new JcaPGPContentSignerBuilder(keyPair.getPublicKey().getAlgorithm(),HashAlgorithmTags.SHA1),
+											new JcaPGPContentSignerBuilder(keyPair.getPublicKey().getAlgorithm(),HashAlgorithmTags.SHA256),
 											new JcePBESecretKeyEncryptorBuilder(PGPEncryptedData.CAST5, sha1Calc).setProvider("BC").build(passPhrase));
 		} catch(PGPException pgpe){
 			System.out.println("problem creating the secret key");
