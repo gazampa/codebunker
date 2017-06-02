@@ -76,7 +76,7 @@ public class PGPExporter{
 	public PGPSecretKey createPGPSecretKey(){
 		PGPSecretKey secretKey = null;
 		try{
-			PGPDigestCalculator sha1Calc = new JcaPGPDigestCalculatorProviderBuilder().build().get(HashAlgorithmTags.SHA1);
+			PGPDigestCalculator sha1Calc = new JcaPGPDigestCalculatorProviderBuilder().build().get(HashAlgorithmTags.SHA256);
 			secretKey = new PGPSecretKey(PGPSignature.DEFAULT_CERTIFICATION,
 											keyPair, identity, sha1Calc, null, null,
 											new JcaPGPContentSignerBuilder(keyPair.getPublicKey().getAlgorithm(),HashAlgorithmTags.SHA256),
