@@ -55,6 +55,7 @@ public class PGPKeyGenerator{
 
 			PGPPublicKey pub = ex.getPublicKey();
 
+			//PGPSecretKey is like a beefed up decorated version of JCA Key pair
 			PGPSecretKey secret = ex.createPGPSecretKey();
 
 			//Returns the key in its primary encoding format,
