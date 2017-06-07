@@ -124,14 +124,12 @@ public class DataTypes{
 		*	The memory usage for one element is 4 bytes for an object reference.
 		*	If the total memory usage of the array is not a multiple of 8 / 16 bytes, then the size is rounded up to the next mutlitple of 8 (just as for any other object).
 		**/
-
 		int[] iArr;
 
 		/**
 		*	user defined data types
 		*
 		**/
-
 		Reference ref;
 
 		/**
@@ -139,7 +137,6 @@ public class DataTypes{
 		*	- As its a singleton, each reference cost less, typically 4 bytes
 		*
 		**/
-
 		Enum<enm> enm; // for looks, its actually an enumeration of the enumeration
 
 		/** reference article for this collections section : http://java-performance.info/memory-consumption-of-java-data-types-1/
@@ -174,6 +171,22 @@ public class DataTypes{
 		*
 		**/
 		ByteBuffer byteBuffer;
+
+		/**
+		*	Each thread of a running program has its own pc register, or program counter, which is created when the thread is started.
+		*	The pc register is one word in size, so it can hold both a native pointer and a returnAddress.
+		*	As a thread executes a Java method, the pc register contains the address of the current instruction being executed by the thread.
+		*	An "address" can be a native pointer or an offset from the beginning of a method's bytecodes.
+		*	If a thread is executing a native method, the value of the pc register is undefined.
+		*	Each thread gets its own stack.
+		*	Threads share the Heap.
+		*	A Java stack stores a thread's state in discrete frames.
+		*	The Java virtual machine only performs two operations directly on Java Stacks: it pushes and pops frames.
+		*	The stack frame has three parts: local variables, operand stack, and frame data.
+		*
+		**/
+		Thread thread;
+
 
 	}
 
@@ -211,6 +224,11 @@ public class DataTypes{
 		String str;
 	}
 
+	/**
+	*	Technically an object so 8/16 bytes of object overhead
+	*	- As its a singleton, each reference cost less, typically 4 bytes
+	*
+	**/
 	enum enm{
     	ONE, TWO, THREE
 	}
