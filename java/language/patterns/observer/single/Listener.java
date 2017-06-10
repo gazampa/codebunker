@@ -16,9 +16,13 @@ public class Listener implements Notification{
 
 	// this object registers itself to receive messages
 	public Listener(){
+
 		history = new ArrayDeque<String>();
+
 		register(ConcreteObserver.INSTANCE);
+
 		register(ConcreteObserver2.INSTANCE);
+
 	}
 
 	// when another objects generates a message, this method is invoked by the observer
@@ -31,8 +35,11 @@ public class Listener implements Notification{
 	// as above except this method passes through the data
 	// adds it to front of lifo q
 	public void setMessageData(String message){
+
 		messageData = message;
+
 		history.addFirst(message);
+
 	}
 
 	public void register(Observer observer){

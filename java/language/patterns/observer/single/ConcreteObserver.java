@@ -45,7 +45,9 @@ public enum ConcreteObserver implements Observer {
 	}
 
 	public String toString(){
+
 		return new String("INSTANCE");
+
 	}
 
 }
