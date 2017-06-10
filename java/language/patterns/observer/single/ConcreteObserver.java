@@ -36,7 +36,7 @@ public enum ConcreteObserver implements Observer {
 
 		for (Notification element : registry){
 
-			element.setMessageData(this + " : " + caller.getData());
+			element.setMessageData(this + " : " + System.nanoTime() + " : " + caller.getData());
 
 			element.message();
 

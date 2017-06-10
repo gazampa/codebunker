@@ -5,6 +5,7 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Iterator;
+
 public class Listener implements Notification{
 
 	private int notificationCounter;
@@ -28,7 +29,7 @@ public class Listener implements Notification{
 	}
 
 	// as above except this method passes through the data
-	// adds it to front of fifo q
+	// adds it to front of lifo q
 	public void setMessageData(String message){
 		messageData = message;
 		history.addFirst(message);

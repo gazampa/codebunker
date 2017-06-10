@@ -3,6 +3,7 @@ package org.gazampa.patterns.observer.fatbridge;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Date;
+
 public class ClientProgram{
 
 	public static void main( String[] args ){

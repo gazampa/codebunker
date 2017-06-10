@@ -2,6 +2,7 @@ package org.gazampa.patterns.observer.fatbridge;
 
 import java.util.Date;
 import java.util.UUID;
+
 public class Subject implements MessageGenerator{
 
 	private final String data;
@@ -20,5 +21,6 @@ public class Subject implements MessageGenerator{
 	public String getData(){
 		return data;
 	}
+
 
 }
