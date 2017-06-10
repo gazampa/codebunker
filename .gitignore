@@ -11,6 +11,9 @@
 *.project
 *.settings
 *.prefs
+*.asc
+*.rpg
+*.key
 
 # Package Files #
 *.jar
