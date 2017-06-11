@@ -1,8 +1,10 @@
-var FuelListView = Backbone.View.extend({
+﻿var FuelListView = Backbone.View.extend({
 
   el : "div.fuelstop" ,
 
-  template : _.template(Templates.collectionTemplate) ,
+  //template : _.template(Templates.collectionTemplate) , // underscore template
+
+  template : Handlebars.compile( HandleBs.collectionTemplate ) , // handlebar template
 
   initialize: function() {
 
