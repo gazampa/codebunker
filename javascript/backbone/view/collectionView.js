@@ -2,6 +2,8 @@ var FuelListView = Backbone.View.extend({
 
   el : "div.fuelstop" ,
 
+  template : _.template(Templates.collectionTemplate) ,
+
   initialize: function() {
 
     this.listenTo(this.collection, 'sync change', this.render);
@@ -16,7 +18,7 @@ var FuelListView = Backbone.View.extend({
 
     var html =  JSON.stringify(this.collection);
 
-    this.$el.empty().append(html);
+    this.$el.empty().append( this.template( { collection: this.collection.toJSON() } ) );
 
     return this;
 
