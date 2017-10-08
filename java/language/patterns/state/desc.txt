@@ -1,0 +1,3 @@
+- this is a way to get an object to partially change its state at runtime.
+- allows an object to alters its behaviour when its internal state changes.
+- 

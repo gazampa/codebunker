@@ -1,0 +1,210 @@
+﻿{
+   "0" : {
+      "fname" : "David",
+      "lname" : "Accam",
+      "position" : "Forward",
+      "number" : "11",
+      "country" : "Ghana",
+      "id": 2001
+   },
+   "1" : {
+      "fname" : "Arturo",
+      "lname" : "Alvarez",
+      "position" : "Midfielder",
+      "number" : "12",
+      "country" : "USA",
+      "id": 2002
+   },
+   "2" : {
+      "fname" : "David",
+      "lname" : "Arshakyan",
+      "position" : "Forward",
+      "number" : "10",
+      "country" : "Russia",
+      "id": 2003
+   },
+   "3" : {
+      "fname" : "Jorge",
+      "lname" : "Rodrigo Bava",
+      "position" : "Goalkeeper",
+      "number" : "1",
+      "country" : "Uruguay",
+      "id": 2004
+   },
+   "4" : {
+      "fname" : "Brandt",
+      "lname" : "Bronico",
+      "position" : "Midfield",
+      "number" : "21",
+      "country" : "USA",
+      "id": 2005
+   },
+   "5" : {
+      "fname" : "Johnathan",
+      "lname" : "Cambell",
+      "position" : "Defender",
+      "number" : "16",
+      "country" : "USA",
+      "id": 2006
+   },
+   "6" : {
+      "fname" : "Stefan",
+      "lname" : "Cleveland",
+      "position" : "Goalkeeper",
+      "number" : "30",
+      "country" : "USA",
+      "id": 2007
+   },
+   "7" : {
+      "fname" : "Drew",
+      "lname" : "Conner",
+      "position" : "Midfield",
+      "number" : "18",
+      "country" : "USA",
+      "id": 2008
+   },
+   "8" : {
+      "fname" : "Michael",
+      "lname" : "de Leeuw",
+      "position" : "Forward",
+      "number" : "8",
+      "country" : "Netherlands",
+      "id": 2009
+   },
+   "9" : {
+      "fname" : "Matej",
+      "lname" : "Dekovic",
+      "position" : "Defender",
+      "number" : "33",
+      "country" : "Crotia",
+      "id": 2010
+   },
+   "10" : {
+      "fname" : "Patrick",
+      "lname" : "Doody",
+      "position" : "Defender",
+      "number" : "22",
+      "country" : "USA",
+      "id": 2011
+   },
+   "11" : {
+      "fname" : "Colin",
+      "lname" : "Fernandez",
+      "position" : "Midfield",
+      "number" : "17",
+      "country" : "USA",
+      "id": 2012
+   },
+   "12" : {
+      "fname" : John",
+      "lname" : "Goossens",
+      "position" : "Midfield",
+      "number" : "7",
+      "country" : "Netherlands",
+      "id": 2013
+   },
+   "13" : {
+      "fname" : "Michael",
+      "lname" : "Harrington",
+      "position" : "Defender",
+      "number" : "5",
+      "country" : "USA",
+      "id": 2014
+   },
+   "14" : {
+      "fname" : "Daniel",
+      "lname" : "Johnson",
+      "position" : "Midfield",
+      "number" : "20",
+      "country" : "USA",
+      "id": 2015
+   },
+   "15" : {
+      "fname" : "",
+      "lname" : "Juninho",
+      "position" : "Midfield",
+      "number" : "19",
+      "country" : "Brazil",
+      "id": 2016
+   },
+   "16" : {
+      "fname" : "Johan",
+      "lname" : "Kappelhof",
+      "position" : "Defender",
+      "number" : "4",
+      "country" : "Netherlands",
+      "id": 2017
+   },
+   "17" : {
+      "fname" : "Matt",
+      "lname" : "Lampson",
+      "position" : "Goalkeeper",
+      "number" : "28",
+      "country" : "USA",
+      "id": 2018
+   },
+   "18" : {
+      "fname" : "Dax",
+      "lname" : "McCarthy",
+      "position" : "Midfield",
+      "number" : "6",
+      "country" : "Flordia",
+      "id": 2019
+   },
+   "19" : {
+      "fname" : "Joao",
+      "lname" : "Meira",
+      "position" : "Midfield",
+      "number" : "66",
+      "country" : "Portugal",
+      "id": 2020
+   },
+   "20" : {
+      "fname" : "Djordje",
+      "lname" : "Mihailovic",
+      "position" : "Midfield",
+      "number" : "14",
+      "country" : "USA",
+      "id": 2021
+   },
+   "21" : {
+      "fname" : "Nemanja",
+      "lname" : "Nikolic",
+      "position" : "Forward",
+      "number" : "23",
+      "country" : "Serbia",
+      "id": 2022
+   },
+   "22" : {
+      "fname" : "Matt",
+      "lname" : "Polster",
+      "position" : "Midfield",
+      "number" : "2",
+      "country" : "USA",
+      "id": 2023
+   },
+   "23" : {
+      "fname" : "Bastian",
+      "lname" : "Schweinsteiger",
+      "position" : "Midfield",
+      "number" : "31",
+      "country" : "Germany",
+      "id": 2024
+   },
+   "24" : {
+      "fname" : "Luis",
+      "lname" : "Solignac",
+      "position" : "Forward",
+      "number" : "9",
+      "country" : "Argentina",
+      "id": 2025
+   },
+   "25" : {
+      "fname" : "Brandon",
+      "lname" : "Vincent",
+      "position" : "Defender",
+      "number" : "3",
+      "country" : "USA",
+      "id": 2026
+   }
+}

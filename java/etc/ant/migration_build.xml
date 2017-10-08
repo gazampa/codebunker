@@ -1,0 +1,32 @@
+<project name="Sample usage of Salesforce Ant tasks" default="test" basedir="." xmlns:sf="antlib:com.salesforce">
+
+    <property file="build.properties"/>
+    <property environment="env"/>
+    
+    <target name="get">
+      <sf:retrieve username="${sf.username.source}" 
+      		   password="${sf.password.source}" 
+      		   serverurl="${sf.serverurl.source}" 
+      		   retrieveTarget="get" unpackaged="get/package.xml"/>
+    </target>
+    
+    <target name="put_n">
+      <sf:deploy username="${sf.username.target_n}" 
+      		 password="${sf.password.target_n}" 
+      		 serverurl="${sf.serverurl.target_u}"  
+      		 maxPoll="${sf.maxPoll}" 
+      		 runAllTests="true" 
+      		 trace="false" 
+      		 checkOnly="true"       		 
+      		 pollWaitMillis="${sf.pollWaitMillis}"  
+      		 deployRoot="get"/>
+    </target>
+   
+    <target name="remove_pp">
+      <sf:deploy username="${sf.username.target_p}"
+      	         password="${sf.password.target_p}"
+      	         serverurl="${sf.serverurl.target_p}"
+      	         deployRoot="del"/>
+    </target>        
+    
+</project>

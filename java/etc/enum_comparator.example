@@ -1,0 +1,42 @@
+enum PersonComparator implements Comparator<Person> {
+    ID_SORT {
+        public int compare(Person o1, Person o2) {
+            return Integer.valueOf(o1.getId()).compareTo(o2.getId());
+        }},
+    NAME_SORT {
+        public int compare(Person o1, Person o2) {
+            return o1.getFullName().compareTo(o2.getFullName());
+        }};
+
+    public static Comparator<Person> decending(final Comparator<Person> other) {
+        return new Comparator<Person>() {
+            public int compare(Person o1, Person o2) {
+                return -1 * other.compare(o1, o2);
+            }
+        };
+    }
+
+    public static Comparator<Person> getComparator(final PersonComparator... multipleOptions) {
+        return new Comparator<Person>() {
+            public int compare(Person o1, Person o2) {
+                for (PersonComparator option : multipleOptions) {
+                    int result = option.compare(o1, o2);
+                    if (result != 0) {
+                        return result;
+                    }
+                }
+                return 0;
+            }
+        };
+    } // ...
+}
+
+
+-----------------------------------------------------------
+
+An example of usage (with a static import).
+
+public static void main(String[] args) {
+    List<Person> list = null;
+    Collections.sort(list, decending(getComparator(NAME_SORT, ID_SORT)));
+}

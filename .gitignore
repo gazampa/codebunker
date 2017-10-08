@@ -1,0 +1,27 @@
+# class and project files
+*.class
+#*.pom
+*.xml
+*.properties
+*.log
+#*.txt
+*.bat
+*.ini
+*.classpath
+*.project
+*.settings
+*.prefs
+*.asc
+*.rpg
+*.key
+
+# Package Files #
+*.jar
+*.war
+*.ear
+bin
+bin/
+javascript/nodejs/node_modules
+javascript/nodejs/node_modules/
+javascript/nodejs/node_modules/*
+javascript/nodejs/node_modules/**

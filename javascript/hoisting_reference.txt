@@ -1,0 +1,108 @@
+<!-- 
+Function declarations and function variables are always moved (‘hoisted’) to the top
+of their JavaScript scope by the JavaScript interpreter
+
+In JavaScript execution there is Context (which ECMA 5 breaks into LexicalEnvironment, VariableEnvironment and ThisBinding)
+and Process (a set of statements to be invoked in sequence).
+Declarations contribute to the VariableEnvironment when the execution scope is entered.
+They are distinct from Statements (such as return) and are not subject to their rules of process.
+
+console.log(' function declaration ');
+
+function bar() {
+    return 3;
+}
+
+bar() //3
+bar  //function
+
+console.log(bar);
+
+console.log(bar());
+
+
+console.log(' function expression ');
+anonymous function expression
+var a = function() {
+    return 3;
+}
+
+console.log(' anonymous ' + a());
+
+named function expression
+var a = function bar() {
+    return 3;
+}
+
+console.log(' named ' + a());
+
+self invoking function expression
+(function sayHello() {
+    console.log(' self invoking ');
+})();
+
+console.log( 'internal function declaration hoisted to top of function' );
+
+function foo(){
+    function bar() {
+        return 3;
+    }
+    return bar();
+    function bar() {
+        return 8;
+    }
+}
+
+console.log( foo );
+
+console.log( foo() );
+
+console.log('Variable Declarations get hoisted but their Assignment Expressions don’t');
+
+function foo(){
+    var bar = function() {
+        return 3;
+    };
+    return bar();
+    var bar = function() {
+        return 8;
+    };
+}
+
+console.log(window.foo);
+
+console.log(foo());
+
+console.log('I havent declared the foo function yet.Global Hoist.');
+
+console.log(window.foo);
+
+console.log(foo());
+
+function foo(){
+    var bar = function() {
+        return 3;
+    };
+    return bar();
+    var bar = function() {
+        return 8;
+    };
+}
+
+console.debug('Variables get hoisted, Assigment statements dont, then the statements execute sequentially');
+
+ function foo(){
+    return bar();
+    var bar = function() {
+        return 3;
+    };
+    var bar = function() {
+        return 8;
+    };
+}
+
+console.debug(window.foo);
+
+console.debug(foo());
+
+-->

@@ -1,0 +1,14 @@
+<getClaimDetailsRequest>
+   <sessionId>
+   </sessionId>
+
+   <clientName>
+   </clientName>
+
+   <hqacNbr>
+   </hqacNbr>
+
+   <claimId>
+   </claimId>
+</getClaimDetailsRequest>
+

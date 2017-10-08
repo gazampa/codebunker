@@ -1,0 +1,22 @@
+[
+    {
+      "airlineName": "United",
+      "price": 400,
+      "departureDate": "2015/03/20",
+      "planeType": "Boeing 737",
+      "origination": "ORD",
+      "flightCode": "ER38sd",
+      "emptySeats": 0,
+      "destination": "SFO"
+    },
+    {
+      "airlineName": "Delta",
+      "price": 423,
+      "departureDate": "2015/06/11",
+      "planeType": "Boeing 707",
+      "origination": "SFO",
+      "flightCode": "ER0945",
+      "emptySeats": 0,
+      "destination": "LAX"
+    }
+]

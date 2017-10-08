@@ -1,0 +1,3 @@
+- provide a unified interface to a set of interfaces in a subsystem.
+- often used when you want a simpler inteface to work with
+- promotes weak coupling.

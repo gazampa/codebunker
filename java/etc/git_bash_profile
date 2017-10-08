@@ -1,0 +1,2 @@
+cd ./gits/codescraps
+alias status='git status'

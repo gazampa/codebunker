@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetClaimDetailsResponse>
+	<claim>
+		<claimId>40345</claimId>
+		<programYear>2006</programYear>
+		<holdReason>CONVERTED</holdReason>
+		<letterCode>FULLPAY</letterCode>
+		<letterComments />
+		<paymentInfo>
+			<date>2/7/2006</date>
+			<paymentType>Check</paymentType>
+			<paymentNumber>124795</paymentNumber>
+			<amountPaid>150</amountPaid>
+			<claimBalance>0</claimBalance>
+			<void>F</void>
+			<note></note>
+		</paymentInfo>
+		<ads>
+			<ad>
+				<number>1</number>
+				<insertDate>1/1/2006</insertDate>
+				<productType>505</productType>
+				<mediaName>AASP News January 20</mediaName>
+				<claimRequestAmount>150</claimRequestAmount>
+				<approvedClaimAmount>150</approvedClaimAmount>
+				<paid>150</paid>
+				<mediaCode>VWOA2006</mediaCode>
+			</ad>
+			<ad>
+				<number>1</number>
+				<insertDate>1/1/2006</insertDate>
+				<productType>505</productType>
+				<mediaName>AASP News January 20</mediaName>
+				<claimRequestAmount>150</claimRequestAmount>
+				<approvedClaimAmount>150</approvedClaimAmount>
+				<paid>150</paid>
+				<mediaCode>VWOA2006</mediaCode>
+			</ad>
+		</ads>
+	</claim>
+</GetClaimDetailsResponse>

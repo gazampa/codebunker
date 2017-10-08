@@ -1,0 +1,42 @@
+@isTest
+public class LoopTest {
+
+    static testMethod void loopTest() {
+	
+	final Integer LIST_SIZE = 100;
+	
+	List<String> testList = new List<String>();
+
+    for( integer i = 0, j = LIST_SIZE; i < j ; i++ ){
+            
+         testList.add('AA');
+            
+    }
+
+	long startTime = System.currentTimeMillis();
+	long endtime, duration;
+
+    for( integer i = 0, j = testList.size(); i < j; i++ ){
+        System.debug(' ' + testList[i]);
+    }
+
+	endTime = System.currentTimeMillis();
+
+    duration = endTime - startTime;
+        
+	System.debug(' ---> primitive loop : ' + duration );
+
+	startTime = System.currentTimeMillis();
+
+    for( String elem : testList ){
+        System.debug(' ' + elem);
+    }
+
+	endTime = System.currentTimeMillis();
+
+	duration = endTime - startTime;
+                 
+	System.debug(' ---> typed loop : ' + duration);
+
+     }    
+}

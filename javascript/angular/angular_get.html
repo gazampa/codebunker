@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="basicService">
+  {{theSquad}}
+</div>
+
+<script>
+// send a get request to the server
+var app = angular.module('myApp', []);
+app.controller('basicService', function($scope, $http) {
+   $http.get('http://127.0.0.1:8081/getLiverpool').then(function (response) {
+        console.log(response);
+        $scope.theSquad = response.data;
+    });
+});
+
+</script>
+
+</body>
+</html>

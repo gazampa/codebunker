@@ -1,0 +1,24 @@
+public class BusinessLogicClass {
+
+    Map<Id, Contact> newFieldValues;
+    Map<Id, Contact> oldFieldValues;
+    
+    public BusinessLogicClass(Map<Id, Contact> newT, Map<Id, Contact> oldT){
+        newFieldValues = newT;
+        oldFieldValues = oldT;
+    }
+
+    public void executeLogic(){
+            businessRequest1();
+			businessRequest2();
+    }
+
+    private void businessRequest1(){
+        System.debug('executing business request 1');
+    }
+
+    private void businessRequest2(){
+        System.debug('executing business request 2');
+    }
+    
+}
