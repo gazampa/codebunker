@@ -29,10 +29,10 @@ public class BinarySearch{
 
 			if ( n > elements[mid] ){
 				lo = mid + 1;
-				System.out.println(n + " is greater than mid : " + elements[mid] + " so search in higher indexes " + lo);
-			}else if ( n < mid ){
+				System.out.println(n + " is greater than : " + elements[mid] + " so search in higher indexes " + lo);
+			}else if ( n < elements[mid] ){
 				hi = mid - 1;
-				System.out.println(n + " is less than mid : " + elements[mid] + " so search in lower indexes " + hi);
+				System.out.println(n + " is less than : " + elements[mid] + " so search in lower indexes " + hi);
 			}else{
 				return mid;
 			}
