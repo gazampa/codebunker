@@ -1,0 +1,5 @@
+curr_dir="$PWD"
+if [ -d "$curr_dir" ] ; then
+  export JAVA_HOME=$curr_dir
+  export PATH=$JAVA_HOME/bin:$PATH
+fi
