@@ -13,6 +13,12 @@ public class ClientProgram{
 		// set state that is the centre of attention
 		obj.setData(" Friends, Romans, Countrymen ");
 
+		//always pay attention to unataching observers for memory management
+		obj.detach(observer2);
+
+		obj.setData(" How Many of You have Ears ");
+
+
 	}
 
 
