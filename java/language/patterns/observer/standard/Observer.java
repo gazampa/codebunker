@@ -6,5 +6,10 @@ public abstract class Observer{
 
 	public abstract void update();
 
+	public void detach(){
+
+		subject = null;
+
+	}
 
 }

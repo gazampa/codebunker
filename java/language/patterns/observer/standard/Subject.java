@@ -43,5 +43,12 @@ public class Subject{
 
 	}
 
+	public void detach(Observer observer){
+
+		observer.detach();
+
+		observers.remove(observer);
+
+	}
 
 }
