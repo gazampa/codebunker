@@ -1,0 +1,206 @@
+<html>
+<head>
+
+<!-- ### refactor switch statements with the commands ### -->
+<!-- often switch statements are sufficient -->
+<!-- but they can grow large and unwieldly - greater than 20 caluses -->
+<!-- Improve readability by swapping in a function object -->
+<!-- with key names co related to the input parameter of the switch -->
+<!-- it puts the coding work into the population of the map -->
+<!-- and reduces the footprint where the code is invoked improving readability  -->
+<!-- often suitable in controllers that have grown long  -->
+
+<!-- get some test data -->
+<script src="./js/data-records.js"></script>
+
+<script>
+  
+  var d = data().getPayload();
+
+  console.log('begin data');
+
+  console.log( JSON.parse( JSON.stringify ( d ) ) );
+
+  // comparators
+
+  // compare by EndDateTime field
+  function compareByDateASC( a, b ){
+
+    return new Date( a.EndDateTime ) - new Date ( b.EndDateTime );
+
+  }
+
+  // compare by Related Company Name Field
+  function compareByDateDESC( a, b ){
+
+    return new Date( b.EndDateTime ) - new Date ( a.EndDateTime );
+
+  }
+
+  function compareByNameASC( a, b ) {
+
+      if ( a.What === undefined ) {
+        return 1;
+      }
+
+      if ( b.What === undefined ){
+        return -1;
+      }
+
+      return a.What.Name > b.What.Name ? 1 : a.What.Name < b.What.Name ? -1 : 0;
+
+  }
+
+  function compareByNameDESC( a, b ) {
+
+    if ( a.What === undefined ){
+      return 1;
+    }
+
+    if ( b.What === undefined ){
+      return -1;
+    }
+
+    return a.What.Name > b.What.Name ? -1 : a.What.Name < b.What.Name ? 1 : 0;
+
+  }
+  
+  // returns an object, other functions could be added to this obj
+  function sortByName( asc ){
+        
+    return {
+      
+      doSort : function ( data ){
+
+        //console.log( asc );
+
+        //console.log( ( asc ) ? data.sort( compareByNameASC ) : data.sort( compareByNameDESC ) );
+
+        return ( asc ) ? data.sort( compareByNameASC ) : data.sort( compareByNameDESC );
+    
+      }
+    
+    }
+
+  }
+
+  function sortByDate( asc ){
+
+     return {
+
+         doSort( data ){
+
+             return sorted = ( asc ) ? data.sort( compareByDateASC ) : data.sort( compareByDateDESC ) ;
+
+         }
+     }
+  }
+
+  // example of a straight function, only sorts, differnt call syntax
+  function sortByDateF( asc ){
+      
+    return function doSort( data ){
+
+        return sorted = ( asc ) ? data.sort( compareByDateASC ) : data.sort( compareByDateDESC ) ;
+  
+    }
+
+  }
+
+  // declare a map amd populate with sorting functions
+  var switchMap = new Map();
+
+  var nameSortASC = sortByName( true ), dateSortASC = sortByDate( true ),
+    nameSortDESC = sortByName( false ), dateSortDESC = sortByDate( false );
+
+  switchMap.set('nameSortASC', nameSortASC );
+
+  switchMap.set('nameSortDESC', nameSortDESC );
+
+  switchMap.set('dateSortASC', dateSortASC );
+
+  switchMap.set('dateSortDESC', dateSortDESC );
+
+  // begin comparison - emulate an input variable
+
+  var sortRequest = 'dateSortASC';
+
+  console.log( '--- > command sort : ' + sortRequest );
+
+  console.log( switchMap.get(sortRequest).doSort( d ) );
+
+  // after map declaration and popluation
+  // one line of code replaces entire switch statement
+
+  // reget data for fresh test
+  d = data().getPayload();
+
+  console.log( JSON.parse( JSON.stringify ( d ) ) );
+
+  switch(sortRequest) {
+
+    case 'nameSortASC':
+
+        nameSortASC.doSort( d );
+
+    break;
+
+    case 'nameSortDESC':
+            
+        nameSortDESC.doSort( d );
+
+    break;
+
+    case 'dateSortASC':
+
+        dateSortASC.doSort( d );
+
+    break;
+
+    case 'dateSortDESC':
+           
+        dateSortDESC.doSort( d );
+
+    break;
+
+    default:
+        
+        console.log(' unknown sort order ');
+    
+    break;
+
+}
+
+console.log('switch sort ' + sortRequest );
+
+console.log( d );
+
+
+</script>
+<style>
+
+  .underline{ text-decoration: underline; }
+
+</style>
+</head>
+
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <td class="underline" onclick="javascript:nameSort.doSort( data );">Name</td>
+        <td class="underline" onclick="javascript:sortByDate()">Date</td>
+      </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>{!record.Name}</td>
+                <td>{!record.Amount}</td>
+            </tr>
+    </tbody>
+</table>
+
+</body>
+
+</html>
