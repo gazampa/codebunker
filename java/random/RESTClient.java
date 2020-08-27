@@ -150,7 +150,7 @@ Map<String, String> oauthLoginResponse = (Map<String, String>)
 	System.out.println(stringParams.toString());
 
     private static final String LOGIN_ENDPOINT = "https://test.salesforce.com";
-    private static final String USER_NAME = "usagedata@kcura.com.uat";
+    private static final String USER_NAME = "blink@blonk.com.uat";
     private static final String PASSWORD = "test1ngserv1cesqcCcQJVsURwQaj4uaPdYFRy6";
     private static final String SERVICES_SOAP_PARTNER_ENDPOINT = "/services/Soap/u/22.0/";
 
@@ -182,8 +182,8 @@ Map<String, String> oauthLoginResponse = (Map<String, String>)
 			ArrayList<NameValuePair> namevalue = new ArrayList<NameValuePair>();
 
 			namevalue.add(new BasicNameValuePair("grant_type", "password"));
-			namevalue.add(new BasicNameValuePair("username","usagedata@kcura.com.bmurphy"));
-			namevalue.add(new BasicNameValuePair("password","kCur@12!nTxJDYvSWnW9iWyHQVyOnWUu"));
+			namevalue.add(new BasicNameValuePair("username","blink@blonk.com.bmurphy"));
+			namevalue.add(new BasicNameValuePair("password","blonk!nTxJDYvSWnW9iWyHQVyOnWUu"));
 			namevalue.add(new BasicNameValuePair("client_id", "	3MVG982oBBDdwyHg.khs.6lurHiLvyiYxZNwiXbAlJXHEgvD3JRk3gjF3sdcGrv_W3eQUyzCE21wPDv7FvEen"));
 			namevalue.add(new BasicNameValuePair("client_secret", "4743202023810632782"));
 

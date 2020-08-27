@@ -204,7 +204,7 @@ public class _case  extends com.sforce.soap.enterprise.sobject.SObject  implemen
 
     private java.util.Date date_Sent_to_Client__c;
 
-    private java.util.Date date_Shipped_to_kCura__c;
+    private java.util.Date date_Shipped_to_blonk__c;
 
     private java.util.Calendar date_Time_Outage_Started__c;
 
@@ -852,7 +852,7 @@ public class _case  extends com.sforce.soap.enterprise.sobject.SObject  implemen
 
     private java.lang.String dtSearch_Drive_Name__c;
 
-    private java.lang.String kCura_Email_Addresses__c;
+    private java.lang.String blonk_Email_Addresses__c;
 
     private java.lang.Double kIE_Age__c;
 
@@ -970,7 +970,7 @@ public class _case  extends com.sforce.soap.enterprise.sobject.SObject  implemen
            java.util.Date date_Recommended_Upgrade__c,
            java.util.Calendar date_Reviewed_for_KCD_Ticket__c,
            java.util.Date date_Sent_to_Client__c,
-           java.util.Date date_Shipped_to_kCura__c,
+           java.util.Date date_Shipped_to_blonk__c,
            java.util.Calendar date_Time_Outage_Started__c,
            java.util.Calendar date_Time_Service_Restored__c,
            java.util.Date date__c,
@@ -1294,7 +1294,7 @@ public class _case  extends com.sforce.soap.enterprise.sobject.SObject  implemen
            java.lang.Double YTD_Total_Days__c,
            java.util.Calendar dtSearch_Date_Verified__c,
            java.lang.String dtSearch_Drive_Name__c,
-           java.lang.String kCura_Email_Addresses__c,
+           java.lang.String blonk_Email_Addresses__c,
            java.lang.Double kIE_Age__c,
            java.lang.String kIE_Resource__c,
            com.sforce.soap.enterprise.sobject.Contact kIE_Resource__r,
@@ -1402,7 +1402,7 @@ public class _case  extends com.sforce.soap.enterprise.sobject.SObject  implemen
         this.date_Recommended_Upgrade__c = date_Recommended_Upgrade__c;
         this.date_Reviewed_for_KCD_Ticket__c = date_Reviewed_for_KCD_Ticket__c;
         this.date_Sent_to_Client__c = date_Sent_to_Client__c;
-        this.date_Shipped_to_kCura__c = date_Shipped_to_kCura__c;
+        this.date_Shipped_to_blonk__c = date_Shipped_to_blonk__c;
         this.date_Time_Outage_Started__c = date_Time_Outage_Started__c;
         this.date_Time_Service_Restored__c = date_Time_Service_Restored__c;
         this.date__c = date__c;
@@ -1726,7 +1726,7 @@ public class _case  extends com.sforce.soap.enterprise.sobject.SObject  implemen
         this.YTD_Total_Days__c = YTD_Total_Days__c;
         this.dtSearch_Date_Verified__c = dtSearch_Date_Verified__c;
         this.dtSearch_Drive_Name__c = dtSearch_Drive_Name__c;
-        this.kCura_Email_Addresses__c = kCura_Email_Addresses__c;
+        this.blonk_Email_Addresses__c = blonk_Email_Addresses__c;
         this.kIE_Age__c = kIE_Age__c;
         this.kIE_Resource__c = kIE_Resource__c;
         this.kIE_Resource__r = kIE_Resource__r;
@@ -3697,22 +3697,22 @@ public class _case  extends com.sforce.soap.enterprise.sobject.SObject  implemen
 
 
     /**
-     * Gets the date_Shipped_to_kCura__c value for this _case.
+     * Gets the date_Shipped_to_blonk__c value for this _case.
      * 
-     * @return date_Shipped_to_kCura__c
+     * @return date_Shipped_to_blonk__c
      */
-    public java.util.Date getDate_Shipped_to_kCura__c() {
-        return date_Shipped_to_kCura__c;
+    public java.util.Date getDate_Shipped_to_blonk__c() {
+        return date_Shipped_to_blonk__c;
     }
 
 
     /**
-     * Sets the date_Shipped_to_kCura__c value for this _case.
+     * Sets the date_Shipped_to_blonk__c value for this _case.
      * 
-     * @param date_Shipped_to_kCura__c
+     * @param date_Shipped_to_blonk__c
      */
-    public void setDate_Shipped_to_kCura__c(java.util.Date date_Shipped_to_kCura__c) {
-        this.date_Shipped_to_kCura__c = date_Shipped_to_kCura__c;
+    public void setDate_Shipped_to_blonk__c(java.util.Date date_Shipped_to_blonk__c) {
+        this.date_Shipped_to_blonk__c = date_Shipped_to_blonk__c;
     }
 
 
@@ -10177,22 +10177,22 @@ public class _case  extends com.sforce.soap.enterprise.sobject.SObject  implemen
 
 
     /**
-     * Gets the kCura_Email_Addresses__c value for this _case.
+     * Gets the blonk_Email_Addresses__c value for this _case.
      * 
-     * @return kCura_Email_Addresses__c
+     * @return blonk_Email_Addresses__c
      */
     public java.lang.String getKCura_Email_Addresses__c() {
-        return kCura_Email_Addresses__c;
+        return blonk_Email_Addresses__c;
     }
 
 
     /**
-     * Sets the kCura_Email_Addresses__c value for this _case.
+     * Sets the blonk_Email_Addresses__c value for this _case.
      * 
-     * @param kCura_Email_Addresses__c
+     * @param blonk_Email_Addresses__c
      */
-    public void setKCura_Email_Addresses__c(java.lang.String kCura_Email_Addresses__c) {
-        this.kCura_Email_Addresses__c = kCura_Email_Addresses__c;
+    public void setKCura_Email_Addresses__c(java.lang.String blonk_Email_Addresses__c) {
+        this.blonk_Email_Addresses__c = blonk_Email_Addresses__c;
     }
 
 
@@ -10621,9 +10621,9 @@ public class _case  extends com.sforce.soap.enterprise.sobject.SObject  implemen
             ((this.date_Sent_to_Client__c==null && other.getDate_Sent_to_Client__c()==null) || 
              (this.date_Sent_to_Client__c!=null &&
               this.date_Sent_to_Client__c.equals(other.getDate_Sent_to_Client__c()))) &&
-            ((this.date_Shipped_to_kCura__c==null && other.getDate_Shipped_to_kCura__c()==null) || 
-             (this.date_Shipped_to_kCura__c!=null &&
-              this.date_Shipped_to_kCura__c.equals(other.getDate_Shipped_to_kCura__c()))) &&
+            ((this.date_Shipped_to_blonk__c==null && other.getDate_Shipped_to_blonk__c()==null) || 
+             (this.date_Shipped_to_blonk__c!=null &&
+              this.date_Shipped_to_blonk__c.equals(other.getDate_Shipped_to_blonk__c()))) &&
             ((this.date_Time_Outage_Started__c==null && other.getDate_Time_Outage_Started__c()==null) || 
              (this.date_Time_Outage_Started__c!=null &&
               this.date_Time_Outage_Started__c.equals(other.getDate_Time_Outage_Started__c()))) &&
@@ -11593,9 +11593,9 @@ public class _case  extends com.sforce.soap.enterprise.sobject.SObject  implemen
             ((this.dtSearch_Drive_Name__c==null && other.getDtSearch_Drive_Name__c()==null) || 
              (this.dtSearch_Drive_Name__c!=null &&
               this.dtSearch_Drive_Name__c.equals(other.getDtSearch_Drive_Name__c()))) &&
-            ((this.kCura_Email_Addresses__c==null && other.getKCura_Email_Addresses__c()==null) || 
-             (this.kCura_Email_Addresses__c!=null &&
-              this.kCura_Email_Addresses__c.equals(other.getKCura_Email_Addresses__c()))) &&
+            ((this.blonk_Email_Addresses__c==null && other.getKCura_Email_Addresses__c()==null) || 
+             (this.blonk_Email_Addresses__c!=null &&
+              this.blonk_Email_Addresses__c.equals(other.getKCura_Email_Addresses__c()))) &&
             ((this.kIE_Age__c==null && other.getKIE_Age__c()==null) || 
              (this.kIE_Age__c!=null &&
               this.kIE_Age__c.equals(other.getKIE_Age__c()))) &&
@@ -11919,8 +11919,8 @@ public class _case  extends com.sforce.soap.enterprise.sobject.SObject  implemen
         if (getDate_Sent_to_Client__c() != null) {
             _hashCode += getDate_Sent_to_Client__c().hashCode();
         }
-        if (getDate_Shipped_to_kCura__c() != null) {
-            _hashCode += getDate_Shipped_to_kCura__c().hashCode();
+        if (getDate_Shipped_to_blonk__c() != null) {
+            _hashCode += getDate_Shipped_to_blonk__c().hashCode();
         }
         if (getDate_Time_Outage_Started__c() != null) {
             _hashCode += getDate_Time_Outage_Started__c().hashCode();
@@ -13609,8 +13609,8 @@ public class _case  extends com.sforce.soap.enterprise.sobject.SObject  implemen
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("date_Shipped_to_kCura__c");
-        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Date_Shipped_to_kCura__c"));
+        elemField.setFieldName("date_Shipped_to_blonk__c");
+        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Date_Shipped_to_blonk__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "date"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);
@@ -15878,7 +15878,7 @@ public class _case  extends com.sforce.soap.enterprise.sobject.SObject  implemen
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("KCura_Email_Addresses__c");
-        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "kCura_Email_Addresses__c"));
+        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "blonk_Email_Addresses__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);

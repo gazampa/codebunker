@@ -1318,7 +1318,7 @@ All Rights Reserved
                         <element name="Date_Received__c" nillable="true" minOccurs="0" type="xsd:date"/>
                         <element name="Date_Recommended_Upgrade__c" nillable="true" minOccurs="0" type="xsd:date"/>
                         <element name="Date_Sent_to_Client__c" nillable="true" minOccurs="0" type="xsd:date"/>
-                        <element name="Date_Shipped_to_kCura__c" nillable="true" minOccurs="0" type="xsd:date"/>
+                        <element name="Date_Shipped_to_blonk__c" nillable="true" minOccurs="0" type="xsd:date"/>
                         <element name="Date_Time_Outage_Started__c" nillable="true" minOccurs="0" type="xsd:dateTime"/>
                         <element name="Date_Time_Service_Restored__c" nillable="true" minOccurs="0" type="xsd:dateTime"/>
                         <element name="Date__c" nillable="true" minOccurs="0" type="xsd:date"/>
@@ -2885,7 +2885,7 @@ All Rights Reserved
                         <element name="OwnerId" nillable="true" minOccurs="0" type="tns:ID"/>
                         <element name="PathOnClient" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="PositiveRatingCount" nillable="true" minOccurs="0" type="xsd:int"/>
-                        <element name="Posted_on_kCura_com__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
+                        <element name="Posted_on_blonk_com__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
                         <element name="PublishStatus" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="RatingCount" nillable="true" minOccurs="0" type="xsd:int"/>
                         <element name="ReasonForChange" nillable="true" minOccurs="0" type="xsd:string"/>
@@ -5475,9 +5475,9 @@ All Rights Reserved
                         <element name="VPN_Setup__c" nillable="true" minOccurs="0" type="tns:ID"/>
                         <element name="VPN_Setup__r" nillable="true" minOccurs="0" type="ens:VPN_Setup__c"/>
                         <element name="Web_Service_URL__c" nillable="true" minOccurs="0" type="xsd:string"/>
-                        <element name="kCura_Internal__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
-                        <element name="kCura_Login_Account__c" nillable="true" minOccurs="0" type="xsd:string"/>
-                        <element name="kCura_Login_Password__c" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="blonk_Internal__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
+                        <element name="blonk_Login_Account__c" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="blonk_Login_Password__c" nillable="true" minOccurs="0" type="xsd:string"/>
                         </sequence>
                     </extension>
                 </complexContent>
@@ -8444,9 +8444,9 @@ All Rights Reserved
                         <element name="Tasks" nillable="true" minOccurs="0" type="tns:QueryResult"/>
                         <element name="Ticket__c" nillable="true" minOccurs="0" type="tns:ID"/>
                         <element name="Ticket__r" nillable="true" minOccurs="0" type="ens:Case"/>
-                        <element name="kCura_Priority__c" nillable="true" minOccurs="0" type="xsd:string"/>
-                        <element name="kCura_Project_Contact__c" nillable="true" minOccurs="0" type="tns:ID"/>
-                        <element name="kCura_Project_Contact__r" nillable="true" minOccurs="0" type="ens:User"/>
+                        <element name="blonk_Priority__c" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="blonk_Project_Contact__c" nillable="true" minOccurs="0" type="tns:ID"/>
+                        <element name="blonk_Project_Contact__r" nillable="true" minOccurs="0" type="ens:User"/>
                         </sequence>
                     </extension>
                 </complexContent>
@@ -9632,7 +9632,7 @@ All Rights Reserved
                         <element name="Training__c" nillable="true" minOccurs="0" type="tns:ID"/>
                         <element name="Training__r" nillable="true" minOccurs="0" type="ens:Training_Relativity__c"/>
                         <element name="Waitlist__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
-                        <element name="kCura__c" nillable="true" minOccurs="0" type="xsd:double"/>
+                        <element name="blonk__c" nillable="true" minOccurs="0" type="xsd:double"/>
                         </sequence>
                     </extension>
                 </complexContent>

@@ -126,7 +126,7 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
 
     private java.lang.Boolean compare_two_non_duplicate_docs__c;
 
-    private java.lang.Boolean computer_on_login_screen_kCura_Offices__c;
+    private java.lang.Boolean computer_on_login_screen_blonk_Offices__c;
 
     private java.lang.Boolean conduct_Webinar__c;
 
@@ -326,7 +326,7 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
 
     private java.lang.Boolean method_Template_Present__c;
 
-    private java.lang.Boolean mouse_Mouse_Pad_kCura_Offices_Only__c;
+    private java.lang.Boolean mouse_Mouse_Pad_blonk_Offices_Only__c;
 
     private java.lang.Boolean mugs__c;
 
@@ -360,7 +360,7 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
 
     private java.lang.Boolean pass_Out_Directions_for_Term_Server__c;
 
-    private java.lang.Boolean pen_Paper_kCura_Offices_Only__c;
+    private java.lang.Boolean pen_Paper_blonk_Offices_Only__c;
 
     private java.lang.Boolean pivot__c;
 
@@ -1770,22 +1770,22 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
 
 
     /**
-     * Gets the computer_on_login_screen_kCura_Offices__c value for this Checklist__c.
+     * Gets the computer_on_login_screen_blonk_Offices__c value for this Checklist__c.
      *
-     * @return computer_on_login_screen_kCura_Offices__c
+     * @return computer_on_login_screen_blonk_Offices__c
      */
-    public java.lang.Boolean getComputer_on_login_screen_kCura_Offices__c() {
-        return computer_on_login_screen_kCura_Offices__c;
+    public java.lang.Boolean getComputer_on_login_screen_blonk_Offices__c() {
+        return computer_on_login_screen_blonk_Offices__c;
     }
 
 
     /**
-     * Sets the computer_on_login_screen_kCura_Offices__c value for this Checklist__c.
+     * Sets the computer_on_login_screen_blonk_Offices__c value for this Checklist__c.
      *
-     * @param computer_on_login_screen_kCura_Offices__c
+     * @param computer_on_login_screen_blonk_Offices__c
      */
-    public void setComputer_on_login_screen_kCura_Offices__c(java.lang.Boolean computer_on_login_screen_kCura_Offices__c) {
-        this.computer_on_login_screen_kCura_Offices__c = computer_on_login_screen_kCura_Offices__c;
+    public void setComputer_on_login_screen_blonk_Offices__c(java.lang.Boolean computer_on_login_screen_blonk_Offices__c) {
+        this.computer_on_login_screen_blonk_Offices__c = computer_on_login_screen_blonk_Offices__c;
     }
 
 
@@ -3770,22 +3770,22 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
 
 
     /**
-     * Gets the mouse_Mouse_Pad_kCura_Offices_Only__c value for this Checklist__c.
+     * Gets the mouse_Mouse_Pad_blonk_Offices_Only__c value for this Checklist__c.
      *
-     * @return mouse_Mouse_Pad_kCura_Offices_Only__c
+     * @return mouse_Mouse_Pad_blonk_Offices_Only__c
      */
-    public java.lang.Boolean getMouse_Mouse_Pad_kCura_Offices_Only__c() {
-        return mouse_Mouse_Pad_kCura_Offices_Only__c;
+    public java.lang.Boolean getMouse_Mouse_Pad_blonk_Offices_Only__c() {
+        return mouse_Mouse_Pad_blonk_Offices_Only__c;
     }
 
 
     /**
-     * Sets the mouse_Mouse_Pad_kCura_Offices_Only__c value for this Checklist__c.
+     * Sets the mouse_Mouse_Pad_blonk_Offices_Only__c value for this Checklist__c.
      *
-     * @param mouse_Mouse_Pad_kCura_Offices_Only__c
+     * @param mouse_Mouse_Pad_blonk_Offices_Only__c
      */
-    public void setMouse_Mouse_Pad_kCura_Offices_Only__c(java.lang.Boolean mouse_Mouse_Pad_kCura_Offices_Only__c) {
-        this.mouse_Mouse_Pad_kCura_Offices_Only__c = mouse_Mouse_Pad_kCura_Offices_Only__c;
+    public void setMouse_Mouse_Pad_blonk_Offices_Only__c(java.lang.Boolean mouse_Mouse_Pad_blonk_Offices_Only__c) {
+        this.mouse_Mouse_Pad_blonk_Offices_Only__c = mouse_Mouse_Pad_blonk_Offices_Only__c;
     }
 
 
@@ -4110,22 +4110,22 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
 
 
     /**
-     * Gets the pen_Paper_kCura_Offices_Only__c value for this Checklist__c.
+     * Gets the pen_Paper_blonk_Offices_Only__c value for this Checklist__c.
      *
-     * @return pen_Paper_kCura_Offices_Only__c
+     * @return pen_Paper_blonk_Offices_Only__c
      */
-    public java.lang.Boolean getPen_Paper_kCura_Offices_Only__c() {
-        return pen_Paper_kCura_Offices_Only__c;
+    public java.lang.Boolean getPen_Paper_blonk_Offices_Only__c() {
+        return pen_Paper_blonk_Offices_Only__c;
     }
 
 
     /**
-     * Sets the pen_Paper_kCura_Offices_Only__c value for this Checklist__c.
+     * Sets the pen_Paper_blonk_Offices_Only__c value for this Checklist__c.
      *
-     * @param pen_Paper_kCura_Offices_Only__c
+     * @param pen_Paper_blonk_Offices_Only__c
      */
-    public void setPen_Paper_kCura_Offices_Only__c(java.lang.Boolean pen_Paper_kCura_Offices_Only__c) {
-        this.pen_Paper_kCura_Offices_Only__c = pen_Paper_kCura_Offices_Only__c;
+    public void setPen_Paper_blonk_Offices_Only__c(java.lang.Boolean pen_Paper_blonk_Offices_Only__c) {
+        this.pen_Paper_blonk_Offices_Only__c = pen_Paper_blonk_Offices_Only__c;
     }
 
 
@@ -6557,9 +6557,9 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
             ((this.compare_two_non_duplicate_docs__c==null && other.getCompare_two_non_duplicate_docs__c()==null) ||
              (this.compare_two_non_duplicate_docs__c!=null &&
               this.compare_two_non_duplicate_docs__c.equals(other.getCompare_two_non_duplicate_docs__c()))) &&
-            ((this.computer_on_login_screen_kCura_Offices__c==null && other.getComputer_on_login_screen_kCura_Offices__c()==null) ||
-             (this.computer_on_login_screen_kCura_Offices__c!=null &&
-              this.computer_on_login_screen_kCura_Offices__c.equals(other.getComputer_on_login_screen_kCura_Offices__c()))) &&
+            ((this.computer_on_login_screen_blonk_Offices__c==null && other.getComputer_on_login_screen_blonk_Offices__c()==null) ||
+             (this.computer_on_login_screen_blonk_Offices__c!=null &&
+              this.computer_on_login_screen_blonk_Offices__c.equals(other.getComputer_on_login_screen_blonk_Offices__c()))) &&
             ((this.conduct_Webinar__c==null && other.getConduct_Webinar__c()==null) ||
              (this.conduct_Webinar__c!=null &&
               this.conduct_Webinar__c.equals(other.getConduct_Webinar__c()))) &&
@@ -6857,9 +6857,9 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
             ((this.method_Template_Present__c==null && other.getMethod_Template_Present__c()==null) ||
              (this.method_Template_Present__c!=null &&
               this.method_Template_Present__c.equals(other.getMethod_Template_Present__c()))) &&
-            ((this.mouse_Mouse_Pad_kCura_Offices_Only__c==null && other.getMouse_Mouse_Pad_kCura_Offices_Only__c()==null) ||
-             (this.mouse_Mouse_Pad_kCura_Offices_Only__c!=null &&
-              this.mouse_Mouse_Pad_kCura_Offices_Only__c.equals(other.getMouse_Mouse_Pad_kCura_Offices_Only__c()))) &&
+            ((this.mouse_Mouse_Pad_blonk_Offices_Only__c==null && other.getMouse_Mouse_Pad_blonk_Offices_Only__c()==null) ||
+             (this.mouse_Mouse_Pad_blonk_Offices_Only__c!=null &&
+              this.mouse_Mouse_Pad_blonk_Offices_Only__c.equals(other.getMouse_Mouse_Pad_blonk_Offices_Only__c()))) &&
             ((this.mugs__c==null && other.getMugs__c()==null) ||
              (this.mugs__c!=null &&
               this.mugs__c.equals(other.getMugs__c()))) &&
@@ -6908,9 +6908,9 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
             ((this.pass_Out_Directions_for_Term_Server__c==null && other.getPass_Out_Directions_for_Term_Server__c()==null) ||
              (this.pass_Out_Directions_for_Term_Server__c!=null &&
               this.pass_Out_Directions_for_Term_Server__c.equals(other.getPass_Out_Directions_for_Term_Server__c()))) &&
-            ((this.pen_Paper_kCura_Offices_Only__c==null && other.getPen_Paper_kCura_Offices_Only__c()==null) ||
-             (this.pen_Paper_kCura_Offices_Only__c!=null &&
-              this.pen_Paper_kCura_Offices_Only__c.equals(other.getPen_Paper_kCura_Offices_Only__c()))) &&
+            ((this.pen_Paper_blonk_Offices_Only__c==null && other.getPen_Paper_blonk_Offices_Only__c()==null) ||
+             (this.pen_Paper_blonk_Offices_Only__c!=null &&
+              this.pen_Paper_blonk_Offices_Only__c.equals(other.getPen_Paper_blonk_Offices_Only__c()))) &&
             ((this.pivot__c==null && other.getPivot__c()==null) ||
              (this.pivot__c!=null &&
               this.pivot__c.equals(other.getPivot__c()))) &&
@@ -7435,8 +7435,8 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
         if (getCompare_two_non_duplicate_docs__c() != null) {
             _hashCode += getCompare_two_non_duplicate_docs__c().hashCode();
         }
-        if (getComputer_on_login_screen_kCura_Offices__c() != null) {
-            _hashCode += getComputer_on_login_screen_kCura_Offices__c().hashCode();
+        if (getComputer_on_login_screen_blonk_Offices__c() != null) {
+            _hashCode += getComputer_on_login_screen_blonk_Offices__c().hashCode();
         }
         if (getConduct_Webinar__c() != null) {
             _hashCode += getConduct_Webinar__c().hashCode();
@@ -7735,8 +7735,8 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
         if (getMethod_Template_Present__c() != null) {
             _hashCode += getMethod_Template_Present__c().hashCode();
         }
-        if (getMouse_Mouse_Pad_kCura_Offices_Only__c() != null) {
-            _hashCode += getMouse_Mouse_Pad_kCura_Offices_Only__c().hashCode();
+        if (getMouse_Mouse_Pad_blonk_Offices_Only__c() != null) {
+            _hashCode += getMouse_Mouse_Pad_blonk_Offices_Only__c().hashCode();
         }
         if (getMugs__c() != null) {
             _hashCode += getMugs__c().hashCode();
@@ -7786,8 +7786,8 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
         if (getPass_Out_Directions_for_Term_Server__c() != null) {
             _hashCode += getPass_Out_Directions_for_Term_Server__c().hashCode();
         }
-        if (getPen_Paper_kCura_Offices_Only__c() != null) {
-            _hashCode += getPen_Paper_kCura_Offices_Only__c().hashCode();
+        if (getPen_Paper_blonk_Offices_Only__c() != null) {
+            _hashCode += getPen_Paper_blonk_Offices_Only__c().hashCode();
         }
         if (getPivot__c() != null) {
             _hashCode += getPivot__c().hashCode();
@@ -8549,8 +8549,8 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("computer_on_login_screen_kCura_Offices__c");
-        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Computer_on_login_screen_kCura_Offices__c"));
+        elemField.setFieldName("computer_on_login_screen_blonk_Offices__c");
+        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Computer_on_login_screen_blonk_Offices__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);
@@ -9249,8 +9249,8 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("mouse_Mouse_Pad_kCura_Offices_Only__c");
-        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Mouse_Mouse_Pad_kCura_Offices_Only__c"));
+        elemField.setFieldName("mouse_Mouse_Pad_blonk_Offices_Only__c");
+        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Mouse_Mouse_Pad_blonk_Offices_Only__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);
@@ -9368,8 +9368,8 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("pen_Paper_kCura_Offices_Only__c");
-        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Pen_Paper_kCura_Offices_Only__c"));
+        elemField.setFieldName("pen_Paper_blonk_Offices_Only__c");
+        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Pen_Paper_blonk_Offices_Only__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);

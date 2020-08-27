@@ -12,7 +12,7 @@ public class Change_Control__c  extends com.sforce.soap.enterprise.sobject.SObje
 
     private java.util.Calendar actual_Start__c;
 
-    private java.lang.String all_kCura_Email_Needed__c;
+    private java.lang.String all_blonk_Email_Needed__c;
 
     private com.sforce.soap.enterprise.QueryResult attachments;
 
@@ -124,7 +124,7 @@ public class Change_Control__c  extends com.sforce.soap.enterprise.sobject.SObje
            java.lang.String id,
            java.util.Calendar actual_Complete__c,
            java.util.Calendar actual_Start__c,
-           java.lang.String all_kCura_Email_Needed__c,
+           java.lang.String all_blonk_Email_Needed__c,
            com.sforce.soap.enterprise.QueryResult attachments,
            com.sforce.soap.enterprise.QueryResult changeControlTicketAssociation__r,
            java.lang.String change_Request_Type__c,
@@ -181,7 +181,7 @@ public class Change_Control__c  extends com.sforce.soap.enterprise.sobject.SObje
             id);
         this.actual_Complete__c = actual_Complete__c;
         this.actual_Start__c = actual_Start__c;
-        this.all_kCura_Email_Needed__c = all_kCura_Email_Needed__c;
+        this.all_blonk_Email_Needed__c = all_blonk_Email_Needed__c;
         this.attachments = attachments;
         this.changeControlTicketAssociation__r = changeControlTicketAssociation__r;
         this.change_Request_Type__c = change_Request_Type__c;
@@ -277,22 +277,22 @@ public class Change_Control__c  extends com.sforce.soap.enterprise.sobject.SObje
 
 
     /**
-     * Gets the all_kCura_Email_Needed__c value for this Change_Control__c.
+     * Gets the all_blonk_Email_Needed__c value for this Change_Control__c.
      * 
-     * @return all_kCura_Email_Needed__c
+     * @return all_blonk_Email_Needed__c
      */
-    public java.lang.String getAll_kCura_Email_Needed__c() {
-        return all_kCura_Email_Needed__c;
+    public java.lang.String getAll_blonk_Email_Needed__c() {
+        return all_blonk_Email_Needed__c;
     }
 
 
     /**
-     * Sets the all_kCura_Email_Needed__c value for this Change_Control__c.
+     * Sets the all_blonk_Email_Needed__c value for this Change_Control__c.
      * 
-     * @param all_kCura_Email_Needed__c
+     * @param all_blonk_Email_Needed__c
      */
-    public void setAll_kCura_Email_Needed__c(java.lang.String all_kCura_Email_Needed__c) {
-        this.all_kCura_Email_Needed__c = all_kCura_Email_Needed__c;
+    public void setAll_blonk_Email_Needed__c(java.lang.String all_blonk_Email_Needed__c) {
+        this.all_blonk_Email_Needed__c = all_blonk_Email_Needed__c;
     }
 
 
@@ -1333,9 +1333,9 @@ public class Change_Control__c  extends com.sforce.soap.enterprise.sobject.SObje
             ((this.actual_Start__c==null && other.getActual_Start__c()==null) || 
              (this.actual_Start__c!=null &&
               this.actual_Start__c.equals(other.getActual_Start__c()))) &&
-            ((this.all_kCura_Email_Needed__c==null && other.getAll_kCura_Email_Needed__c()==null) || 
-             (this.all_kCura_Email_Needed__c!=null &&
-              this.all_kCura_Email_Needed__c.equals(other.getAll_kCura_Email_Needed__c()))) &&
+            ((this.all_blonk_Email_Needed__c==null && other.getAll_blonk_Email_Needed__c()==null) || 
+             (this.all_blonk_Email_Needed__c!=null &&
+              this.all_blonk_Email_Needed__c.equals(other.getAll_blonk_Email_Needed__c()))) &&
             ((this.attachments==null && other.getAttachments()==null) || 
              (this.attachments!=null &&
               this.attachments.equals(other.getAttachments()))) &&
@@ -1506,8 +1506,8 @@ public class Change_Control__c  extends com.sforce.soap.enterprise.sobject.SObje
         if (getActual_Start__c() != null) {
             _hashCode += getActual_Start__c().hashCode();
         }
-        if (getAll_kCura_Email_Needed__c() != null) {
-            _hashCode += getAll_kCura_Email_Needed__c().hashCode();
+        if (getAll_blonk_Email_Needed__c() != null) {
+            _hashCode += getAll_blonk_Email_Needed__c().hashCode();
         }
         if (getAttachments() != null) {
             _hashCode += getAttachments().hashCode();
@@ -1687,8 +1687,8 @@ public class Change_Control__c  extends com.sforce.soap.enterprise.sobject.SObje
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("all_kCura_Email_Needed__c");
-        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "All_kCura_Email_Needed__c"));
+        elemField.setFieldName("all_blonk_Email_Needed__c");
+        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "All_blonk_Email_Needed__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);

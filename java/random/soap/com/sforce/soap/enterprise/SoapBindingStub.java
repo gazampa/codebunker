@@ -2339,37 +2339,37 @@ public class SoapBindingStub extends org.apache.axis.client.Stub implements com.
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
 
-            qName = new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_kCura_Recipes__DataCategorySelection");
+            qName = new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_blonk_Recipes__DataCategorySelection");
             cachedSerQNames.add(qName);
-            cls = com.sforce.soap.enterprise.sobject.Advice_kCura_Recipes__DataCategorySelection.class;
+            cls = com.sforce.soap.enterprise.sobject.Advice_blonk_Recipes__DataCategorySelection.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
 
-            qName = new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_kCura_Recipes__ka");
+            qName = new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_blonk_Recipes__ka");
             cachedSerQNames.add(qName);
-            cls = com.sforce.soap.enterprise.sobject.Advice_kCura_Recipes__ka.class;
+            cls = com.sforce.soap.enterprise.sobject.Advice_blonk_Recipes__ka.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
 
-            qName = new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_kCura_Recipes__kav");
+            qName = new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_blonk_Recipes__kav");
             cachedSerQNames.add(qName);
-            cls = com.sforce.soap.enterprise.sobject.Advice_kCura_Recipes__kav.class;
+            cls = com.sforce.soap.enterprise.sobject.Advice_blonk_Recipes__kav.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
 
-            qName = new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_kCura_Recipes__ViewStat");
+            qName = new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_blonk_Recipes__ViewStat");
             cachedSerQNames.add(qName);
-            cls = com.sforce.soap.enterprise.sobject.Advice_kCura_Recipes__ViewStat.class;
+            cls = com.sforce.soap.enterprise.sobject.Advice_blonk_Recipes__ViewStat.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
 
-            qName = new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_kCura_Recipes__VoteStat");
+            qName = new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_blonk_Recipes__VoteStat");
             cachedSerQNames.add(qName);
-            cls = com.sforce.soap.enterprise.sobject.Advice_kCura_Recipes__VoteStat.class;
+            cls = com.sforce.soap.enterprise.sobject.Advice_blonk_Recipes__VoteStat.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);

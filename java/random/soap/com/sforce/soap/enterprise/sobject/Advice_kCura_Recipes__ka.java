@@ -1,5 +1,5 @@
 /**
- * Advice_kCura_Recipes__ka.java
+ * Advice_blonk_Recipes__ka.java
  *
  * This file was auto-generated from WSDL
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
@@ -7,7 +7,7 @@
 
 package com.sforce.soap.enterprise.sobject;
 
-public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobject.SObject  implements java.io.Serializable {
+public class Advice_blonk_Recipes__ka  extends com.sforce.soap.enterprise.sobject.SObject  implements java.io.Serializable {
     private java.lang.String archivedById;
 
     private java.util.Calendar archivedDate;
@@ -62,10 +62,10 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
     private com.sforce.soap.enterprise.QueryResult votes;
 
-    public Advice_kCura_Recipes__ka() {
+    public Advice_blonk_Recipes__ka() {
     }
 
-    public Advice_kCura_Recipes__ka(
+    public Advice_blonk_Recipes__ka(
            java.lang.String[] fieldsToNull,
            java.lang.String id,
            java.lang.String archivedById,
@@ -129,7 +129,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the archivedById value for this Advice_kCura_Recipes__ka.
+     * Gets the archivedById value for this Advice_blonk_Recipes__ka.
      * 
      * @return archivedById
      */
@@ -139,7 +139,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the archivedById value for this Advice_kCura_Recipes__ka.
+     * Sets the archivedById value for this Advice_blonk_Recipes__ka.
      * 
      * @param archivedById
      */
@@ -149,7 +149,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the archivedDate value for this Advice_kCura_Recipes__ka.
+     * Gets the archivedDate value for this Advice_blonk_Recipes__ka.
      * 
      * @return archivedDate
      */
@@ -159,7 +159,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the archivedDate value for this Advice_kCura_Recipes__ka.
+     * Sets the archivedDate value for this Advice_blonk_Recipes__ka.
      * 
      * @param archivedDate
      */
@@ -169,7 +169,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the articleNumber value for this Advice_kCura_Recipes__ka.
+     * Gets the articleNumber value for this Advice_blonk_Recipes__ka.
      * 
      * @return articleNumber
      */
@@ -179,7 +179,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the articleNumber value for this Advice_kCura_Recipes__ka.
+     * Sets the articleNumber value for this Advice_blonk_Recipes__ka.
      * 
      * @param articleNumber
      */
@@ -189,7 +189,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the caseArticles value for this Advice_kCura_Recipes__ka.
+     * Gets the caseArticles value for this Advice_blonk_Recipes__ka.
      * 
      * @return caseArticles
      */
@@ -199,7 +199,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the caseArticles value for this Advice_kCura_Recipes__ka.
+     * Sets the caseArticles value for this Advice_blonk_Recipes__ka.
      * 
      * @param caseArticles
      */
@@ -209,7 +209,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the caseAssociationCount value for this Advice_kCura_Recipes__ka.
+     * Gets the caseAssociationCount value for this Advice_blonk_Recipes__ka.
      * 
      * @return caseAssociationCount
      */
@@ -219,7 +219,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the caseAssociationCount value for this Advice_kCura_Recipes__ka.
+     * Sets the caseAssociationCount value for this Advice_blonk_Recipes__ka.
      * 
      * @param caseAssociationCount
      */
@@ -229,7 +229,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the createdBy value for this Advice_kCura_Recipes__ka.
+     * Gets the createdBy value for this Advice_blonk_Recipes__ka.
      * 
      * @return createdBy
      */
@@ -239,7 +239,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the createdBy value for this Advice_kCura_Recipes__ka.
+     * Sets the createdBy value for this Advice_blonk_Recipes__ka.
      * 
      * @param createdBy
      */
@@ -249,7 +249,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the createdById value for this Advice_kCura_Recipes__ka.
+     * Gets the createdById value for this Advice_blonk_Recipes__ka.
      * 
      * @return createdById
      */
@@ -259,7 +259,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the createdById value for this Advice_kCura_Recipes__ka.
+     * Sets the createdById value for this Advice_blonk_Recipes__ka.
      * 
      * @param createdById
      */
@@ -269,7 +269,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the createdDate value for this Advice_kCura_Recipes__ka.
+     * Gets the createdDate value for this Advice_blonk_Recipes__ka.
      * 
      * @return createdDate
      */
@@ -279,7 +279,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the createdDate value for this Advice_kCura_Recipes__ka.
+     * Sets the createdDate value for this Advice_blonk_Recipes__ka.
      * 
      * @param createdDate
      */
@@ -289,7 +289,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the draftVersionId value for this Advice_kCura_Recipes__ka.
+     * Gets the draftVersionId value for this Advice_blonk_Recipes__ka.
      * 
      * @return draftVersionId
      */
@@ -299,7 +299,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the draftVersionId value for this Advice_kCura_Recipes__ka.
+     * Sets the draftVersionId value for this Advice_blonk_Recipes__ka.
      * 
      * @param draftVersionId
      */
@@ -309,7 +309,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the feedSubscriptionsForEntity value for this Advice_kCura_Recipes__ka.
+     * Gets the feedSubscriptionsForEntity value for this Advice_blonk_Recipes__ka.
      * 
      * @return feedSubscriptionsForEntity
      */
@@ -319,7 +319,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the feedSubscriptionsForEntity value for this Advice_kCura_Recipes__ka.
+     * Sets the feedSubscriptionsForEntity value for this Advice_blonk_Recipes__ka.
      * 
      * @param feedSubscriptionsForEntity
      */
@@ -329,7 +329,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the firstPublishedDate value for this Advice_kCura_Recipes__ka.
+     * Gets the firstPublishedDate value for this Advice_blonk_Recipes__ka.
      * 
      * @return firstPublishedDate
      */
@@ -339,7 +339,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the firstPublishedDate value for this Advice_kCura_Recipes__ka.
+     * Sets the firstPublishedDate value for this Advice_blonk_Recipes__ka.
      * 
      * @param firstPublishedDate
      */
@@ -349,7 +349,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the isDeleted value for this Advice_kCura_Recipes__ka.
+     * Gets the isDeleted value for this Advice_blonk_Recipes__ka.
      * 
      * @return isDeleted
      */
@@ -359,7 +359,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the isDeleted value for this Advice_kCura_Recipes__ka.
+     * Sets the isDeleted value for this Advice_blonk_Recipes__ka.
      * 
      * @param isDeleted
      */
@@ -369,7 +369,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the lastArchivedVersionId value for this Advice_kCura_Recipes__ka.
+     * Gets the lastArchivedVersionId value for this Advice_blonk_Recipes__ka.
      * 
      * @return lastArchivedVersionId
      */
@@ -379,7 +379,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the lastArchivedVersionId value for this Advice_kCura_Recipes__ka.
+     * Sets the lastArchivedVersionId value for this Advice_blonk_Recipes__ka.
      * 
      * @param lastArchivedVersionId
      */
@@ -389,7 +389,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the lastModifiedBy value for this Advice_kCura_Recipes__ka.
+     * Gets the lastModifiedBy value for this Advice_blonk_Recipes__ka.
      * 
      * @return lastModifiedBy
      */
@@ -399,7 +399,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the lastModifiedBy value for this Advice_kCura_Recipes__ka.
+     * Sets the lastModifiedBy value for this Advice_blonk_Recipes__ka.
      * 
      * @param lastModifiedBy
      */
@@ -409,7 +409,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the lastModifiedById value for this Advice_kCura_Recipes__ka.
+     * Gets the lastModifiedById value for this Advice_blonk_Recipes__ka.
      * 
      * @return lastModifiedById
      */
@@ -419,7 +419,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the lastModifiedById value for this Advice_kCura_Recipes__ka.
+     * Sets the lastModifiedById value for this Advice_blonk_Recipes__ka.
      * 
      * @param lastModifiedById
      */
@@ -429,7 +429,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the lastModifiedDate value for this Advice_kCura_Recipes__ka.
+     * Gets the lastModifiedDate value for this Advice_blonk_Recipes__ka.
      * 
      * @return lastModifiedDate
      */
@@ -439,7 +439,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the lastModifiedDate value for this Advice_kCura_Recipes__ka.
+     * Sets the lastModifiedDate value for this Advice_blonk_Recipes__ka.
      * 
      * @param lastModifiedDate
      */
@@ -449,7 +449,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the lastPublishedDate value for this Advice_kCura_Recipes__ka.
+     * Gets the lastPublishedDate value for this Advice_blonk_Recipes__ka.
      * 
      * @return lastPublishedDate
      */
@@ -459,7 +459,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the lastPublishedDate value for this Advice_kCura_Recipes__ka.
+     * Sets the lastPublishedDate value for this Advice_blonk_Recipes__ka.
      * 
      * @param lastPublishedDate
      */
@@ -469,7 +469,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the masterLanguage value for this Advice_kCura_Recipes__ka.
+     * Gets the masterLanguage value for this Advice_blonk_Recipes__ka.
      * 
      * @return masterLanguage
      */
@@ -479,7 +479,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the masterLanguage value for this Advice_kCura_Recipes__ka.
+     * Sets the masterLanguage value for this Advice_blonk_Recipes__ka.
      * 
      * @param masterLanguage
      */
@@ -489,7 +489,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the onlineVersionId value for this Advice_kCura_Recipes__ka.
+     * Gets the onlineVersionId value for this Advice_blonk_Recipes__ka.
      * 
      * @return onlineVersionId
      */
@@ -499,7 +499,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the onlineVersionId value for this Advice_kCura_Recipes__ka.
+     * Sets the onlineVersionId value for this Advice_blonk_Recipes__ka.
      * 
      * @param onlineVersionId
      */
@@ -509,7 +509,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the processInstances value for this Advice_kCura_Recipes__ka.
+     * Gets the processInstances value for this Advice_blonk_Recipes__ka.
      * 
      * @return processInstances
      */
@@ -519,7 +519,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the processInstances value for this Advice_kCura_Recipes__ka.
+     * Sets the processInstances value for this Advice_blonk_Recipes__ka.
      * 
      * @param processInstances
      */
@@ -529,7 +529,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the processSteps value for this Advice_kCura_Recipes__ka.
+     * Gets the processSteps value for this Advice_blonk_Recipes__ka.
      * 
      * @return processSteps
      */
@@ -539,7 +539,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the processSteps value for this Advice_kCura_Recipes__ka.
+     * Sets the processSteps value for this Advice_blonk_Recipes__ka.
      * 
      * @param processSteps
      */
@@ -549,7 +549,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the securityId value for this Advice_kCura_Recipes__ka.
+     * Gets the securityId value for this Advice_blonk_Recipes__ka.
      * 
      * @return securityId
      */
@@ -559,7 +559,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the securityId value for this Advice_kCura_Recipes__ka.
+     * Sets the securityId value for this Advice_blonk_Recipes__ka.
      * 
      * @param securityId
      */
@@ -569,7 +569,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the systemModstamp value for this Advice_kCura_Recipes__ka.
+     * Gets the systemModstamp value for this Advice_blonk_Recipes__ka.
      * 
      * @return systemModstamp
      */
@@ -579,7 +579,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the systemModstamp value for this Advice_kCura_Recipes__ka.
+     * Sets the systemModstamp value for this Advice_blonk_Recipes__ka.
      * 
      * @param systemModstamp
      */
@@ -589,7 +589,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the title value for this Advice_kCura_Recipes__ka.
+     * Gets the title value for this Advice_blonk_Recipes__ka.
      * 
      * @return title
      */
@@ -599,7 +599,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the title value for this Advice_kCura_Recipes__ka.
+     * Sets the title value for this Advice_blonk_Recipes__ka.
      * 
      * @param title
      */
@@ -609,7 +609,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the viewStats value for this Advice_kCura_Recipes__ka.
+     * Gets the viewStats value for this Advice_blonk_Recipes__ka.
      * 
      * @return viewStats
      */
@@ -619,7 +619,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the viewStats value for this Advice_kCura_Recipes__ka.
+     * Sets the viewStats value for this Advice_blonk_Recipes__ka.
      * 
      * @param viewStats
      */
@@ -629,7 +629,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the voteStats value for this Advice_kCura_Recipes__ka.
+     * Gets the voteStats value for this Advice_blonk_Recipes__ka.
      * 
      * @return voteStats
      */
@@ -639,7 +639,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the voteStats value for this Advice_kCura_Recipes__ka.
+     * Sets the voteStats value for this Advice_blonk_Recipes__ka.
      * 
      * @param voteStats
      */
@@ -649,7 +649,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Gets the votes value for this Advice_kCura_Recipes__ka.
+     * Gets the votes value for this Advice_blonk_Recipes__ka.
      * 
      * @return votes
      */
@@ -659,7 +659,7 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
 
     /**
-     * Sets the votes value for this Advice_kCura_Recipes__ka.
+     * Sets the votes value for this Advice_blonk_Recipes__ka.
      * 
      * @param votes
      */
@@ -669,8 +669,8 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
     private java.lang.Object __equalsCalc = null;
     public synchronized boolean equals(java.lang.Object obj) {
-        if (!(obj instanceof Advice_kCura_Recipes__ka)) return false;
-        Advice_kCura_Recipes__ka other = (Advice_kCura_Recipes__ka) obj;
+        if (!(obj instanceof Advice_blonk_Recipes__ka)) return false;
+        Advice_blonk_Recipes__ka other = (Advice_blonk_Recipes__ka) obj;
         if (obj == null) return false;
         if (this == obj) return true;
         if (__equalsCalc != null) {
@@ -858,10 +858,10 @@ public class Advice_kCura_Recipes__ka  extends com.sforce.soap.enterprise.sobjec
 
     // Type metadata
     private static org.apache.axis.description.TypeDesc typeDesc =
-        new org.apache.axis.description.TypeDesc(Advice_kCura_Recipes__ka.class, true);
+        new org.apache.axis.description.TypeDesc(Advice_blonk_Recipes__ka.class, true);
 
     static {
-        typeDesc.setXmlType(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_kCura_Recipes__ka"));
+        typeDesc.setXmlType(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_blonk_Recipes__ka"));
         org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("archivedById");
         elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "ArchivedById"));

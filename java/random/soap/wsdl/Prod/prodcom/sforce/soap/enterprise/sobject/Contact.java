@@ -370,7 +370,7 @@ public class Contact  extends com.sforce.soap.enterprise.sobject.SObject  implem
 
     private com.sforce.soap.enterprise.QueryResult trainings__r;
 
-    private java.lang.String kCura_News_and_Press__c;
+    private java.lang.String blonk_News_and_Press__c;
 
     public Contact() {
     }
@@ -559,7 +559,7 @@ public class Contact  extends com.sforce.soap.enterprise.sobject.SObject  implem
            com.sforce.soap.enterprise.QueryResult training_Questions__r,
            com.sforce.soap.enterprise.QueryResult trainings1__r,
            com.sforce.soap.enterprise.QueryResult trainings__r,
-           java.lang.String kCura_News_and_Press__c) {
+           java.lang.String blonk_News_and_Press__c) {
         super(
             fieldsToNull,
             id);
@@ -744,7 +744,7 @@ public class Contact  extends com.sforce.soap.enterprise.sobject.SObject  implem
         this.training_Questions__r = training_Questions__r;
         this.trainings1__r = trainings1__r;
         this.trainings__r = trainings__r;
-        this.kCura_News_and_Press__c = kCura_News_and_Press__c;
+        this.blonk_News_and_Press__c = blonk_News_and_Press__c;
     }
 
 
@@ -4369,22 +4369,22 @@ public class Contact  extends com.sforce.soap.enterprise.sobject.SObject  implem
 
 
     /**
-     * Gets the kCura_News_and_Press__c value for this Contact.
+     * Gets the blonk_News_and_Press__c value for this Contact.
      * 
-     * @return kCura_News_and_Press__c
+     * @return blonk_News_and_Press__c
      */
     public java.lang.String getKCura_News_and_Press__c() {
-        return kCura_News_and_Press__c;
+        return blonk_News_and_Press__c;
     }
 
 
     /**
-     * Sets the kCura_News_and_Press__c value for this Contact.
+     * Sets the blonk_News_and_Press__c value for this Contact.
      * 
-     * @param kCura_News_and_Press__c
+     * @param blonk_News_and_Press__c
      */
-    public void setKCura_News_and_Press__c(java.lang.String kCura_News_and_Press__c) {
-        this.kCura_News_and_Press__c = kCura_News_and_Press__c;
+    public void setKCura_News_and_Press__c(java.lang.String blonk_News_and_Press__c) {
+        this.blonk_News_and_Press__c = blonk_News_and_Press__c;
     }
 
     private java.lang.Object __equalsCalc = null;
@@ -4942,9 +4942,9 @@ public class Contact  extends com.sforce.soap.enterprise.sobject.SObject  implem
             ((this.trainings__r==null && other.getTrainings__r()==null) || 
              (this.trainings__r!=null &&
               this.trainings__r.equals(other.getTrainings__r()))) &&
-            ((this.kCura_News_and_Press__c==null && other.getKCura_News_and_Press__c()==null) || 
-             (this.kCura_News_and_Press__c!=null &&
-              this.kCura_News_and_Press__c.equals(other.getKCura_News_and_Press__c())));
+            ((this.blonk_News_and_Press__c==null && other.getKCura_News_and_Press__c()==null) || 
+             (this.blonk_News_and_Press__c!=null &&
+              this.blonk_News_and_Press__c.equals(other.getKCura_News_and_Press__c())));
         __equalsCalc = null;
         return _equals;
     }
@@ -6781,7 +6781,7 @@ public class Contact  extends com.sforce.soap.enterprise.sobject.SObject  implem
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("KCura_News_and_Press__c");
-        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "kCura_News_and_Press__c"));
+        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "blonk_News_and_Press__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);

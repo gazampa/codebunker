@@ -74,7 +74,7 @@ public class ContentVersion  extends com.sforce.soap.enterprise.sobject.SObject 
 
     private java.lang.Integer positiveRatingCount;
 
-    private java.lang.Boolean posted_on_kCura_com__c;
+    private java.lang.Boolean posted_on_blonk_com__c;
 
     private java.lang.String publishStatus;
 
@@ -139,7 +139,7 @@ public class ContentVersion  extends com.sforce.soap.enterprise.sobject.SObject 
            java.lang.String ownerId,
            java.lang.String pathOnClient,
            java.lang.Integer positiveRatingCount,
-           java.lang.Boolean posted_on_kCura_com__c,
+           java.lang.Boolean posted_on_blonk_com__c,
            java.lang.String publishStatus,
            java.lang.Integer ratingCount,
            java.lang.String reasonForChange,
@@ -188,7 +188,7 @@ public class ContentVersion  extends com.sforce.soap.enterprise.sobject.SObject 
         this.ownerId = ownerId;
         this.pathOnClient = pathOnClient;
         this.positiveRatingCount = positiveRatingCount;
-        this.posted_on_kCura_com__c = posted_on_kCura_com__c;
+        this.posted_on_blonk_com__c = posted_on_blonk_com__c;
         this.publishStatus = publishStatus;
         this.ratingCount = ratingCount;
         this.reasonForChange = reasonForChange;
@@ -865,22 +865,22 @@ public class ContentVersion  extends com.sforce.soap.enterprise.sobject.SObject 
 
 
     /**
-     * Gets the posted_on_kCura_com__c value for this ContentVersion.
+     * Gets the posted_on_blonk_com__c value for this ContentVersion.
      * 
-     * @return posted_on_kCura_com__c
+     * @return posted_on_blonk_com__c
      */
-    public java.lang.Boolean getPosted_on_kCura_com__c() {
-        return posted_on_kCura_com__c;
+    public java.lang.Boolean getPosted_on_blonk_com__c() {
+        return posted_on_blonk_com__c;
     }
 
 
     /**
-     * Sets the posted_on_kCura_com__c value for this ContentVersion.
+     * Sets the posted_on_blonk_com__c value for this ContentVersion.
      * 
-     * @param posted_on_kCura_com__c
+     * @param posted_on_blonk_com__c
      */
-    public void setPosted_on_kCura_com__c(java.lang.Boolean posted_on_kCura_com__c) {
-        this.posted_on_kCura_com__c = posted_on_kCura_com__c;
+    public void setPosted_on_blonk_com__c(java.lang.Boolean posted_on_blonk_com__c) {
+        this.posted_on_blonk_com__c = posted_on_blonk_com__c;
     }
 
 
@@ -1234,9 +1234,9 @@ public class ContentVersion  extends com.sforce.soap.enterprise.sobject.SObject 
             ((this.positiveRatingCount==null && other.getPositiveRatingCount()==null) || 
              (this.positiveRatingCount!=null &&
               this.positiveRatingCount.equals(other.getPositiveRatingCount()))) &&
-            ((this.posted_on_kCura_com__c==null && other.getPosted_on_kCura_com__c()==null) || 
-             (this.posted_on_kCura_com__c!=null &&
-              this.posted_on_kCura_com__c.equals(other.getPosted_on_kCura_com__c()))) &&
+            ((this.posted_on_blonk_com__c==null && other.getPosted_on_blonk_com__c()==null) || 
+             (this.posted_on_blonk_com__c!=null &&
+              this.posted_on_blonk_com__c.equals(other.getPosted_on_blonk_com__c()))) &&
             ((this.publishStatus==null && other.getPublishStatus()==null) || 
              (this.publishStatus!=null &&
               this.publishStatus.equals(other.getPublishStatus()))) &&
@@ -1383,8 +1383,8 @@ public class ContentVersion  extends com.sforce.soap.enterprise.sobject.SObject 
         if (getPositiveRatingCount() != null) {
             _hashCode += getPositiveRatingCount().hashCode();
         }
-        if (getPosted_on_kCura_com__c() != null) {
-            _hashCode += getPosted_on_kCura_com__c().hashCode();
+        if (getPosted_on_blonk_com__c() != null) {
+            _hashCode += getPosted_on_blonk_com__c().hashCode();
         }
         if (getPublishStatus() != null) {
             _hashCode += getPublishStatus().hashCode();
@@ -1672,8 +1672,8 @@ public class ContentVersion  extends com.sforce.soap.enterprise.sobject.SObject 
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("posted_on_kCura_com__c");
-        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Posted_on_kCura_com__c"));
+        elemField.setFieldName("posted_on_blonk_com__c");
+        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Posted_on_blonk_com__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);

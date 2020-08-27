@@ -9,25 +9,25 @@
 
 //			loginParams.add(new BasicNameValuePair("grant_type", "password"));
 //			loginParams.add(new BasicNameValuePair("username","usagedata@kcura.com.bmurphy"));
-//			loginParams.add(new BasicNameValuePair("password","kCur@12!nTxJDYvSWnW9iWyHQVyOnWUu"));
+//			loginParams.add(new BasicNameValuePair("password","blonk!nTxJDYvSWnW9iWyHQVyOnWUu"));
 //			loginParams.add(new BasicNameValuePair("client_id", "3MVG982oBBDdwyHg.khs.6lurHmUJau38egL3YEQFYc_Cw3j29O4ANuHSa42f4Q2Fg_42Y.Vg6xErZxyRSkNg"));
 //			loginParams.add(new BasicNameValuePair("client_secret", "229576090654978009"));
 
 //			loginParams.add(new BasicNameValuePair("grant_type", "password"));
 //			loginParams.add(new BasicNameValuePair("username","usagedata@kcura.com.fun"));
-//			loginParams.add(new BasicNameValuePair("password","kCur@12!z80LNsOZshYWR76iwPynPdpqp"));
+//			loginParams.add(new BasicNameValuePair("password","blonk!z80LNsOZshYWR76iwPynPdpqp"));
 //			loginParams.add(new BasicNameValuePair("client_id", "3MVG982oBBDdwyHhLpHKg5eBZ9j4oOhhpv_lCT4yzv3hqthFFTaaXiNdWUgdLCfatnKMu2lXp9SWvE_HU.H5G"));
 //			loginParams.add(new BasicNameValuePair("client_secret", "3048659026706680515"));
 
 //			loginParams.add(new BasicNameValuePair("grant_type", "password"));
 //			loginParams.add(new BasicNameValuePair("username","usagedata@kcura.com.uat"));
-//			loginParams.add(new BasicNameValuePair("password","kCur@12!T2TbUe1DbVZwRLbWp8fEJeUDX"));
+//			loginParams.add(new BasicNameValuePair("password","blonk!T2TbUe1DbVZwRLbWp8fEJeUDX"));
 //			loginParams.add(new BasicNameValuePair("client_id", "3MVG982oBBDdwyHh9G3sL8s3O_lrmj_PV_OlcNAbJ0la1WuuCcyDNmCv62U7G.Pm3UStdQsrl6DDATV1Vy0sV"));
 //			loginParams.add(new BasicNameValuePair("client_secret", "7081044019301192607"));
 
 //			loginParams.add(new BasicNameValuePair("grant_type", "password"));
 //			loginParams.add(new BasicNameValuePair("username","usagedata@kcura.com.uat"));
-//			loginParams.add(new BasicNameValuePair("password","kCur@12!T2TbUe1DbVZwRLbWp8fEJeUDX"));
+//			loginParams.add(new BasicNameValuePair("password","blonk!T2TbUe1DbVZwRLbWp8fEJeUDX"));
 //			loginParams.add(new BasicNameValuePair("client_id", "3MVG982oBBDdwyHh9G3sL8s3O_i_tZVertHVe.j6D.J_KE2uxVPnagMAf7XZCPnyJiiTRlM4WBwv_LrmUcIKb"));
 //			loginParams.add(new BasicNameValuePair("client_secret", "3730954675056249084"));
 
@@ -35,7 +35,7 @@
 			/** PRODUCTION - SUBSCRIPTION SERVICE **/
 //			loginParams.add(new BasicNameValuePair("grant_type", "password"));
 //			loginParams.add(new BasicNameValuePair("username","usagedata@kcura.com"));
-//			loginParams.add(new BasicNameValuePair("password","kCur@12!mjHbC39k2rDuSj82QSwmocfc"));
+//			loginParams.add(new BasicNameValuePair("password","blonk!mjHbC39k2rDuSj82QSwmocfc"));
 //			loginParams.add(new BasicNameValuePair("client_id", "3MVG9Km_cBLhsuPwD4SrEPsgnqR1fGu75YFDu3pJciTWAzL4h_5hc61hZcwDkMEBng0ivY3nQtXCR0NASkT9."));
 //			loginParams.add(new BasicNameValuePair("client_secret", "6550501745108683974"));
 
@@ -44,6 +44,6 @@
 
 			loginParams.add(new BasicNameValuePair("grant_type", "password"));
 			loginParams.add(new BasicNameValuePair("username","bmurphy@kcura.com.uat"));
-			loginParams.add(new BasicNameValuePair("password","ele5ant*kUTIgR7eP1wSM9Jt3dOodktL"));
+			loginParams.add(new BasicNameValuePair("password","blonk*kUTIgR7eP1wSM9Jt3dOodktL"));
 			loginParams.add(new BasicNameValuePair("client_id", "3MVG982oBBDdwyHh5DylAy0uaDa6vZp_oivg9jbCf5ThFuOGdt5CHdPqzZlAafQyTXM2oQCcyzRQ59cy2Cbud"));
 			loginParams.add(new BasicNameValuePair("client_secret", "3485559566833045838"));

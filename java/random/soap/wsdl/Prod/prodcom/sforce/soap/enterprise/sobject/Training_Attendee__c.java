@@ -104,7 +104,7 @@ public class Training_Attendee__c  extends com.sforce.soap.enterprise.sobject.SO
 
     private java.lang.Boolean waitlist__c;
 
-    private java.lang.Double kCura__c;
+    private java.lang.Double blonk__c;
 
     public Training_Attendee__c() {
     }
@@ -160,7 +160,7 @@ public class Training_Attendee__c  extends com.sforce.soap.enterprise.sobject.SO
            java.lang.String training__c,
            com.sforce.soap.enterprise.sobject.Training_Relativity__c training__r,
            java.lang.Boolean waitlist__c,
-           java.lang.Double kCura__c) {
+           java.lang.Double blonk__c) {
         super(
             fieldsToNull,
             id);
@@ -212,7 +212,7 @@ public class Training_Attendee__c  extends com.sforce.soap.enterprise.sobject.SO
         this.training__c = training__c;
         this.training__r = training__r;
         this.waitlist__c = waitlist__c;
-        this.kCura__c = kCura__c;
+        this.blonk__c = blonk__c;
     }
 
 
@@ -1177,22 +1177,22 @@ public class Training_Attendee__c  extends com.sforce.soap.enterprise.sobject.SO
 
 
     /**
-     * Gets the kCura__c value for this Training_Attendee__c.
+     * Gets the blonk__c value for this Training_Attendee__c.
      * 
-     * @return kCura__c
+     * @return blonk__c
      */
     public java.lang.Double getKCura__c() {
-        return kCura__c;
+        return blonk__c;
     }
 
 
     /**
-     * Sets the kCura__c value for this Training_Attendee__c.
+     * Sets the blonk__c value for this Training_Attendee__c.
      * 
-     * @param kCura__c
+     * @param blonk__c
      */
-    public void setKCura__c(java.lang.Double kCura__c) {
-        this.kCura__c = kCura__c;
+    public void setKCura__c(java.lang.Double blonk__c) {
+        this.blonk__c = blonk__c;
     }
 
     private java.lang.Object __equalsCalc = null;
@@ -1351,9 +1351,9 @@ public class Training_Attendee__c  extends com.sforce.soap.enterprise.sobject.SO
             ((this.waitlist__c==null && other.getWaitlist__c()==null) || 
              (this.waitlist__c!=null &&
               this.waitlist__c.equals(other.getWaitlist__c()))) &&
-            ((this.kCura__c==null && other.getKCura__c()==null) || 
-             (this.kCura__c!=null &&
-              this.kCura__c.equals(other.getKCura__c())));
+            ((this.blonk__c==null && other.getKCura__c()==null) || 
+             (this.blonk__c!=null &&
+              this.blonk__c.equals(other.getKCura__c())));
         __equalsCalc = null;
         return _equals;
     }
@@ -1860,7 +1860,7 @@ public class Training_Attendee__c  extends com.sforce.soap.enterprise.sobject.SO
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("KCura__c");
-        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "kCura__c"));
+        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "blonk__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);

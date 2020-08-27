@@ -40,7 +40,7 @@ public class Meeting_Attendee__c  extends com.sforce.soap.enterprise.sobject.SOb
 
     private java.lang.String name;
 
-    private java.lang.Double non_kCura_Attendee__c;
+    private java.lang.Double non_blonk_Attendee__c;
 
     private com.sforce.soap.enterprise.QueryResult notes;
 
@@ -76,7 +76,7 @@ public class Meeting_Attendee__c  extends com.sforce.soap.enterprise.sobject.SOb
            java.lang.String meeting__c,
            com.sforce.soap.enterprise.sobject.Meeting__c meeting__r,
            java.lang.String name,
-           java.lang.Double non_kCura_Attendee__c,
+           java.lang.Double non_blonk_Attendee__c,
            com.sforce.soap.enterprise.QueryResult notes,
            com.sforce.soap.enterprise.QueryResult notesAndAttachments,
            com.sforce.soap.enterprise.QueryResult processInstances,
@@ -102,7 +102,7 @@ public class Meeting_Attendee__c  extends com.sforce.soap.enterprise.sobject.SOb
         this.meeting__c = meeting__c;
         this.meeting__r = meeting__r;
         this.name = name;
-        this.non_kCura_Attendee__c = non_kCura_Attendee__c;
+        this.non_blonk_Attendee__c = non_blonk_Attendee__c;
         this.notes = notes;
         this.notesAndAttachments = notesAndAttachments;
         this.processInstances = processInstances;
@@ -433,22 +433,22 @@ public class Meeting_Attendee__c  extends com.sforce.soap.enterprise.sobject.SOb
 
 
     /**
-     * Gets the non_kCura_Attendee__c value for this Meeting_Attendee__c.
+     * Gets the non_blonk_Attendee__c value for this Meeting_Attendee__c.
      * 
-     * @return non_kCura_Attendee__c
+     * @return non_blonk_Attendee__c
      */
-    public java.lang.Double getNon_kCura_Attendee__c() {
-        return non_kCura_Attendee__c;
+    public java.lang.Double getNon_blonk_Attendee__c() {
+        return non_blonk_Attendee__c;
     }
 
 
     /**
-     * Sets the non_kCura_Attendee__c value for this Meeting_Attendee__c.
+     * Sets the non_blonk_Attendee__c value for this Meeting_Attendee__c.
      * 
-     * @param non_kCura_Attendee__c
+     * @param non_blonk_Attendee__c
      */
-    public void setNon_kCura_Attendee__c(java.lang.Double non_kCura_Attendee__c) {
-        this.non_kCura_Attendee__c = non_kCura_Attendee__c;
+    public void setNon_blonk_Attendee__c(java.lang.Double non_blonk_Attendee__c) {
+        this.non_blonk_Attendee__c = non_blonk_Attendee__c;
     }
 
 
@@ -631,9 +631,9 @@ public class Meeting_Attendee__c  extends com.sforce.soap.enterprise.sobject.SOb
             ((this.name==null && other.getName()==null) || 
              (this.name!=null &&
               this.name.equals(other.getName()))) &&
-            ((this.non_kCura_Attendee__c==null && other.getNon_kCura_Attendee__c()==null) || 
-             (this.non_kCura_Attendee__c!=null &&
-              this.non_kCura_Attendee__c.equals(other.getNon_kCura_Attendee__c()))) &&
+            ((this.non_blonk_Attendee__c==null && other.getNon_blonk_Attendee__c()==null) || 
+             (this.non_blonk_Attendee__c!=null &&
+              this.non_blonk_Attendee__c.equals(other.getNon_blonk_Attendee__c()))) &&
             ((this.notes==null && other.getNotes()==null) || 
              (this.notes!=null &&
               this.notes.equals(other.getNotes()))) &&
@@ -711,8 +711,8 @@ public class Meeting_Attendee__c  extends com.sforce.soap.enterprise.sobject.SOb
         if (getName() != null) {
             _hashCode += getName().hashCode();
         }
-        if (getNon_kCura_Attendee__c() != null) {
-            _hashCode += getNon_kCura_Attendee__c().hashCode();
+        if (getNon_blonk_Attendee__c() != null) {
+            _hashCode += getNon_blonk_Attendee__c().hashCode();
         }
         if (getNotes() != null) {
             _hashCode += getNotes().hashCode();
@@ -855,8 +855,8 @@ public class Meeting_Attendee__c  extends com.sforce.soap.enterprise.sobject.SOb
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("non_kCura_Attendee__c");
-        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Non_kCura_Attendee__c"));
+        elemField.setFieldName("non_blonk_Attendee__c");
+        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Non_blonk_Attendee__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);

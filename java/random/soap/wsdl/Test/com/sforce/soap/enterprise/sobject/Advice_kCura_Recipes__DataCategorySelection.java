@@ -1,5 +1,5 @@
 /**
- * Advice_kCura_Recipes__DataCategorySelection.java
+ * Advice_blonk_Recipes__DataCategorySelection.java
  *
  * This file was auto-generated from WSDL
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
@@ -7,7 +7,7 @@
 
 package com.sforce.soap.enterprise.sobject;
 
-public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soap.enterprise.sobject.SObject  implements java.io.Serializable {
+public class Advice_blonk_Recipes__DataCategorySelection  extends com.sforce.soap.enterprise.sobject.SObject  implements java.io.Serializable {
     private com.sforce.soap.enterprise.sobject.User createdBy;
 
     private java.lang.String createdById;
@@ -20,16 +20,16 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
     private java.lang.Boolean isDeleted;
 
-    private com.sforce.soap.enterprise.sobject.Advice_kCura_Recipes__kav parent;
+    private com.sforce.soap.enterprise.sobject.Advice_blonk_Recipes__kav parent;
 
     private java.lang.String parentId;
 
     private java.util.Calendar systemModstamp;
 
-    public Advice_kCura_Recipes__DataCategorySelection() {
+    public Advice_blonk_Recipes__DataCategorySelection() {
     }
 
-    public Advice_kCura_Recipes__DataCategorySelection(
+    public Advice_blonk_Recipes__DataCategorySelection(
            java.lang.String[] fieldsToNull,
            java.lang.String id,
            com.sforce.soap.enterprise.sobject.User createdBy,
@@ -38,7 +38,7 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
            java.lang.String dataCategoryGroupName,
            java.lang.String dataCategoryName,
            java.lang.Boolean isDeleted,
-           com.sforce.soap.enterprise.sobject.Advice_kCura_Recipes__kav parent,
+           com.sforce.soap.enterprise.sobject.Advice_blonk_Recipes__kav parent,
            java.lang.String parentId,
            java.util.Calendar systemModstamp) {
         super(
@@ -57,7 +57,7 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
 
     /**
-     * Gets the createdBy value for this Advice_kCura_Recipes__DataCategorySelection.
+     * Gets the createdBy value for this Advice_blonk_Recipes__DataCategorySelection.
      * 
      * @return createdBy
      */
@@ -67,7 +67,7 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
 
     /**
-     * Sets the createdBy value for this Advice_kCura_Recipes__DataCategorySelection.
+     * Sets the createdBy value for this Advice_blonk_Recipes__DataCategorySelection.
      * 
      * @param createdBy
      */
@@ -77,7 +77,7 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
 
     /**
-     * Gets the createdById value for this Advice_kCura_Recipes__DataCategorySelection.
+     * Gets the createdById value for this Advice_blonk_Recipes__DataCategorySelection.
      * 
      * @return createdById
      */
@@ -87,7 +87,7 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
 
     /**
-     * Sets the createdById value for this Advice_kCura_Recipes__DataCategorySelection.
+     * Sets the createdById value for this Advice_blonk_Recipes__DataCategorySelection.
      * 
      * @param createdById
      */
@@ -97,7 +97,7 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
 
     /**
-     * Gets the createdDate value for this Advice_kCura_Recipes__DataCategorySelection.
+     * Gets the createdDate value for this Advice_blonk_Recipes__DataCategorySelection.
      * 
      * @return createdDate
      */
@@ -107,7 +107,7 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
 
     /**
-     * Sets the createdDate value for this Advice_kCura_Recipes__DataCategorySelection.
+     * Sets the createdDate value for this Advice_blonk_Recipes__DataCategorySelection.
      * 
      * @param createdDate
      */
@@ -117,7 +117,7 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
 
     /**
-     * Gets the dataCategoryGroupName value for this Advice_kCura_Recipes__DataCategorySelection.
+     * Gets the dataCategoryGroupName value for this Advice_blonk_Recipes__DataCategorySelection.
      * 
      * @return dataCategoryGroupName
      */
@@ -127,7 +127,7 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
 
     /**
-     * Sets the dataCategoryGroupName value for this Advice_kCura_Recipes__DataCategorySelection.
+     * Sets the dataCategoryGroupName value for this Advice_blonk_Recipes__DataCategorySelection.
      * 
      * @param dataCategoryGroupName
      */
@@ -137,7 +137,7 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
 
     /**
-     * Gets the dataCategoryName value for this Advice_kCura_Recipes__DataCategorySelection.
+     * Gets the dataCategoryName value for this Advice_blonk_Recipes__DataCategorySelection.
      * 
      * @return dataCategoryName
      */
@@ -147,7 +147,7 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
 
     /**
-     * Sets the dataCategoryName value for this Advice_kCura_Recipes__DataCategorySelection.
+     * Sets the dataCategoryName value for this Advice_blonk_Recipes__DataCategorySelection.
      * 
      * @param dataCategoryName
      */
@@ -157,7 +157,7 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
 
     /**
-     * Gets the isDeleted value for this Advice_kCura_Recipes__DataCategorySelection.
+     * Gets the isDeleted value for this Advice_blonk_Recipes__DataCategorySelection.
      * 
      * @return isDeleted
      */
@@ -167,7 +167,7 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
 
     /**
-     * Sets the isDeleted value for this Advice_kCura_Recipes__DataCategorySelection.
+     * Sets the isDeleted value for this Advice_blonk_Recipes__DataCategorySelection.
      * 
      * @param isDeleted
      */
@@ -177,27 +177,27 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
 
     /**
-     * Gets the parent value for this Advice_kCura_Recipes__DataCategorySelection.
+     * Gets the parent value for this Advice_blonk_Recipes__DataCategorySelection.
      * 
      * @return parent
      */
-    public com.sforce.soap.enterprise.sobject.Advice_kCura_Recipes__kav getParent() {
+    public com.sforce.soap.enterprise.sobject.Advice_blonk_Recipes__kav getParent() {
         return parent;
     }
 
 
     /**
-     * Sets the parent value for this Advice_kCura_Recipes__DataCategorySelection.
+     * Sets the parent value for this Advice_blonk_Recipes__DataCategorySelection.
      * 
      * @param parent
      */
-    public void setParent(com.sforce.soap.enterprise.sobject.Advice_kCura_Recipes__kav parent) {
+    public void setParent(com.sforce.soap.enterprise.sobject.Advice_blonk_Recipes__kav parent) {
         this.parent = parent;
     }
 
 
     /**
-     * Gets the parentId value for this Advice_kCura_Recipes__DataCategorySelection.
+     * Gets the parentId value for this Advice_blonk_Recipes__DataCategorySelection.
      * 
      * @return parentId
      */
@@ -207,7 +207,7 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
 
     /**
-     * Sets the parentId value for this Advice_kCura_Recipes__DataCategorySelection.
+     * Sets the parentId value for this Advice_blonk_Recipes__DataCategorySelection.
      * 
      * @param parentId
      */
@@ -217,7 +217,7 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
 
     /**
-     * Gets the systemModstamp value for this Advice_kCura_Recipes__DataCategorySelection.
+     * Gets the systemModstamp value for this Advice_blonk_Recipes__DataCategorySelection.
      * 
      * @return systemModstamp
      */
@@ -227,7 +227,7 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
 
     /**
-     * Sets the systemModstamp value for this Advice_kCura_Recipes__DataCategorySelection.
+     * Sets the systemModstamp value for this Advice_blonk_Recipes__DataCategorySelection.
      * 
      * @param systemModstamp
      */
@@ -237,8 +237,8 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
     private java.lang.Object __equalsCalc = null;
     public synchronized boolean equals(java.lang.Object obj) {
-        if (!(obj instanceof Advice_kCura_Recipes__DataCategorySelection)) return false;
-        Advice_kCura_Recipes__DataCategorySelection other = (Advice_kCura_Recipes__DataCategorySelection) obj;
+        if (!(obj instanceof Advice_blonk_Recipes__DataCategorySelection)) return false;
+        Advice_blonk_Recipes__DataCategorySelection other = (Advice_blonk_Recipes__DataCategorySelection) obj;
         if (obj == null) return false;
         if (this == obj) return true;
         if (__equalsCalc != null) {
@@ -318,10 +318,10 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
 
     // Type metadata
     private static org.apache.axis.description.TypeDesc typeDesc =
-        new org.apache.axis.description.TypeDesc(Advice_kCura_Recipes__DataCategorySelection.class, true);
+        new org.apache.axis.description.TypeDesc(Advice_blonk_Recipes__DataCategorySelection.class, true);
 
     static {
-        typeDesc.setXmlType(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_kCura_Recipes__DataCategorySelection"));
+        typeDesc.setXmlType(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_blonk_Recipes__DataCategorySelection"));
         org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("createdBy");
         elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "CreatedBy"));
@@ -367,7 +367,7 @@ public class Advice_kCura_Recipes__DataCategorySelection  extends com.sforce.soa
         elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("parent");
         elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Parent"));
-        elemField.setXmlType(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_kCura_Recipes__kav"));
+        elemField.setXmlType(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_blonk_Recipes__kav"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);

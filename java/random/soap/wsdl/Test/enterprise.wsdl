@@ -1785,7 +1785,7 @@ All Rights Reserved
                         <element name="Date_Recommended_Upgrade__c" nillable="true" minOccurs="0" type="xsd:date"/>
                         <element name="Date_Reviewed_for_KCD_Ticket__c" nillable="true" minOccurs="0" type="xsd:dateTime"/>
                         <element name="Date_Sent_to_Client__c" nillable="true" minOccurs="0" type="xsd:date"/>
-                        <element name="Date_Shipped_to_kCura__c" nillable="true" minOccurs="0" type="xsd:date"/>
+                        <element name="Date_Shipped_to_blonk__c" nillable="true" minOccurs="0" type="xsd:date"/>
                         <element name="Date_Time_Outage_Started__c" nillable="true" minOccurs="0" type="xsd:dateTime"/>
                         <element name="Date_Time_Service_Restored__c" nillable="true" minOccurs="0" type="xsd:dateTime"/>
                         <element name="Date__c" nillable="true" minOccurs="0" type="xsd:date"/>
@@ -2109,7 +2109,7 @@ All Rights Reserved
                         <element name="YTD_Total_Days__c" nillable="true" minOccurs="0" type="xsd:double"/>
                         <element name="dtSearch_Date_Verified__c" nillable="true" minOccurs="0" type="xsd:dateTime"/>
                         <element name="dtSearch_Drive_Name__c" nillable="true" minOccurs="0" type="xsd:string"/>
-                        <element name="kCura_Email_Addresses__c" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="blonk_Email_Addresses__c" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="kIE_Age__c" nillable="true" minOccurs="0" type="xsd:double"/>
                         <element name="kIE_Resource__c" nillable="true" minOccurs="0" type="tns:ID"/>
                         <element name="kIE_Resource__r" nillable="true" minOccurs="0" type="ens:Contact"/>
@@ -3125,7 +3125,7 @@ All Rights Reserved
                         <sequence>
                         <element name="Actual_Complete__c" nillable="true" minOccurs="0" type="xsd:dateTime"/>
                         <element name="Actual_Start__c" nillable="true" minOccurs="0" type="xsd:dateTime"/>
-                        <element name="All_kCura_Email_Needed__c" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="All_blonk_Email_Needed__c" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="Attachments" nillable="true" minOccurs="0" type="tns:QueryResult"/>
                         <element name="ChangeControlTicketAssociation__r" nillable="true" minOccurs="0" type="tns:QueryResult"/>
                         <element name="Change_Request_Type__c" nillable="true" minOccurs="0" type="xsd:string"/>
@@ -3847,7 +3847,7 @@ All Rights Reserved
                         <element name="Training_Questions__r" nillable="true" minOccurs="0" type="tns:QueryResult"/>
                         <element name="Trainings1__r" nillable="true" minOccurs="0" type="tns:QueryResult"/>
                         <element name="Trainings__r" nillable="true" minOccurs="0" type="tns:QueryResult"/>
-                        <element name="kCura_News_and_Press__c" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="blonk_News_and_Press__c" nillable="true" minOccurs="0" type="xsd:string"/>
                         </sequence>
                     </extension>
                 </complexContent>
@@ -4058,7 +4058,7 @@ All Rights Reserved
                         <element name="OwnerId" nillable="true" minOccurs="0" type="tns:ID"/>
                         <element name="PathOnClient" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="PositiveRatingCount" nillable="true" minOccurs="0" type="xsd:int"/>
-                        <element name="Posted_on_kCura_com__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
+                        <element name="Posted_on_blonk_com__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
                         <element name="PublishStatus" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="RatingCount" nillable="true" minOccurs="0" type="xsd:int"/>
                         <element name="ReasonForChange" nillable="true" minOccurs="0" type="xsd:string"/>
@@ -6767,9 +6767,9 @@ All Rights Reserved
                         <element name="VPN_Setup__c" nillable="true" minOccurs="0" type="tns:ID"/>
                         <element name="VPN_Setup__r" nillable="true" minOccurs="0" type="ens:VPN_Setup__c"/>
                         <element name="Web_Service_URL__c" nillable="true" minOccurs="0" type="xsd:string"/>
-                        <element name="kCura_Internal__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
-                        <element name="kCura_Login_Account__c" nillable="true" minOccurs="0" type="xsd:string"/>
-                        <element name="kCura_Login_Password__c" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="blonk_Internal__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
+                        <element name="blonk_Login_Account__c" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="blonk_Login_Password__c" nillable="true" minOccurs="0" type="xsd:string"/>
                         </sequence>
                     </extension>
                 </complexContent>
@@ -7407,7 +7407,7 @@ All Rights Reserved
                         <element name="Title" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="Website" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="Year_Established__c" nillable="true" minOccurs="0" type="xsd:double"/>
-                        <element name="kCura_News_and_Press__c" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="blonk_News_and_Press__c" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="of_Attorneys__c" nillable="true" minOccurs="0" type="xsd:double"/>
                         </sequence>
                     </extension>
@@ -7839,7 +7839,7 @@ All Rights Reserved
                         <element name="Meeting_Hours__c" nillable="true" minOccurs="0" type="xsd:double"/>
                         <element name="Meeting_Rank__c" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="Name" nillable="true" minOccurs="0" type="xsd:string"/>
-                        <element name="Non_kCura_Attendee__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
+                        <element name="Non_blonk_Attendee__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
                         <element name="Notes" nillable="true" minOccurs="0" type="tns:QueryResult"/>
                         <element name="NotesAndAttachments" nillable="true" minOccurs="0" type="tns:QueryResult"/>
                         <element name="Onsite_Visit_Attendees__r" nillable="true" minOccurs="0" type="tns:QueryResult"/>
@@ -7856,7 +7856,7 @@ All Rights Reserved
                         <element name="SystemModstamp" nillable="true" minOccurs="0" type="xsd:dateTime"/>
                         <element name="Tasks" nillable="true" minOccurs="0" type="tns:QueryResult"/>
                         <element name="Type__c" nillable="true" minOccurs="0" type="xsd:string"/>
-                        <element name="kCura_Attendee__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
+                        <element name="blonk_Attendee__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
                         </sequence>
                     </extension>
                 </complexContent>
@@ -9054,8 +9054,8 @@ All Rights Reserved
                         <element name="Status__c" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="SystemModstamp" nillable="true" minOccurs="0" type="xsd:dateTime"/>
                         <element name="Tasks" nillable="true" minOccurs="0" type="tns:QueryResult"/>
-                        <element name="kCura_Sales_Contact__c" nillable="true" minOccurs="0" type="tns:ID"/>
-                        <element name="kCura_Sales_Contact__r" nillable="true" minOccurs="0" type="ens:Contact"/>
+                        <element name="blonk_Sales_Contact__c" nillable="true" minOccurs="0" type="tns:ID"/>
+                        <element name="blonk_Sales_Contact__r" nillable="true" minOccurs="0" type="ens:Contact"/>
                         </sequence>
                     </extension>
                 </complexContent>
@@ -10717,9 +10717,9 @@ All Rights Reserved
                         <element name="Tasks" nillable="true" minOccurs="0" type="tns:QueryResult"/>
                         <element name="Ticket__c" nillable="true" minOccurs="0" type="tns:ID"/>
                         <element name="Ticket__r" nillable="true" minOccurs="0" type="ens:Case"/>
-                        <element name="kCura_Priority__c" nillable="true" minOccurs="0" type="xsd:string"/>
-                        <element name="kCura_Project_Contact__c" nillable="true" minOccurs="0" type="tns:ID"/>
-                        <element name="kCura_Project_Contact__r" nillable="true" minOccurs="0" type="ens:User"/>
+                        <element name="blonk_Priority__c" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="blonk_Project_Contact__c" nillable="true" minOccurs="0" type="tns:ID"/>
+                        <element name="blonk_Project_Contact__r" nillable="true" minOccurs="0" type="ens:User"/>
                         </sequence>
                     </extension>
                 </complexContent>
@@ -12034,7 +12034,7 @@ All Rights Reserved
                         <element name="Training__c" nillable="true" minOccurs="0" type="tns:ID"/>
                         <element name="Training__r" nillable="true" minOccurs="0" type="ens:Training_Relativity__c"/>
                         <element name="Waitlist__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
-                        <element name="kCura__c" nillable="true" minOccurs="0" type="xsd:double"/>
+                        <element name="blonk__c" nillable="true" minOccurs="0" type="xsd:double"/>
                         </sequence>
                     </extension>
                 </complexContent>
@@ -13611,7 +13611,7 @@ All Rights Reserved
                 </complexContent>
             </complexType>
 
-            <complexType name="advice_kCura_Recipes__DataCategorySelection">
+            <complexType name="advice_blonk_Recipes__DataCategorySelection">
                 <complexContent>
                     <extension base="ens:sObject">
                         <sequence>
@@ -13621,7 +13621,7 @@ All Rights Reserved
                         <element name="DataCategoryGroupName" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="DataCategoryName" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="IsDeleted" nillable="true" minOccurs="0" type="xsd:boolean"/>
-                        <element name="Parent" nillable="true" minOccurs="0" type="ens:advice_kCura_Recipes__kav"/>
+                        <element name="Parent" nillable="true" minOccurs="0" type="ens:advice_blonk_Recipes__kav"/>
                         <element name="ParentId" nillable="true" minOccurs="0" type="tns:ID"/>
                         <element name="SystemModstamp" nillable="true" minOccurs="0" type="xsd:dateTime"/>
                         </sequence>
@@ -13629,14 +13629,14 @@ All Rights Reserved
                 </complexContent>
             </complexType>
 
-            <complexType name="advice_kCura_Recipes__ViewStat">
+            <complexType name="advice_blonk_Recipes__ViewStat">
                 <complexContent>
                     <extension base="ens:sObject">
                         <sequence>
                         <element name="Channel" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="IsDeleted" nillable="true" minOccurs="0" type="xsd:boolean"/>
                         <element name="NormalizedScore" nillable="true" minOccurs="0" type="xsd:double"/>
-                        <element name="Parent" nillable="true" minOccurs="0" type="ens:advice_kCura_Recipes__ka"/>
+                        <element name="Parent" nillable="true" minOccurs="0" type="ens:advice_blonk_Recipes__ka"/>
                         <element name="ParentId" nillable="true" minOccurs="0" type="tns:ID"/>
                         <element name="ViewCount" nillable="true" minOccurs="0" type="xsd:int"/>
                         </sequence>
@@ -13644,21 +13644,21 @@ All Rights Reserved
                 </complexContent>
             </complexType>
 
-            <complexType name="advice_kCura_Recipes__VoteStat">
+            <complexType name="advice_blonk_Recipes__VoteStat">
                 <complexContent>
                     <extension base="ens:sObject">
                         <sequence>
                         <element name="Channel" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="IsDeleted" nillable="true" minOccurs="0" type="xsd:boolean"/>
                         <element name="NormalizedScore" nillable="true" minOccurs="0" type="xsd:double"/>
-                        <element name="Parent" nillable="true" minOccurs="0" type="ens:advice_kCura_Recipes__ka"/>
+                        <element name="Parent" nillable="true" minOccurs="0" type="ens:advice_blonk_Recipes__ka"/>
                         <element name="ParentId" nillable="true" minOccurs="0" type="tns:ID"/>
                         </sequence>
                     </extension>
                 </complexContent>
             </complexType>
 
-            <complexType name="advice_kCura_Recipes__ka">
+            <complexType name="advice_blonk_Recipes__ka">
                 <complexContent>
                     <extension base="ens:sObject">
                         <sequence>
@@ -13694,7 +13694,7 @@ All Rights Reserved
                 </complexContent>
             </complexType>
 
-            <complexType name="advice_kCura_Recipes__kav">
+            <complexType name="advice_blonk_Recipes__kav">
                 <complexContent>
                     <extension base="ens:sObject">
                         <sequence>

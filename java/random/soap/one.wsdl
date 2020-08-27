@@ -1157,7 +1157,7 @@ All Rights Reserved
                         <element name="Training_Status__c" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="Training_Survey_Results__r" nillable="true" minOccurs="0" type="tns:QueryResult"/>
                         <element name="Waitlist__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
-                        <element name="kCura__c" nillable="true" minOccurs="0" type="xsd:double"/>
+                        <element name="blonk__c" nillable="true" minOccurs="0" type="xsd:double"/>
                         </sequence>
                     </extension>
                 </complexContent>
@@ -2004,7 +2004,7 @@ All Rights Reserved
                 </complexContent>
             </complexType>
 
-            <complexType name="advice_kCura_Recipes__DataCategorySelection">
+            <complexType name="advice_blonk_Recipes__DataCategorySelection">
                 <complexContent>
                     <extension base="ens:sObject">
                         <sequence>
@@ -2014,7 +2014,7 @@ All Rights Reserved
                         <element name="DataCategoryGroupName" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="DataCategoryName" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="IsDeleted" nillable="true" minOccurs="0" type="xsd:boolean"/>
-                        <element name="Parent" nillable="true" minOccurs="0" type="ens:advice_kCura_Recipes__kav"/>
+                        <element name="Parent" nillable="true" minOccurs="0" type="ens:advice_blonk_Recipes__kav"/>
                         <element name="ParentId" nillable="true" minOccurs="0" type="tns:ID"/>
                         <element name="SystemModstamp" nillable="true" minOccurs="0" type="xsd:dateTime"/>
                         </sequence>
@@ -2022,14 +2022,14 @@ All Rights Reserved
                 </complexContent>
             </complexType>
 
-            <complexType name="advice_kCura_Recipes__ViewStat">
+            <complexType name="advice_blonk_Recipes__ViewStat">
                 <complexContent>
                     <extension base="ens:sObject">
                         <sequence>
                         <element name="Channel" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="IsDeleted" nillable="true" minOccurs="0" type="xsd:boolean"/>
                         <element name="NormalizedScore" nillable="true" minOccurs="0" type="xsd:double"/>
-                        <element name="Parent" nillable="true" minOccurs="0" type="ens:advice_kCura_Recipes__ka"/>
+                        <element name="Parent" nillable="true" minOccurs="0" type="ens:advice_blonk_Recipes__ka"/>
                         <element name="ParentId" nillable="true" minOccurs="0" type="tns:ID"/>
                         <element name="ViewCount" nillable="true" minOccurs="0" type="xsd:int"/>
                         </sequence>
@@ -2037,21 +2037,21 @@ All Rights Reserved
                 </complexContent>
             </complexType>
 
-            <complexType name="advice_kCura_Recipes__VoteStat">
+            <complexType name="advice_blonk_Recipes__VoteStat">
                 <complexContent>
                     <extension base="ens:sObject">
                         <sequence>
                         <element name="Channel" nillable="true" minOccurs="0" type="xsd:string"/>
                         <element name="IsDeleted" nillable="true" minOccurs="0" type="xsd:boolean"/>
                         <element name="NormalizedScore" nillable="true" minOccurs="0" type="xsd:double"/>
-                        <element name="Parent" nillable="true" minOccurs="0" type="ens:advice_kCura_Recipes__ka"/>
+                        <element name="Parent" nillable="true" minOccurs="0" type="ens:advice_blonk_Recipes__ka"/>
                         <element name="ParentId" nillable="true" minOccurs="0" type="tns:ID"/>
                         </sequence>
                     </extension>
                 </complexContent>
             </complexType>
 
-            <complexType name="advice_kCura_Recipes__ka">
+            <complexType name="advice_blonk_Recipes__ka">
                 <complexContent>
                     <extension base="ens:sObject">
                         <sequence>
@@ -2087,7 +2087,7 @@ All Rights Reserved
                 </complexContent>
             </complexType>
 
-            <complexType name="advice_kCura_Recipes__kav">
+            <complexType name="advice_blonk_Recipes__kav">
                 <complexContent>
                     <extension base="ens:sObject">
                         <sequence>

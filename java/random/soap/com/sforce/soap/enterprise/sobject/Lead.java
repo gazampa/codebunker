@@ -200,7 +200,7 @@ public class Lead  extends com.sforce.soap.enterprise.sobject.SObject  implement
 
     private java.lang.Double year_Established__c;
 
-    private java.lang.String kCura_News_and_Press__c;
+    private java.lang.String blonk_News_and_Press__c;
 
     private java.lang.Double of_Attorneys__c;
 
@@ -306,7 +306,7 @@ public class Lead  extends com.sforce.soap.enterprise.sobject.SObject  implement
            java.lang.String title,
            java.lang.String website,
            java.lang.Double year_Established__c,
-           java.lang.String kCura_News_and_Press__c,
+           java.lang.String blonk_News_and_Press__c,
            java.lang.Double of_Attorneys__c) {
         super(
             fieldsToNull,
@@ -407,7 +407,7 @@ public class Lead  extends com.sforce.soap.enterprise.sobject.SObject  implement
         this.title = title;
         this.website = website;
         this.year_Established__c = year_Established__c;
-        this.kCura_News_and_Press__c = kCura_News_and_Press__c;
+        this.blonk_News_and_Press__c = blonk_News_and_Press__c;
         this.of_Attorneys__c = of_Attorneys__c;
     }
 
@@ -2333,22 +2333,22 @@ public class Lead  extends com.sforce.soap.enterprise.sobject.SObject  implement
 
 
     /**
-     * Gets the kCura_News_and_Press__c value for this Lead.
+     * Gets the blonk_News_and_Press__c value for this Lead.
      * 
-     * @return kCura_News_and_Press__c
+     * @return blonk_News_and_Press__c
      */
     public java.lang.String getKCura_News_and_Press__c() {
-        return kCura_News_and_Press__c;
+        return blonk_News_and_Press__c;
     }
 
 
     /**
-     * Sets the kCura_News_and_Press__c value for this Lead.
+     * Sets the blonk_News_and_Press__c value for this Lead.
      * 
-     * @param kCura_News_and_Press__c
+     * @param blonk_News_and_Press__c
      */
-    public void setKCura_News_and_Press__c(java.lang.String kCura_News_and_Press__c) {
-        this.kCura_News_and_Press__c = kCura_News_and_Press__c;
+    public void setKCura_News_and_Press__c(java.lang.String blonk_News_and_Press__c) {
+        this.blonk_News_and_Press__c = blonk_News_and_Press__c;
     }
 
 
@@ -2671,9 +2671,9 @@ public class Lead  extends com.sforce.soap.enterprise.sobject.SObject  implement
             ((this.year_Established__c==null && other.getYear_Established__c()==null) || 
              (this.year_Established__c!=null &&
               this.year_Established__c.equals(other.getYear_Established__c()))) &&
-            ((this.kCura_News_and_Press__c==null && other.getKCura_News_and_Press__c()==null) || 
-             (this.kCura_News_and_Press__c!=null &&
-              this.kCura_News_and_Press__c.equals(other.getKCura_News_and_Press__c()))) &&
+            ((this.blonk_News_and_Press__c==null && other.getKCura_News_and_Press__c()==null) || 
+             (this.blonk_News_and_Press__c!=null &&
+              this.blonk_News_and_Press__c.equals(other.getKCura_News_and_Press__c()))) &&
             ((this.of_Attorneys__c==null && other.getOf_Attorneys__c()==null) || 
              (this.of_Attorneys__c!=null &&
               this.of_Attorneys__c.equals(other.getOf_Attorneys__c())));
@@ -3666,7 +3666,7 @@ public class Lead  extends com.sforce.soap.enterprise.sobject.SObject  implement
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("KCura_News_and_Press__c");
-        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "kCura_News_and_Press__c"));
+        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "blonk_News_and_Press__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);

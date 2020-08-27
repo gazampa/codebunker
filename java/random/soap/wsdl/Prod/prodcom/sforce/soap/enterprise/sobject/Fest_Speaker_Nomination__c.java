@@ -34,7 +34,7 @@ public class Fest_Speaker_Nomination__c  extends com.sforce.soap.enterprise.sobj
 
     private java.lang.String how_Relativity_Solved_Problem__c;
 
-    private java.lang.Boolean interested_in_a_Case_Study_with_kCura__c;
+    private java.lang.Boolean interested_in_a_Case_Study_with_blonk__c;
 
     private java.lang.String interested_in_case_study_as_YES_NO__c;
 
@@ -93,7 +93,7 @@ public class Fest_Speaker_Nomination__c  extends com.sforce.soap.enterprise.sobj
            com.sforce.soap.enterprise.QueryResult feedSubscriptionsForEntity,
            com.sforce.soap.enterprise.QueryResult histories,
            java.lang.String how_Relativity_Solved_Problem__c,
-           java.lang.Boolean interested_in_a_Case_Study_with_kCura__c,
+           java.lang.Boolean interested_in_a_Case_Study_with_blonk__c,
            java.lang.String interested_in_case_study_as_YES_NO__c,
            java.lang.Boolean isDeleted,
            java.util.Date lastActivityDate,
@@ -129,7 +129,7 @@ public class Fest_Speaker_Nomination__c  extends com.sforce.soap.enterprise.sobj
         this.feedSubscriptionsForEntity = feedSubscriptionsForEntity;
         this.histories = histories;
         this.how_Relativity_Solved_Problem__c = how_Relativity_Solved_Problem__c;
-        this.interested_in_a_Case_Study_with_kCura__c = interested_in_a_Case_Study_with_kCura__c;
+        this.interested_in_a_Case_Study_with_blonk__c = interested_in_a_Case_Study_with_blonk__c;
         this.interested_in_case_study_as_YES_NO__c = interested_in_case_study_as_YES_NO__c;
         this.isDeleted = isDeleted;
         this.lastActivityDate = lastActivityDate;
@@ -413,22 +413,22 @@ public class Fest_Speaker_Nomination__c  extends com.sforce.soap.enterprise.sobj
 
 
     /**
-     * Gets the interested_in_a_Case_Study_with_kCura__c value for this Fest_Speaker_Nomination__c.
+     * Gets the interested_in_a_Case_Study_with_blonk__c value for this Fest_Speaker_Nomination__c.
      * 
-     * @return interested_in_a_Case_Study_with_kCura__c
+     * @return interested_in_a_Case_Study_with_blonk__c
      */
-    public java.lang.Boolean getInterested_in_a_Case_Study_with_kCura__c() {
-        return interested_in_a_Case_Study_with_kCura__c;
+    public java.lang.Boolean getInterested_in_a_Case_Study_with_blonk__c() {
+        return interested_in_a_Case_Study_with_blonk__c;
     }
 
 
     /**
-     * Sets the interested_in_a_Case_Study_with_kCura__c value for this Fest_Speaker_Nomination__c.
+     * Sets the interested_in_a_Case_Study_with_blonk__c value for this Fest_Speaker_Nomination__c.
      * 
-     * @param interested_in_a_Case_Study_with_kCura__c
+     * @param interested_in_a_Case_Study_with_blonk__c
      */
-    public void setInterested_in_a_Case_Study_with_kCura__c(java.lang.Boolean interested_in_a_Case_Study_with_kCura__c) {
-        this.interested_in_a_Case_Study_with_kCura__c = interested_in_a_Case_Study_with_kCura__c;
+    public void setInterested_in_a_Case_Study_with_blonk__c(java.lang.Boolean interested_in_a_Case_Study_with_blonk__c) {
+        this.interested_in_a_Case_Study_with_blonk__c = interested_in_a_Case_Study_with_blonk__c;
     }
 
 
@@ -862,9 +862,9 @@ public class Fest_Speaker_Nomination__c  extends com.sforce.soap.enterprise.sobj
             ((this.how_Relativity_Solved_Problem__c==null && other.getHow_Relativity_Solved_Problem__c()==null) || 
              (this.how_Relativity_Solved_Problem__c!=null &&
               this.how_Relativity_Solved_Problem__c.equals(other.getHow_Relativity_Solved_Problem__c()))) &&
-            ((this.interested_in_a_Case_Study_with_kCura__c==null && other.getInterested_in_a_Case_Study_with_kCura__c()==null) || 
-             (this.interested_in_a_Case_Study_with_kCura__c!=null &&
-              this.interested_in_a_Case_Study_with_kCura__c.equals(other.getInterested_in_a_Case_Study_with_kCura__c()))) &&
+            ((this.interested_in_a_Case_Study_with_blonk__c==null && other.getInterested_in_a_Case_Study_with_blonk__c()==null) || 
+             (this.interested_in_a_Case_Study_with_blonk__c!=null &&
+              this.interested_in_a_Case_Study_with_blonk__c.equals(other.getInterested_in_a_Case_Study_with_blonk__c()))) &&
             ((this.interested_in_case_study_as_YES_NO__c==null && other.getInterested_in_case_study_as_YES_NO__c()==null) || 
              (this.interested_in_case_study_as_YES_NO__c!=null &&
               this.interested_in_case_study_as_YES_NO__c.equals(other.getInterested_in_case_study_as_YES_NO__c()))) &&
@@ -972,8 +972,8 @@ public class Fest_Speaker_Nomination__c  extends com.sforce.soap.enterprise.sobj
         if (getHow_Relativity_Solved_Problem__c() != null) {
             _hashCode += getHow_Relativity_Solved_Problem__c().hashCode();
         }
-        if (getInterested_in_a_Case_Study_with_kCura__c() != null) {
-            _hashCode += getInterested_in_a_Case_Study_with_kCura__c().hashCode();
+        if (getInterested_in_a_Case_Study_with_blonk__c() != null) {
+            _hashCode += getInterested_in_a_Case_Study_with_blonk__c().hashCode();
         }
         if (getInterested_in_case_study_as_YES_NO__c() != null) {
             _hashCode += getInterested_in_case_study_as_YES_NO__c().hashCode();
@@ -1134,8 +1134,8 @@ public class Fest_Speaker_Nomination__c  extends com.sforce.soap.enterprise.sobj
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("interested_in_a_Case_Study_with_kCura__c");
-        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Interested_in_a_Case_Study_with_kCura__c"));
+        elemField.setFieldName("interested_in_a_Case_Study_with_blonk__c");
+        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Interested_in_a_Case_Study_with_blonk__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);

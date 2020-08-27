@@ -80,7 +80,7 @@ public class Meeting__c  extends com.sforce.soap.enterprise.sobject.SObject  imp
 
     private java.lang.String name;
 
-    private java.lang.Boolean non_kCura_Attendee__c;
+    private java.lang.Boolean non_blonk_Attendee__c;
 
     private com.sforce.soap.enterprise.QueryResult notes;
 
@@ -114,7 +114,7 @@ public class Meeting__c  extends com.sforce.soap.enterprise.sobject.SObject  imp
 
     private java.lang.String type__c;
 
-    private java.lang.Boolean kCura_Attendee__c;
+    private java.lang.Boolean blonk_Attendee__c;
 
     public Meeting__c() {
     }
@@ -158,7 +158,7 @@ public class Meeting__c  extends com.sforce.soap.enterprise.sobject.SObject  imp
            java.lang.Double meeting_Hours__c,
            java.lang.String meeting_Rank__c,
            java.lang.String name,
-           java.lang.Boolean non_kCura_Attendee__c,
+           java.lang.Boolean non_blonk_Attendee__c,
            com.sforce.soap.enterprise.QueryResult notes,
            com.sforce.soap.enterprise.QueryResult notesAndAttachments,
            com.sforce.soap.enterprise.QueryResult onsite_Visit_Attendees__r,
@@ -175,7 +175,7 @@ public class Meeting__c  extends com.sforce.soap.enterprise.sobject.SObject  imp
            java.util.Calendar systemModstamp,
            com.sforce.soap.enterprise.QueryResult tasks,
            java.lang.String type__c,
-           java.lang.Boolean kCura_Attendee__c) {
+           java.lang.Boolean blonk_Attendee__c) {
         super(
             fieldsToNull,
             id);
@@ -215,7 +215,7 @@ public class Meeting__c  extends com.sforce.soap.enterprise.sobject.SObject  imp
         this.meeting_Hours__c = meeting_Hours__c;
         this.meeting_Rank__c = meeting_Rank__c;
         this.name = name;
-        this.non_kCura_Attendee__c = non_kCura_Attendee__c;
+        this.non_blonk_Attendee__c = non_blonk_Attendee__c;
         this.notes = notes;
         this.notesAndAttachments = notesAndAttachments;
         this.onsite_Visit_Attendees__r = onsite_Visit_Attendees__r;
@@ -232,7 +232,7 @@ public class Meeting__c  extends com.sforce.soap.enterprise.sobject.SObject  imp
         this.systemModstamp = systemModstamp;
         this.tasks = tasks;
         this.type__c = type__c;
-        this.kCura_Attendee__c = kCura_Attendee__c;
+        this.blonk_Attendee__c = blonk_Attendee__c;
     }
 
 
@@ -957,22 +957,22 @@ public class Meeting__c  extends com.sforce.soap.enterprise.sobject.SObject  imp
 
 
     /**
-     * Gets the non_kCura_Attendee__c value for this Meeting__c.
+     * Gets the non_blonk_Attendee__c value for this Meeting__c.
      * 
-     * @return non_kCura_Attendee__c
+     * @return non_blonk_Attendee__c
      */
-    public java.lang.Boolean getNon_kCura_Attendee__c() {
-        return non_kCura_Attendee__c;
+    public java.lang.Boolean getNon_blonk_Attendee__c() {
+        return non_blonk_Attendee__c;
     }
 
 
     /**
-     * Sets the non_kCura_Attendee__c value for this Meeting__c.
+     * Sets the non_blonk_Attendee__c value for this Meeting__c.
      * 
-     * @param non_kCura_Attendee__c
+     * @param non_blonk_Attendee__c
      */
-    public void setNon_kCura_Attendee__c(java.lang.Boolean non_kCura_Attendee__c) {
-        this.non_kCura_Attendee__c = non_kCura_Attendee__c;
+    public void setNon_blonk_Attendee__c(java.lang.Boolean non_blonk_Attendee__c) {
+        this.non_blonk_Attendee__c = non_blonk_Attendee__c;
     }
 
 
@@ -1297,22 +1297,22 @@ public class Meeting__c  extends com.sforce.soap.enterprise.sobject.SObject  imp
 
 
     /**
-     * Gets the kCura_Attendee__c value for this Meeting__c.
+     * Gets the blonk_Attendee__c value for this Meeting__c.
      * 
-     * @return kCura_Attendee__c
+     * @return blonk_Attendee__c
      */
     public java.lang.Boolean getKCura_Attendee__c() {
-        return kCura_Attendee__c;
+        return blonk_Attendee__c;
     }
 
 
     /**
-     * Sets the kCura_Attendee__c value for this Meeting__c.
+     * Sets the blonk_Attendee__c value for this Meeting__c.
      * 
-     * @param kCura_Attendee__c
+     * @param blonk_Attendee__c
      */
-    public void setKCura_Attendee__c(java.lang.Boolean kCura_Attendee__c) {
-        this.kCura_Attendee__c = kCura_Attendee__c;
+    public void setKCura_Attendee__c(java.lang.Boolean blonk_Attendee__c) {
+        this.blonk_Attendee__c = blonk_Attendee__c;
     }
 
     private java.lang.Object __equalsCalc = null;
@@ -1435,9 +1435,9 @@ public class Meeting__c  extends com.sforce.soap.enterprise.sobject.SObject  imp
             ((this.name==null && other.getName()==null) || 
              (this.name!=null &&
               this.name.equals(other.getName()))) &&
-            ((this.non_kCura_Attendee__c==null && other.getNon_kCura_Attendee__c()==null) || 
-             (this.non_kCura_Attendee__c!=null &&
-              this.non_kCura_Attendee__c.equals(other.getNon_kCura_Attendee__c()))) &&
+            ((this.non_blonk_Attendee__c==null && other.getNon_blonk_Attendee__c()==null) || 
+             (this.non_blonk_Attendee__c!=null &&
+              this.non_blonk_Attendee__c.equals(other.getNon_blonk_Attendee__c()))) &&
             ((this.notes==null && other.getNotes()==null) || 
              (this.notes!=null &&
               this.notes.equals(other.getNotes()))) &&
@@ -1486,9 +1486,9 @@ public class Meeting__c  extends com.sforce.soap.enterprise.sobject.SObject  imp
             ((this.type__c==null && other.getType__c()==null) || 
              (this.type__c!=null &&
               this.type__c.equals(other.getType__c()))) &&
-            ((this.kCura_Attendee__c==null && other.getKCura_Attendee__c()==null) || 
-             (this.kCura_Attendee__c!=null &&
-              this.kCura_Attendee__c.equals(other.getKCura_Attendee__c())));
+            ((this.blonk_Attendee__c==null && other.getKCura_Attendee__c()==null) || 
+             (this.blonk_Attendee__c!=null &&
+              this.blonk_Attendee__c.equals(other.getKCura_Attendee__c())));
         __equalsCalc = null;
         return _equals;
     }
@@ -1608,8 +1608,8 @@ public class Meeting__c  extends com.sforce.soap.enterprise.sobject.SObject  imp
         if (getName() != null) {
             _hashCode += getName().hashCode();
         }
-        if (getNon_kCura_Attendee__c() != null) {
-            _hashCode += getNon_kCura_Attendee__c().hashCode();
+        if (getNon_blonk_Attendee__c() != null) {
+            _hashCode += getNon_blonk_Attendee__c().hashCode();
         }
         if (getNotes() != null) {
             _hashCode += getNotes().hashCode();
@@ -1925,8 +1925,8 @@ public class Meeting__c  extends com.sforce.soap.enterprise.sobject.SObject  imp
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("non_kCura_Attendee__c");
-        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Non_kCura_Attendee__c"));
+        elemField.setFieldName("non_blonk_Attendee__c");
+        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Non_blonk_Attendee__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);
@@ -2045,7 +2045,7 @@ public class Meeting__c  extends com.sforce.soap.enterprise.sobject.SObject  imp
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("KCura_Attendee__c");
-        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "kCura_Attendee__c"));
+        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "blonk_Attendee__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);

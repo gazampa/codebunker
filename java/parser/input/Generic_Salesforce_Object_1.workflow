@@ -1232,7 +1232,7 @@
         <criteriaItems>
             <field>Training_Attendee__c.Account__c</field>
             <operation>equals</operation>
-            <value>kCura</value>
+            <value>blonk</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -1604,7 +1604,7 @@
         <criteriaItems>
             <field>Training_Attendee__c.Account__c</field>
             <operation>notEqual</operation>
-            <value>kCura</value>
+            <value>blonk</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
         <workflowTimeTriggers>
@@ -1707,7 +1707,7 @@
         <criteriaItems>
             <field>Training_Attendee__c.Account__c</field>
             <operation>notEqual</operation>
-            <value>kCura</value>
+            <value>blonk</value>
         </criteriaItems>
         <criteriaItems>
             <field>Training_Attendee__c.Removed_from_Waitlist__c</field>
@@ -1766,7 +1766,7 @@
         <criteriaItems>
             <field>Training_Attendee__c.Account__c</field>
             <operation>notEqual</operation>
-            <value>kCura</value>
+            <value>blonk</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
         <workflowTimeTriggers>
@@ -1821,7 +1821,7 @@
         <criteriaItems>
             <field>Training_Attendee__c.Account__c</field>
             <operation>notEqual</operation>
-            <value>kCura</value>
+            <value>blonk</value>
         </criteriaItems>
         <criteriaItems>
             <field>Training_Attendee__c.Removed_from_Waitlist__c</field>
@@ -1880,7 +1880,7 @@
         <criteriaItems>
             <field>Training_Attendee__c.Account__c</field>
             <operation>notEqual</operation>
-            <value>kCura</value>
+            <value>blonk</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
         <workflowTimeTriggers>
@@ -1983,7 +1983,7 @@
         <criteriaItems>
             <field>Training_Attendee__c.Account__c</field>
             <operation>notEqual</operation>
-            <value>kCura</value>
+            <value>blonk</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
         <workflowTimeTriggers>
@@ -2519,7 +2519,7 @@
         <criteriaItems>
             <field>Training_Attendee__c.Account__c</field>
             <operation>equals</operation>
-            <value>kCura</value>
+            <value>blonk</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
         <workflowTimeTriggers>
@@ -2573,7 +2573,7 @@
         <criteriaItems>
             <field>Training_Attendee__c.Account__c</field>
             <operation>equals</operation>
-            <value>kCura</value>
+            <value>blonk</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
         <workflowTimeTriggers>
@@ -2627,7 +2627,7 @@
         <criteriaItems>
             <field>Training_Attendee__c.Account__c</field>
             <operation>equals</operation>
-            <value>kCura</value>
+            <value>blonk</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
         <workflowTimeTriggers>
@@ -2681,7 +2681,7 @@
         <criteriaItems>
             <field>Training_Attendee__c.Account__c</field>
             <operation>equals</operation>
-            <value>kCura</value>
+            <value>blonk</value>
         </criteriaItems>
         <criteriaItems>
             <field>Training_Attendee__c.LastModifiedById</field>
@@ -2740,7 +2740,7 @@
         <criteriaItems>
             <field>Training_Attendee__c.Account__c</field>
             <operation>equals</operation>
-            <value>kCura</value>
+            <value>blonk</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
         <workflowTimeTriggers>
@@ -2794,7 +2794,7 @@
         <criteriaItems>
             <field>Training_Attendee__c.Account__c</field>
             <operation>equals</operation>
-            <value>kCura</value>
+            <value>blonk</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
         <workflowTimeTriggers>
@@ -3800,7 +3800,7 @@ ISPICKVAL(PRIORVALUE(Attendee_Status__c), &quot;Waitlist&quot;)
         <criteriaItems>
             <field>Training_Attendee__c.Account__c</field>
             <operation>equals</operation>
-            <value>kCura</value>
+            <value>blonk</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
         <workflowTimeTriggers>

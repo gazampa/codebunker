@@ -120,8 +120,8 @@ class SOAPClient{
 		}
 
     static final String LOGIN_ENDPOINT = "https://ondemand.questionmark.com"; //"https://test.salesforce.com";
-    private static final String USER_NAME = "Billy"; //"bmurphy@kcura.com.uat";//"usagedata@kcura.com.uat";// "apiuser@kcura.com.fun";//
-    private static final String PASSWORD = "Paper123!"; //ele5ant*ceNxsKuWi1QWfx8eExIyLRFV";// "kCur@12!T2TbUe1DbVZwRLbWp8fEJeUDX";//"changeme1vmIAFfTxF62Nhk7UJElZlbPpD";//;//
+    private static final String USER_NAME = "Billy"; //"bmurphy@blonka.com.uat";//"usagedata@blonka.com.uat";// "apiuser@blonka.com.fun";//
+    private static final String PASSWORD = "Paper123!"; //blonkceNxsKuWi1QWfx8eExIyLRFV";// "blonk@12!T2TbUe1DbVZwRLbWp8fEJeUDX";//"changeme1vmIAFfTxF62Nhk7UJElZlbPpD";//;//
 
     private static final String SERVICES_SOAP_PARTNER_ENDPOINT = "/qmwise/qmwise.asmx"; //http://questionmark.com/QMWISe/GetAbout
 
@@ -482,8 +482,8 @@ class SOAPClient{
 
 
     static final String LOGIN_ENDPOINT = "https://test.salesforce.com";
-    private static final String USER_NAME = "bmurphy@kcura.com.uat";//"usagedata@kcura.com.uat";// "apiuser@kcura.com.fun";//
-    private static final String PASSWORD = "ele5ant*ceNxsKuWi1QWfx8eExIyLRFV";// "kCur@12!T2TbUe1DbVZwRLbWp8fEJeUDX";//"changeme1vmIAFfTxF62Nhk7UJElZlbPpD";//;//
+    private static final String USER_NAME = "bmurphy@blonka.com.uat";//"usagedata@blonka.com.uat";// "apiuser@blonka.com.fun";//
+    private static final String PASSWORD = "blonkceNxsKuWi1QWfx8eExIyLRFV";// "blonk@12!T2TbUe1DbVZwRLbWp8fEJeUDX";//"changeme1vmIAFfTxF62Nhk7UJElZlbPpD";//;//
 
     private static final String SERVICES_SOAP_PARTNER_ENDPOINT = "/services/Soap/u/28.0";
 

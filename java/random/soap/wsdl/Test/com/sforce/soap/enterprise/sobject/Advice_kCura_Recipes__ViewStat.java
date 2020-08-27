@@ -1,5 +1,5 @@
 /**
- * Advice_kCura_Recipes__ViewStat.java
+ * Advice_blonk_Recipes__ViewStat.java
  *
  * This file was auto-generated from WSDL
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
@@ -7,29 +7,29 @@
 
 package com.sforce.soap.enterprise.sobject;
 
-public class Advice_kCura_Recipes__ViewStat  extends com.sforce.soap.enterprise.sobject.SObject  implements java.io.Serializable {
+public class Advice_blonk_Recipes__ViewStat  extends com.sforce.soap.enterprise.sobject.SObject  implements java.io.Serializable {
     private java.lang.String channel;
 
     private java.lang.Boolean isDeleted;
 
     private java.lang.Double normalizedScore;
 
-    private com.sforce.soap.enterprise.sobject.Advice_kCura_Recipes__ka parent;
+    private com.sforce.soap.enterprise.sobject.Advice_blonk_Recipes__ka parent;
 
     private java.lang.String parentId;
 
     private java.lang.Integer viewCount;
 
-    public Advice_kCura_Recipes__ViewStat() {
+    public Advice_blonk_Recipes__ViewStat() {
     }
 
-    public Advice_kCura_Recipes__ViewStat(
+    public Advice_blonk_Recipes__ViewStat(
            java.lang.String[] fieldsToNull,
            java.lang.String id,
            java.lang.String channel,
            java.lang.Boolean isDeleted,
            java.lang.Double normalizedScore,
-           com.sforce.soap.enterprise.sobject.Advice_kCura_Recipes__ka parent,
+           com.sforce.soap.enterprise.sobject.Advice_blonk_Recipes__ka parent,
            java.lang.String parentId,
            java.lang.Integer viewCount) {
         super(
@@ -45,7 +45,7 @@ public class Advice_kCura_Recipes__ViewStat  extends com.sforce.soap.enterprise.
 
 
     /**
-     * Gets the channel value for this Advice_kCura_Recipes__ViewStat.
+     * Gets the channel value for this Advice_blonk_Recipes__ViewStat.
      * 
      * @return channel
      */
@@ -55,7 +55,7 @@ public class Advice_kCura_Recipes__ViewStat  extends com.sforce.soap.enterprise.
 
 
     /**
-     * Sets the channel value for this Advice_kCura_Recipes__ViewStat.
+     * Sets the channel value for this Advice_blonk_Recipes__ViewStat.
      * 
      * @param channel
      */
@@ -65,7 +65,7 @@ public class Advice_kCura_Recipes__ViewStat  extends com.sforce.soap.enterprise.
 
 
     /**
-     * Gets the isDeleted value for this Advice_kCura_Recipes__ViewStat.
+     * Gets the isDeleted value for this Advice_blonk_Recipes__ViewStat.
      * 
      * @return isDeleted
      */
@@ -75,7 +75,7 @@ public class Advice_kCura_Recipes__ViewStat  extends com.sforce.soap.enterprise.
 
 
     /**
-     * Sets the isDeleted value for this Advice_kCura_Recipes__ViewStat.
+     * Sets the isDeleted value for this Advice_blonk_Recipes__ViewStat.
      * 
      * @param isDeleted
      */
@@ -85,7 +85,7 @@ public class Advice_kCura_Recipes__ViewStat  extends com.sforce.soap.enterprise.
 
 
     /**
-     * Gets the normalizedScore value for this Advice_kCura_Recipes__ViewStat.
+     * Gets the normalizedScore value for this Advice_blonk_Recipes__ViewStat.
      * 
      * @return normalizedScore
      */
@@ -95,7 +95,7 @@ public class Advice_kCura_Recipes__ViewStat  extends com.sforce.soap.enterprise.
 
 
     /**
-     * Sets the normalizedScore value for this Advice_kCura_Recipes__ViewStat.
+     * Sets the normalizedScore value for this Advice_blonk_Recipes__ViewStat.
      * 
      * @param normalizedScore
      */
@@ -105,27 +105,27 @@ public class Advice_kCura_Recipes__ViewStat  extends com.sforce.soap.enterprise.
 
 
     /**
-     * Gets the parent value for this Advice_kCura_Recipes__ViewStat.
+     * Gets the parent value for this Advice_blonk_Recipes__ViewStat.
      * 
      * @return parent
      */
-    public com.sforce.soap.enterprise.sobject.Advice_kCura_Recipes__ka getParent() {
+    public com.sforce.soap.enterprise.sobject.Advice_blonk_Recipes__ka getParent() {
         return parent;
     }
 
 
     /**
-     * Sets the parent value for this Advice_kCura_Recipes__ViewStat.
+     * Sets the parent value for this Advice_blonk_Recipes__ViewStat.
      * 
      * @param parent
      */
-    public void setParent(com.sforce.soap.enterprise.sobject.Advice_kCura_Recipes__ka parent) {
+    public void setParent(com.sforce.soap.enterprise.sobject.Advice_blonk_Recipes__ka parent) {
         this.parent = parent;
     }
 
 
     /**
-     * Gets the parentId value for this Advice_kCura_Recipes__ViewStat.
+     * Gets the parentId value for this Advice_blonk_Recipes__ViewStat.
      * 
      * @return parentId
      */
@@ -135,7 +135,7 @@ public class Advice_kCura_Recipes__ViewStat  extends com.sforce.soap.enterprise.
 
 
     /**
-     * Sets the parentId value for this Advice_kCura_Recipes__ViewStat.
+     * Sets the parentId value for this Advice_blonk_Recipes__ViewStat.
      * 
      * @param parentId
      */
@@ -145,7 +145,7 @@ public class Advice_kCura_Recipes__ViewStat  extends com.sforce.soap.enterprise.
 
 
     /**
-     * Gets the viewCount value for this Advice_kCura_Recipes__ViewStat.
+     * Gets the viewCount value for this Advice_blonk_Recipes__ViewStat.
      * 
      * @return viewCount
      */
@@ -155,7 +155,7 @@ public class Advice_kCura_Recipes__ViewStat  extends com.sforce.soap.enterprise.
 
 
     /**
-     * Sets the viewCount value for this Advice_kCura_Recipes__ViewStat.
+     * Sets the viewCount value for this Advice_blonk_Recipes__ViewStat.
      * 
      * @param viewCount
      */
@@ -165,8 +165,8 @@ public class Advice_kCura_Recipes__ViewStat  extends com.sforce.soap.enterprise.
 
     private java.lang.Object __equalsCalc = null;
     public synchronized boolean equals(java.lang.Object obj) {
-        if (!(obj instanceof Advice_kCura_Recipes__ViewStat)) return false;
-        Advice_kCura_Recipes__ViewStat other = (Advice_kCura_Recipes__ViewStat) obj;
+        if (!(obj instanceof Advice_blonk_Recipes__ViewStat)) return false;
+        Advice_blonk_Recipes__ViewStat other = (Advice_blonk_Recipes__ViewStat) obj;
         if (obj == null) return false;
         if (this == obj) return true;
         if (__equalsCalc != null) {
@@ -228,10 +228,10 @@ public class Advice_kCura_Recipes__ViewStat  extends com.sforce.soap.enterprise.
 
     // Type metadata
     private static org.apache.axis.description.TypeDesc typeDesc =
-        new org.apache.axis.description.TypeDesc(Advice_kCura_Recipes__ViewStat.class, true);
+        new org.apache.axis.description.TypeDesc(Advice_blonk_Recipes__ViewStat.class, true);
 
     static {
-        typeDesc.setXmlType(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_kCura_Recipes__ViewStat"));
+        typeDesc.setXmlType(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_blonk_Recipes__ViewStat"));
         org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("channel");
         elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Channel"));
@@ -256,7 +256,7 @@ public class Advice_kCura_Recipes__ViewStat  extends com.sforce.soap.enterprise.
         elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("parent");
         elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Parent"));
-        elemField.setXmlType(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_kCura_Recipes__ka"));
+        elemField.setXmlType(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "advice_blonk_Recipes__ka"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
