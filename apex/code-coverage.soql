@@ -1,0 +1,1 @@
+SELECT ApexTestClassId, NumLinesCovered, NumLinesUncovered FROM ApexCodeCoverage order by NumLinesUncovered desc
