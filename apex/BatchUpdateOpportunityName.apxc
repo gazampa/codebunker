@@ -1,0 +1,78 @@
+global class BatchUpdateOpportunityName implements 
+    Database.Batchable<sObject>, Database.Stateful {
+    
+    // instance member to retain state across transactions
+    global List<String> errors = new List<String>();
+        
+    global Integer recordsProcessed = 0;
+    
+    global Database.QueryLocator start(Database.BatchableContext bc) {
+
+        String soqlQuery = 'SELECT ID, Name, (SELECT ID, Name FROM Opportunities) FROM Account';
+
+        return Database.getQueryLocator( soqlQuery );
+    
+    }
+        
+    global void execute(Database.BatchableContext bc, List<Account> scope){
+        // process each batch of records
+        List<Opportunity> opportunities = new List<Opportunity>();
+        
+        for (Account account : scope) {
+            
+            for (Opportunity opp : account.opportunities) {
+                
+                opp.Name = account.Name + ' ' + opp.Name;                
+                // add opportunity to list to be updated
+                opportunities.add(opp);
+                
+                // increment the instance member counter
+                recordsProcessed = recordsProcessed + 1;
+            
+            }
+        
+        }
+        
+        Database.SaveResult[] sr = Database.update ( opportunities, false );
+
+        Integer recordIndex = 0;
+        
+        for ( Database.SaveResult result : sr ) {
+            
+            if ( ! result.isSuccess() ){
+                
+                for(Database.Error err : result.getErrors()) {
+                    
+                    String message = 'The following error has occurred for : ' + scope[recordIndex].Id + '.';                    
+                    
+                    message+= err.getStatusCode() + ': ' + err.getMessage();
+                    
+                    message+='Lead fields that affected this error: ' + err.getFields();
+                	
+                    errors.add(message);
+                
+                }
+                
+                recordIndex++;
+                
+            }
+            
+        }
+
+    }    
+    global void finish(Database.BatchableContext bc){
+        
+        System.debug(recordsProcessed + ' records processed.');
+        
+        AsyncApexJob job = [SELECT Id, Status, NumberOfErrors, 
+                            JobItemsProcessed,
+                            TotalJobItems, CreatedBy.Email
+                            FROM AsyncApexJob
+                            WHERE Id = :bc.getJobId()];
+        
+        // call some utility to send email
+        //EmailUtils.sendMessage(job, recordsProcessed);
+    
+    }    
+
+}
