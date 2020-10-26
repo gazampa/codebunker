@@ -35,15 +35,15 @@ global class BatchUpdateOpportunityName implements
         
         Database.SaveResult[] sr = Database.update ( opportunities, false );
 
-        Integer recordIndex = 0;
-        
-        for ( Database.SaveResult result : sr ) {
+        for ( Integer i = 0; i < sr.size(); i++ ) {
+            
+            Database.SaveResult result = sr.get(i);
             
             if ( ! result.isSuccess() ){
                 
                 for(Database.Error err : result.getErrors()) {
                     
-                    String message = 'The following error has occurred for : ' + scope[recordIndex].Id + '.';                    
+                    String message = 'The following error has occurred for : ' + opportunities[i].Id + '.';                    
                     
                     message+= err.getStatusCode() + ': ' + err.getMessage();
                     
@@ -52,8 +52,6 @@ global class BatchUpdateOpportunityName implements
                     errors.add(message);
                 
                 }
-                
-                recordIndex++;
                 
             }
             
@@ -72,7 +70,13 @@ global class BatchUpdateOpportunityName implements
         
         // call some utility to send email
         //EmailUtils.sendMessage(job, recordsProcessed);
-    
+
+         for ( String msg : errors ) {
+
+            System.debug('---> batch : ' + msg);
+
+        }
+
     }    
 
 }
