@@ -1,23 +1,27 @@
 trigger ControllingTrigger on Contact (before insert, before update, before delete, after insert, after update, after delete) {
     
     //https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm
-    
-    BusinessLogicClass business = new BusinessLogicClass(System.Trigger.NewMap, System.Trigger.OldMap);
-    
+        
     if ( Trigger.isBefore){
         
         if (Trigger.isInsert){
 	   // recusion control important here, data update lifecycle number 10.
-           business.executeLogic();
+           
+            BusinessLogic.doThatFunctionalThing1(System.Trigger.NewMap, System.Trigger.OldMap);
+
+            BusinessLogic.doThatFunctionalThing2(System.Trigger.NewMap, System.Trigger.OldMap);    
+
         }
         
         if ( Trigger.isUpdate ){
-            
+                   
+            BusinessLogic.doThatFunctionalThing3(System.Trigger.NewMap, System.Trigger.OldMap);    
+        
         }
     
         if (Trigger.isDelete){
         
-	}
+		}
         
     }
 

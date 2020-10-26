@@ -1,24 +1,34 @@
-public class BusinessLogicClass {
+public class BusinessLogic {
 
-    Map<Id, Contact> newFieldValues;
-    Map<Id, Contact> oldFieldValues;
+    public static void doThatFunctionalThing1(Map<Id, Contact> oldT, Map<Id, Contact> newT) {
+        
+        System.debug(' business logic for method 1 here');
     
-    public BusinessLogicClass(Map<Id, Contact> newT, Map<Id, Contact> oldT){
-        newFieldValues = newT;
-        oldFieldValues = oldT;
+    }
+    
+    public static void doThatFunctionalThing2(Map<Id, Contact> oldT, Map<Id, Contact> newT) {
+        
+        System.debug(' business logic for method 1 here');
+    
     }
 
-    public void executeLogic(){
-            businessRequest1();
-			businessRequest2();
+    public static void doThatFunctionalThing3(Map<Id, Contact> oldT, Map<Id, Contact> newT) {
+        
+        System.debug(' business logic for method 1 here');
+    
     }
-
-    private void businessRequest1(){
-        System.debug('executing business request 1');
+    
+    private void utilityMethod1(){
+        
+        System.debug(' this is only used by this class ');
+    
     }
-
-    private void businessRequest2(){
-        System.debug('executing business request 2');
-    }
+    
+    private void utilityMethod2(){
+        
+        System.debug(' this is only used by this class ');
+    
+    }    
+    
     
 }
