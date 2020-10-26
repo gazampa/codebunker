@@ -19,7 +19,9 @@ global class BatchUpdateOpportunityName implements
         List<Opportunity> opportunities = new List<Opportunity>();
         
         for (Account account : scope) {
-            
+
+            opportunities.clear();
+
             for (Opportunity opp : account.opportunities) {
                 
                 opp.Name = account.Name + ' ' + opp.Name;                
