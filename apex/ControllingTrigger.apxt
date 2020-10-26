@@ -7,15 +7,15 @@ trigger ControllingTrigger on Contact (before insert, before update, before dele
         if (Trigger.isInsert){
 	   // recusion control important here, data update lifecycle number 10.
            
-            BusinessLogic.doThatFunctionalThing1(System.Trigger.NewMap, System.Trigger.OldMap);
+            BusinessLogic.doThatFunctionalThing1( System.Trigger.New );
 
-            BusinessLogic.doThatFunctionalThing2(System.Trigger.NewMap, System.Trigger.OldMap);    
+            BusinessLogic.doThatFunctionalThing2( System.Trigger.New );    
 
         }
         
         if ( Trigger.isUpdate ){
                    
-            BusinessLogic.doThatFunctionalThing3(System.Trigger.NewMap, System.Trigger.OldMap);    
+            BusinessLogic.doThatFunctionalThing3(System.Trigger.oldMap, System.Trigger.newMap);    
         
         }
     

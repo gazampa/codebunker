@@ -1,12 +1,12 @@
 public class BusinessLogic {
 
-    public static void doThatFunctionalThing1(Map<Id, Contact> oldT, Map<Id, Contact> newT) {
+    public static void doThatFunctionalThing1( List<Contact> newT ) {
         
         System.debug(' business logic for method 1 here');
-    
+            
     }
     
-    public static void doThatFunctionalThing2(Map<Id, Contact> oldT, Map<Id, Contact> newT) {
+    public static void doThatFunctionalThing2( List<Contact> newT ) {
         
         System.debug(' business logic for method 1 here');
     
