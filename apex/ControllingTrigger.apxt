@@ -15,12 +15,14 @@ trigger ControllingTrigger on Contact (before insert, before update, before dele
         
         if ( Trigger.isUpdate ){
                    
-            BusinessLogic.doThatFunctionalThing3(System.Trigger.oldMap, System.Trigger.newMap);    
+            BusinessLogic.doThatFunctionalThing3( System.Trigger.oldMap, System.Trigger.newMap );    
         
         }
     
         if (Trigger.isDelete){
-        
+
+            BusinessLogic.doThatFunctionalThing4( System.Trigger.old );    
+            
 		}
         
     }
