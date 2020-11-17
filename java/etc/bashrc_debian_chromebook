@@ -80,16 +80,32 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
- 
+
+#export PATH="$HOME/bin:$PATH"
+export GRADLE_USER_HOME=6.3
+export NODE_PATH=/usr/bin/nodejs:/usr/lib/nodejs:/usr/include/nodejs:
+export SFDX_APEX_LOG_COLOR_MAP=home/billy1murphy/etc/colors.json
+
 # some more ls aliases
 alias xs='cd'
 alias vf='cd'f
 alias ll='ls -alF'
 alias la='ls -A'
+alias lt='ls -lat'
 alias l='ls -CF'
+alias f='sudo find / -name' 
+alias ssa='source /home/billy1murphy/scripts/agent-ssh.sh'
+alias ntulp='netsat -tulp'
 alias f='sudo find / -name' 
 alias jk='javac -classpath $CLASSPATH -d $CLASSES'
 alias jj='java -classpath $CLASSPATH'
+alias gits='git status'
+alias sfc='sfdx force:apex:class:create -n '
+alias sfget='sfdx force:source:retrieve force-app/main/default/classes/'
+alias sfput='sfdx force:source:deploy force-app/main/default/classes/'
+alias sftr='sfdx force:apex:test:run --classnames '
+alias sfl='sfdx force:apex:log:tail --color'
+alias sflu='sfdx force:apex:log:tail --color | grep USER_DEBUG'
 alias mcd='mcd' 
 
 mcd(){
@@ -97,7 +113,7 @@ mkdir -p $1;
 cd $1
 }
 
-# java - this will just be for this console - for vi editor 
+# java - this will just be for vi editor 
 CLASSPATH=".":"/home/billyboy/code/java/classes":"/home/billyboy/code/java/lib":"/home/billyboy/code/java/lib/*"
 CLASSES="/home/billyboy/code/java/classes"
 

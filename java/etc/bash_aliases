@@ -1,0 +1,35 @@
+#aliases
+alias lst='ls -lt'
+alias lsl='ls -l'
+alias lsa='ls -A'
+alias lat='ls -at'
+alias lsc='ls --color=auto'
+alias l='ls -CF --color=auto'
+alias tcf='tar -cvf'
+alias tcz='tar -zcvf'
+alias untar='tar -xvf'
+alias untarz='tar -zxvf'
+alias tls='tar -tvf'
+alias tra='tar -rvf'
+alias trv='tar tvfW'
+alias grepc='grep --color=auto'
+alias ssa='source $HOME/scripts/agent-ssh.sh'
+alias ssh-add='ssh-add -t 3600'
+alias f='sudo find / -name' 
+alias jk='javac -classpath $CLASSPATH -d $CLASSES'
+alias jj='java -classpath $CLASSPATH'
+alias jr='java -jar '
+alias ntulp='netstat -tulp'
+alias gits='git status'
+alias gitl='git log -10'
+alias sfc='sfdx force:apex:class:create -n '
+alias sfget='sfdx force:source:retrieve ./force-app/main/default/classes/'
+alias sfput='sfdx force:source:deploy ./force-app/main/default/classes/'
+alias sftr='sfdx force:apex:test:run --classnames '
+alias sfl='sfdx force:apex:log:tail --color'
+alias sflu='sfdx force:apex:log:tail --color | grep USER_DEBUG'
+#functions
+mcd ()
+{
+  mkdir -p -- "$1" && cd -P -- "$1"
+}
