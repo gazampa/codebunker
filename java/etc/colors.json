@@ -1,0 +1,9 @@
+{
+    "CONSTRUCTOR_": "blue",
+    "EXCEPTION_": "red",
+    "FATAL_": "red",
+    "METHOD_": "green",
+    "SOQL_": "yellow",
+    "USER_": "green",
+    "VARIABLE_": "cyan"
+}
