@@ -1,0 +1,120 @@
+public class LoggingService {
+ // boiler plate for logging service
+    
+    //seperate calls for each type of log
+    @AuraEnabled
+    public static void logToObject( String errorMessage ) {
+        
+        System.debug('---> sending to queue');
+        
+        System.enqueueJob( new DatabaseLog( errorMessage) );
+        
+        System.debug('---> sending to queue complete');
+        
+    }
+    
+    @AuraEnabled
+    public static void logToEmail( String errorMessage ) {
+        
+        System.debug('---> sending to queue');
+        
+        System.enqueueJob( new EmailNotificationLog( errorMessage) );
+        
+        System.debug('---> sending to queue complete');
+        
+    }
+
+    @AuraEnabled
+    public static void logToPlatformEvent( String errorMessage ) {
+        
+        System.debug('---> sending to queue');
+        
+        System.enqueueJob( new PlatformEventLog( errorMessage) );
+        
+        System.debug('---> sending to queue complete');
+        
+    }
+    
+    // possible to chain another job that adds functionality...kinda expensive in terms of jobs, what ways to add functionality ?
+    // try to composition
+    class DatabaseLog implements Queueable {
+       	
+        String message;
+        
+        public DatabaseLog(String errMsg) {
+            
+            message = errMsg;
+            
+        }
+        
+        public void execute( QueueableContext context ) {
+            
+            createDatabaseRecord();
+        
+        }
+        
+        private void createDatabaseRecord(){
+			
+            System.debug('--> create a database record');
+			
+            Custom_Object__c logEntry = new Custom_Object__c( Area_of_Text__c = message );
+        
+    	    Database.insert( logEntry );
+            
+        }
+        
+    }
+
+    class EmailNotificationLog implements Queueable {
+       	
+        String message;
+        
+        public EmailNotificationLog(String errMsg) {
+            
+            message = errMsg;
+            
+        }
+        
+        public void execute( QueueableContext context ) {
+            
+			sendAnEmail();	
+            
+        }
+        
+        private void sendAnEmail(){
+            System.debug('--> sending an email');
+            // send an email with an email sending utility
+
+        }
+        
+    }
+
+    class PlatformEventLog implements Queueable {
+       	
+        String message;
+        
+        public PlatformEventLog(String errMsg) {
+            
+            message = errMsg;
+            
+        }
+        
+        public void execute( QueueableContext context ) {
+            
+			registerPlatformEvent();
+            
+        }
+        
+        private void registerPlatformEvent(){
+			// register an event            
+			System.debug('--> registering an event');
+            
+            List<LoggingEvent__e> logEvents = new List<LoggingEvent__e>();
+            
+			logEvents.add( new LoggingEvent__e( message__c=message ) );         
+            
+        }
+    
+    }
+    
+}
