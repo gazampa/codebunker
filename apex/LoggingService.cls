@@ -49,11 +49,11 @@ public class LoggingService {
         
         public void execute( QueueableContext context ) {
             
-            createDatabaseRecord();
+            performTask();
         
         }
         
-        private void createDatabaseRecord(){
+        private void performTask(){
 			
             System.debug('--> create a database record');
 			
@@ -77,11 +77,11 @@ public class LoggingService {
         
         public void execute( QueueableContext context ) {
             
-			sendAnEmail();	
+			performTask();
             
         }
         
-        private void sendAnEmail(){
+        private void performTask(){
             System.debug('--> sending an email');
             // send an email with an email sending utility
 
@@ -101,11 +101,11 @@ public class LoggingService {
         
         public void execute( QueueableContext context ) {
             
-			registerPlatformEvent();
+			performTask();
             
         }
         
-        private void registerPlatformEvent(){
+        private void performTask(){
 			// register an event            
 			System.debug('--> registering an event');
             
