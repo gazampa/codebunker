@@ -1,38 +1,52 @@
 public class LoggingService {
  // boiler plate for logging service
-    
-    //seperate calls for each type of log
+  
+    private static boolean isEnabled { get { return Application_Configuration__c.getValues('Logging').Enabled__c; } set; }
+
+    //seperate calls for each type of log, wouldnt it be good to be invokable
     @AuraEnabled
     public static void logToObject( String errorMessage ) {
         
-        System.debug('---> sending to queue');
+        if ( isEnabled ) {
         
-        System.enqueueJob( new DatabaseLog( errorMessage) );
+        	System.debug('---> sending to queue');
         
-        System.debug('---> sending to queue complete');
+        	System.enqueueJob( new DatabaseLog( errorMessage) );
+        
+        	System.debug('---> sending to queue complete');
+        
+        }
         
     }
     
     @AuraEnabled
     public static void logToEmail( String errorMessage ) {
+
+        if ( isEnabled ) {
         
-        System.debug('---> sending to queue');
-        
-        System.enqueueJob( new EmailNotificationLog( errorMessage) );
-        
-        System.debug('---> sending to queue complete');
-        
+            System.debug('---> sending to queue');
+            
+            System.enqueueJob( new EmailNotificationLog( errorMessage) );
+            
+            System.debug('---> sending to queue complete');
+
+        }
+    
     }
 
     @AuraEnabled
     public static void logToPlatformEvent( String errorMessage ) {
-        
-        System.debug('---> sending to queue');
-        
-        System.enqueueJob( new PlatformEventLog( errorMessage) );
-        
-        System.debug('---> sending to queue complete');
-        
+    
+        if ( isEnabled ) {
+
+            System.debug('---> sending to queue');
+            
+            System.enqueueJob( new PlatformEventLog( errorMessage) );
+            
+            System.debug('---> sending to queue complete');
+
+        }
+    
     }
     
     // possible to chain another job that adds functionality...kinda expensive in terms of jobs, what ways to add functionality ?
@@ -116,5 +130,5 @@ public class LoggingService {
         }
     
     }
-    
+                
 }
