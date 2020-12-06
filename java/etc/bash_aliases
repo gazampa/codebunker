@@ -15,7 +15,6 @@ alias tls='tar -tvf'
 alias tra='tar -rvf'
 alias trv='tar tvfW'
 alias grepc='grep --color=auto'
-alias sspi='ssh -p 33033 pi@192.168.1.130'
 alias ssa='source $HOME/scripts/agent-ssh.sh'
 alias ssh-add='ssh-add -t 3600'
 alias f='sudo find / -name' 
@@ -26,7 +25,8 @@ alias ntulp='netstat -tulp'
 alias gits='git status'
 alias gitl='git log -10'
 alias sfc='sfdx force:apex:class:create -n '
-alias sfget='sfdx force:source:retrieve -m "ApexClass:'
+alias sfgetf='sfdx force:source:retrieve -m "ApexClass:'
+alias sfgetp='sfdx force:source:retrieve -x path\to\package.xml'
 alias sfput='sfdx force:source:deploy ./force-app/main/default/classes/'
 alias sftr='sfdx force:apex:test:run --classnames '
 alias sfl='sfdx force:apex:log:tail --color'
@@ -40,5 +40,5 @@ mcd ()
 }
 dxlt () 
 {
-  sfdx force:apex:log:tail --color | grep USER_DEBUG | sed -e 's/^.*DEBUG|//' ;
+  sfdx force:apex:log:tail --color | grep --line-buffered USER_DEBUG | sed -e 's/^.*DEBUG|//';
 }
