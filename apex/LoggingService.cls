@@ -1,51 +1,52 @@
 public class LoggingService {
  // boiler plate for logging service
   
-    private static boolean isEnabled { get { return Application_Configuration__c.getValues('Logging').Enabled__c; } set; }
+    private static boolean config { get { return Application_Configuration__c.getValues('Logging').Enabled__c; } set; }
 
+    private static boolean enabled { get { return ( config == true ); } set; }
+    
+    private static boolean disabled { get { return ( config == false ); } set; }
+    
+    private static boolean batch { get{ return System.isBatch(); } set; }
+    
     //seperate calls for each type of log, wouldnt it be good to be invokable
     @AuraEnabled
     public static void logToObject( String errorMessage ) {
+        System.debug(' ---> check ' + notEnabled + ' ' + isBatch );
+        // if not enabled or in batch, quit
+        if ( disabled || batch ) { return; }
         
-        if ( isEnabled ) {
+        System.debug('---> sending to queue');
         
-        	System.debug('---> sending to queue');
+        System.enqueueJob( new DatabaseLog( errorMessage) );
         
-        	System.enqueueJob( new DatabaseLog( errorMessage) );
-        
-        	System.debug('---> sending to queue complete');
-        
-        }
+        System.debug('---> sending to queue complete');
         
     }
     
     @AuraEnabled
     public static void logToEmail( String errorMessage ) {
 
-        if ( isEnabled ) {
-        
-            System.debug('---> sending to queue');
-            
-            System.enqueueJob( new EmailNotificationLog( errorMessage) );
-            
-            System.debug('---> sending to queue complete');
+		if ( disabled || batch ) { return; }	        
 
-        }
+        System.debug('---> sending to queue');
+        
+        System.enqueueJob( new EmailNotificationLog( errorMessage) );
+        
+        System.debug('---> sending to queue complete');
     
     }
 
     @AuraEnabled
     public static void logToPlatformEvent( String errorMessage ) {
     
-        if ( isEnabled ) {
+        if ( disabled || batch ) { return; }
 
-            System.debug('---> sending to queue');
-            
-            System.enqueueJob( new PlatformEventLog( errorMessage) );
-            
-            System.debug('---> sending to queue complete');
-
-        }
+        System.debug('---> sending to queue');
+        
+        System.enqueueJob( new PlatformEventLog( errorMessage) );
+        
+        System.debug('---> sending to queue complete');
     
     }
     
