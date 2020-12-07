@@ -7,12 +7,12 @@ public class LoggingService {
     
     private static boolean disabled { get { return ( config == false ); } set; }
     
-    private static boolean batch { get{ return System.isBatch(); } set; }
+    private static boolean batch { get { return System.isBatch(); } set; }
     
     //seperate calls for each type of log, wouldnt it be good to be invokable
     @AuraEnabled
     public static void logToObject( String errorMessage ) {
-        System.debug(' ---> check ' + notEnabled + ' ' + isBatch );
+
         // if not enabled or in batch, quit
         if ( disabled || batch ) { return; }
         
