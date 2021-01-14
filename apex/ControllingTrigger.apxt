@@ -2,46 +2,59 @@ trigger ControllingTrigger on Contact (before insert, before update, before dele
     
     //https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm
         
-    if ( Trigger.isBefore){
+    if ( Trigger.isInsert){
         
-        if (Trigger.isInsert){
+        if (Trigger.isBefore){
 	   // recusion control important here, data update lifecycle number 10.
            
-            BusinessLogic.doThatFunctionalThing1( System.Trigger.New );
-
-            BusinessLogic.doThatFunctionalThing2( System.Trigger.New );    
+            BusinessLogicClass.doThatFunctionalRequest1();
 
         }
         
-        if ( Trigger.isUpdate ){
+        if ( Trigger.isAfter ){
                    
-            BusinessLogic.doThatFunctionalThing3( System.Trigger.oldMap, System.Trigger.newMap );    
-        
+
+            BusinessLogicClass.doThatFunctionalRequest2();
+
         }
     
-        if (Trigger.isDelete){
-
-            BusinessLogic.doThatFunctionalThing4( System.Trigger.old );    
-            
-		}
         
     }
 
-    if ( Trigger.isAfter){
+    if ( Trigger.isUpdate){
         
-        if (Trigger.isInsert){
+        if (Trigger.isBefore){
             
         }
         
-        if ( Trigger.isUpdate ){
+        if ( Trigger.isAfter ){
+
+            BusinessLogicClass.doThatFunctionalRequest3();
+
+        }
+            
+    }    
+
+    if ( Trigger.isDelete ){
+
+        if (Trigger.isBefore){
+            
+        }
+        
+        if ( Trigger.isAfter ){
             
         }
     
-        if (Trigger.isDelete){
+    }
+
+    if ( Trigger.isUnDelete ){
         
-	    }
-        
-    }    
+        if ( Trigger.isAfter ){
+            
+        }
+    
+    }
+
 }
 /**   #### Data Change Lifecycle : Triggers and Order of Execution ####
 

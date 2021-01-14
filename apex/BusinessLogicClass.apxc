@@ -1,24 +1,24 @@
 public class BusinessLogic {
 
-    public static void doThatFunctionalThing1( List<Contact> newT ) {
+    public static void doThatFunctionalRequest1( List<Contact> newT ) {
         
         System.debug(' business logic for method 1 here');
             
     }
     
-    public static void doThatFunctionalThing2( List<Contact> newT ) {
+    public static void doThatFunctionalRequest2( List<Contact> newT ) {
         
         System.debug(' business logic for method 2 here');
     
     }
 
-    public static void doThatFunctionalThing3(Map<Id, Contact> oldT, Map<Id, Contact> newT) {
+    public static void doThatFunctionalRequest3(Map<Id, Contact> oldT, Map<Id, Contact> newT) {
         
         System.debug(' business logic for method 3 here');
     
     }
     
-    public static void doThatFunctionalThing4(List<Contact> oldT) {
+    public static void doThatFunctionalRequest4(List<Contact> oldT) {
         
         System.debug(' business logic for method 4 here');
     
