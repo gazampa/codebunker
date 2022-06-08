@@ -12,7 +12,6 @@ trigger ControllingTrigger on Contact (before insert, before update, before dele
         }
         
         if ( Trigger.isAfter ){
-                   
 
             BusinessLogicClass.doThatFunctionalRequest2();
 
