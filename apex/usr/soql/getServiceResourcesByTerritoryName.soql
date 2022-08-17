@@ -1,0 +1,1 @@
+select id, serviceterritory.name, serviceresource.name, serviceresource.RelatedRecordId from serviceterritorymember where TerritoryType = 'P' and serviceterritory.name = 'ROS-B' and serviceresource.IsActive=true

@@ -1,0 +1,1 @@
+select id, name, city, state, profile.name from user where profile.name like 'CMS - Work%' and isactive=true and state = 'NY'
