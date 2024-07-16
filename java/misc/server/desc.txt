@@ -1,0 +1,100 @@
+Skip to Content Sun
+
+
+Java
+
+
+Solaris
+
+Communities My SDN Account
+
+» search tips 
+Home Page Sun Developer Network
+
+    APIs
+    Downloads
+    Products
+    Support
+    Training
+    Participate
+
+SDN Home > Products & Technologies > Java Technology > Reference > Technical Articles and Tips > Developer Technical Articles & Tips > Networking >
+	
+ 
+Article
+A Simple Multithreaded Web Server
+					
+	  	
+  	Print-friendly VersionPrint-friendly Version
+	  	
+
+Articles Index
+
+Learning how to use this code can give you a lot of insight into multithreading
+David Brown
+August 1997
+
+The following code implements a simple, multithreaded HTTP server in a few hundred lines of Java code. Here's how it works: The main thread initializes the server and starts a number of worker threads that will handle client connections. The worker threads simply wait around idle until there's a client to service. The main thread then accepts connections from clients, passes off the connection for a worker thread to handle, and continues accepting new connections.
+
+In Java, there's a fair amount of overhead associated with initializing threads. So for performance and efficiency reasons, we initialize a pool of worker threads once at startup time, rather than on demand. Because the worker threads are usually in an idle state (Object.wait()), they don't consume much CPU power. (We re-use worker threads over many client connections.)
+
+This is an example of a very simple, multithreaded HTTP server. Here is the .java file for the example as well. Take a look at a sample property file for the example web server.
+
+The following are my notes on the classes and other code used to implement the server.
+
+    WebServer.loadProps() (lines 48-93)
+    In this method, we load configuration properties for the server from a file called www-server.properties. This file needs to be in the lib subdirectory relative to JAVA_HOME, which is where the Java interpreter lives on the local disk.
+    root
+    This is the local directory where the HTTP server looks for the files it serves. The root directory name is prepended to the path of all files requested from clients.
+    workers
+    This tells the server how many worker threads in the pool of worker threads to start on initialization.
+    timeout
+    This describes the time, in milliseconds, that a worker thread should block while reading from a client connection, before it times out and closes a connection. Without this timeout, a worker thread could be tied up indefinitely waiting for a client to issue a request.
+    log
+    This is the name of the log file, where the server will record which clients requested which files. If no log is specified, logging is done on standard output.
+    WebServer.main()
+    This is where the server initializes itself. It loads properties, initializes a pool of worker threads, binds a ServerSocket to the local port for our HTTP server, then enters a loop. In this loop, it accepts client connections, and passes the connections off to worker threads in the pool.
+    class Worker (lines 137-148)
+    This class implements java.lang.Runnable. It runs in a worker thread to do the actual work of serving files to clients. Memory allocation in java can be a performance hit at runtime. It is best to reuse allocated objects whenever possible. Our worker threads need a buffer (a byte array) to read and write files to clients. We allocate this buffer once in the constructor and reuse it, rather than needlessly re-allocating new buffers.
+    Worker.run()
+    The worker thread spends most of its time idle, at line 162, in wait(). When a new connection is to be serviced, the wait will wake up, and the worker has at it.
+    Worker.setSocket() (lines 152-155)
+    When the main thread has accepted a connection from a client, it finds an idle thread in the worker pool (lines 121-131). It then calls setSocket() on the Worker, which also does a notify() on the Worker. This wakes up the worker thread in wait(), to inform that thread that it's time to work. Note that setSocket() must be synchronized in order to call notify().
+    Worker.handleClient() (lines 189-224)
+    This is the loop where the worker reads the first line of the client's HTTP request. This line is usually of the form GET /foo/bar/baz.html HTTP/1.0. This code shows how to break out of nested loops in java, since java has no goto statement like other languages. What we're trying to find here is the name of the file that the client is requesting (for example, "/foo/bar/baz.html"). There are two nested loops in this code snippet. The outer while() loop is the read loop, and the inner for() loop iterates over the bytes looking for end-of-line characters. The break outerloop statement, though in the inner loop, actually breaks out of the outer loop as well.
+    class Worker (lines 279-285, 360-366)
+    It is important to always close sockets and files when you're done with them, even if something went wrong. Your Java program, like any program, can have only a finite number of open sockets and files before it can't open any more. So wrap all IO operations in a code segment as following:
+
+    try
+    { /* open socket or file and do IO */ .... }
+    finally {           
+    /* cleanup under all exit conditions. */
+    /* Our finally clause is guaranteed 
+     *to be executed */
+    /* even if there's a pending exception. */    
+    socket.close();
+    file.close(); 
+    }
+
+
+    Worker.handleClient() (line 303)
+    At this point, we're recording the IP address of the client in the server's log, and which file the client requested. The string we're recording is the IP address (that is, "129.144.125.157") of the client, not the hostname (for example, "monkey.eng.sun.com"). We do this for better performance. We do this by calling s.getInetAddress().getHostAddress(), instead of s.getInetAddress().getHostName(). We already know the IP address of the client machine that connected, but we don't know the hostname. If we had asked for the hostname at this point, the worker thread might have blocked for a long time while trying to do a reverse DNS look-up out on the Internet. Just recording the IP address in the log is enough. If, at some later point we want to find the hostnames that connected to our server, we can later run a tool over the log file to do this, when time isn't as important.
+
+Enjoy this model web server, and happy Java programming!
+	
+	
+
+Oracle is reviewing the Sun product roadmap and will provide guidance to customers in accordance with Oracle's standard product communication policies. Any resulting features and timing of release of such features as determined by Oracle's review of roadmaps, are at the sole discretion of Oracle. All product roadmap information, whether communicated by Sun Microsystems or by Oracle, does not represent a commitment to deliver any material, code, or functionality, and should not be relied upon in making purchasing decisions. It is intended for information purposes only, and may not be incorporated into any contract.
+
+	
+About Sun  |  About This Site  |  Newsletters  |  Contact Us  |  Employment  |  How to Buy  |  Licensing  |  Terms of Use  |  Privacy  |  Trademarks
+ 
+
+ 
+© 2010, Oracle Corporation and/or its affiliates
+		
+A Sun Developer Network Site
+
+Unless otherwise licensed, code in all technical manuals herein (including articles, FAQs, samples) is provided under this License.
+ 
+XML Sun Developer RSS Feeds

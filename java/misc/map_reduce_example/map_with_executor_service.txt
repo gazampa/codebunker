@@ -1,0 +1,24 @@
+	public int[][] step2RunMapFunctionForAllBuckets(int[][] list)
+	{
+	        ExecutorService executor = Executors.newFixedThreadPool(50);
+
+		for(int i = 0; i < list.length; i++)
+		{
+			int[] elementList = list[i];
+
+        	        executor.execute(new StartThread(elementList, i));
+		}
+
+		        executor.shutdown();
+
+		try {
+			executor.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
+		} catch (InterruptedException e) {
+			System.out.println("The xecutor has not left the building");
+		}
+
+		return intermediateResults;
+	}
+
+with executor service :  time elapsed : 353855518(50), 322024028(100), 291123173(5), 250581638(2) 238712253(1)
+with threads and countdown latch : 294507123(100) 
