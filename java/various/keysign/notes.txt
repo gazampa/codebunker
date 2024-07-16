@@ -1,0 +1,3 @@
+you need to be nuts to be really into encryption, and probablly naive to fully ever trust it
+a working knowldge is useful
+signing java libraries is a good technique to know
