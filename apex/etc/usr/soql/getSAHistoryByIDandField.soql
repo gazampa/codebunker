@@ -1,0 +1,1 @@
+select id, ServiceAppointmentId, ServiceAppointment.ParentRecordStatusCategory, oldvalue, newvalue from ServiceAppointmentHistory where ServiceAppointmentId= '08p78000000Rw7lAAC' and field='Status' limit 5
