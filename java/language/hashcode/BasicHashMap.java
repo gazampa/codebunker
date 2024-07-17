@@ -62,7 +62,7 @@ public class GoodKey{
     }
     @Override
     public int hashCode(){                  //polynomial, multipliction is better performance than exponents, 
-        char[] chrs = name.toCharArray();   // 31 is a best guesstimate for uniform distribution of calculated codes for strings across map size
+        char[] chrs = name.toCharArray();   // 31 is one of a best guesstimate for uniform distribution of calculated codes for strings across map size
         int hcode = 1;                      // maps resize in factors of ^2
         for ( char c : chrs ){
             hcode= hcode * 31 + (int)c; 
