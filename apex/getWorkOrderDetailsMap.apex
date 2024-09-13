@@ -4,20 +4,20 @@ map<Id,List<WorkOrder>> preWO = new map<Id,List<WorkOrder>>();
 
 Set<Id> premiseidSet = new Set<Id>{'1311V0000013hpNQAQ'};
 
-getWorkorderDetailsMap = GBE_WorkOrderSelector.getWorkOrdercreateSpecificationMap(premiseidSet);
+getWorkorderDetailsMap = SAF_WorkOrderSelector.getWorkOrdercreateSpecificationMap(premiseidSet);
 
 if(getWorkorderDetailsMap != null && !getWorkorderDetailsMap.isEmpty()){                    
         for(WorkOrder woRec: getWorkorderDetailsMap.values()){                     
-            if(preWO.containskey(woRec.NG_Premise__c)){
-                List<WorkOrder> tempWO = preWO.get(woRec.NG_Premise__c);
+            if(preWO.containskey(woRec.SAF_Premise__c)){
+                List<WorkOrder> tempWO = preWO.get(woRec.SAF_Premise__c);
                 if(tempWO.size()<2){
                     tempWO.add(woRec);
-                    preWO.put(woRec.NG_Premise__c,tempWO);
+                    preWO.put(woRec.SAF_Premise__c,tempWO);
                     wotoSpec.add(woRec.id);
                 }
             }
             else{
-                preWO.put(woRec.NG_Premise__c,new List<WorkOrder>{woRec});
+                preWO.put(woRec.SAF_Premise__c,new List<WorkOrder>{woRec});
                 wotoSpec.add(woRec.id);
             }
             

@@ -35,17 +35,17 @@ System.debug('---basedatetime userTZ ' + baseDateTime.format());
 //Database.Update(srs); // 00577000000Dg6hAAC //0051V0000077brPQAQ -sb
 // wo--*sa--*sr : select id, ServiceAppointment.Id, ServiceAppointment.ParentRecord.Id, ServiceResource.id from AssignedResource limit 5
 // sr--*skill : select id, ServiceResource.id from ServiceResourceSkill limit 5
-// st--*stm*--sr : select id, ServiceTerritoryid, ServiceTerritory.NG_Jurisdiction__c, serviceresourceid, serviceresource.name from ServiceTerritoryMember where ServiceTerritory.NG_Jurisdiction__c = 'RI'
+// st--*stm*--sr : select id, ServiceTerritoryid, ServiceTerritory.SAF_Jurisdiction__c, serviceresourceid, serviceresource.name from ServiceTerritoryMember where ServiceTerritory.SAF_Jurisdiction__c = 'RI'
 Set<ID> testWoIds = new Set<ID>{'0WO77000000GqozGAC','0WO77000000GqlCGAS','0WO77000000Gpw6GAC','0WO77000000GpuKGAS','0WO77000000GptHGAS','0WO77000000GpqmGAC','0WO77000000GpqhGAC','0WO77000000GpqcGAC','0WO77000000GsXxGAK','0WO77000000GsXnGAK','0WO77000000GsXYGA0','0WO77000000GsWQGA0','0WO77000000GsWLGA0','0WO77000000GsWGGA0'};
 //Set<ID> testWoIds = new Set<Id>{'0WO1V00000093f0WAA'};
 //get workorders
-List<WorkOrder> wos = [select id, Priority, due_date__c, Earliest_Start_Permitted__c, NG_Finish_No_Later_Than__c, NG_Assigned_Technician__c, ( select id, status, duedate, Include_in_Appointment_Optimization__c, NG_Assigned_Technician__c, EarliestStartTime, NG_Finish_No_Later_Than__c from ServiceAppointments), (select id, SkillLevel, SkillId, Skill.MasterLabel, Skill.DeveloperName from SkillRequirements) from WorkOrder where id=:testWoIds order by Priority];
+List<WorkOrder> wos = [select id, Priority, due_date__c, Earliest_Start_Permitted__c, SAF_Finish_No_Later_Than__c, SAF_Assigned_Technician__c, ( select id, status, duedate, Include_in_Appointment_Optimization__c, SAF_Assigned_Technician__c, EarliestStartTime, SAF_Finish_No_Later_Than__c from ServiceAppointments), (select id, SkillLevel, SkillId, Skill.MasterLabel, Skill.DeveloperName from SkillRequirements) from WorkOrder where id=:testWoIds order by Priority];
 
 for (WorkOrder wo : wos ){
 
     wo.due_date__c = baseDateTime;
     wo.Earliest_Start_Permitted__c = baseDateTime;
-    wo.NG_Finish_No_Later_Than__c = baseDateTime.addDays(2);
+    wo.SAF_Finish_No_Later_Than__c = baseDateTime.addDays(2);
     system.debug('---'+wo);
     system.debug('---'+wo.ServiceAppointments);  
     system.debug('---'+wo.SkillRequirements);
@@ -53,7 +53,7 @@ for (WorkOrder wo : wos ){
 }
 //update wos;
 //get service appointments
-List<ServiceAppointment> sas = [select id, status, duedate, Include_in_Appointment_Optimization__c, NG_Assigned_Technician__c from ServiceAppointment where ParentRecordId=:testWOIds];
+List<ServiceAppointment> sas = [select id, status, duedate, Include_in_Appointment_Optimization__c, SAF_Assigned_Technician__c from ServiceAppointment where ParentRecordId=:testWOIds];
 
 //for (ServiceAppointment sa : sas ){
 

@@ -1,10 +1,10 @@
-//List<WorkOrder> wos = [select Source__c, ng_order_type_name__c, recordtype.name, priority, createddate, due_date__c, Earliest_Start_Permitted__c, NG_Finish_No_Later_Than__c from workorder where createddate > 2021-10-19T01:02:03Z and Priority='3 - Non-Committed' order by Source__c, ng_order_type_name__c, recordtype.name, priority, createddate desc limit 50000];
+//List<WorkOrder> wos = [select Source__c, SAF_order_type_name__c, recordtype.name, priority, createddate, due_date__c, Earliest_Start_Permitted__c, SAF_Finish_No_Later_Than__c from workorder where createddate > 2021-10-19T01:02:03Z and Priority='3 - Non-Committed' order by Source__c, SAF_order_type_name__c, recordtype.name, priority, createddate desc limit 50000];
 
 //System.debug('---' + 'Source' + ' ; ' + 'Order Type' + ';' + 'Record Type' + ' ; ' + 'Priority' + ';CreatedOnDay'+';DueOnDayDate'+ ';EarliestStartPermitted'+';FinishNoLater');
 
 //for (WorkOrder ar : wos) {
 
-//    System.debug('---' + ar.Source__c + ' ; ' + ar.NG_Order_Type_Name__c + ' ; ' + ar.recordtype.Name + ' ; ' + ar.Priority + ' ; ' + ar.CreatedDate + ' ; ' + ar.due_date__c );
+//    System.debug('---' + ar.Source__c + ' ; ' + ar.SAF_Order_Type_Name__c + ' ; ' + ar.recordtype.Name + ' ; ' + ar.Priority + ' ; ' + ar.CreatedDate + ' ; ' + ar.due_date__c );
 
 //}
 
@@ -28,6 +28,6 @@
 
 //Set<String> workOrderIdentifierSet = new Set<String>();
 //workOrderIdentifierSet.add('Gas & Electric_Bundled');
-//Map<String,NG_Maximo_to_SF_Metadata_for_Ordertype__mdt> recordTypeMap = GBE_MetadataSelectorClass.getMaximoToSFMetadataForOrderTypeMetaDataMap(workOrderIdentifierSet);
+//Map<String,SAF_Maximo_to_SF_Metadata_for_Ordertype__mdt> recordTypeMap = SAF_MetadataSelectorClass.getMaximoToSFMetadataForOrderTypeMetaDataMap(workOrderIdentifierSet);
 
 //system.debug('---'+recordTypeMap);

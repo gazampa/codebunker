@@ -1,4 +1,4 @@
-String[]  types = new String[]{'Location', 'NG_Billing_Account__c','Case', 'WorkOrder', 'ServiceAppointment'};
+String[]  types = new String[]{'Location', 'SAF_BilliSAF_Account__c','Case', 'WorkOrder', 'ServiceAppointment'};
 
 // list of object names
 List<String> sObjectNames = new List<String> ( types );

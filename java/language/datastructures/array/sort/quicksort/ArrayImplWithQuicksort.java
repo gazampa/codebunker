@@ -4,7 +4,7 @@ import org.gazampa.array.BaseArray;
 import org.gazampa.array.util.Randomizable;
 import org.gazampa.array.util.Sortable;
 
-public class ArrayImplWithQuicksort extends BaseArray implements Sortable, Randomizable{
+public class ArrayImplWithQuicksort extends BaseArray implements Sortable{
 
 	private int callCounter = 0;
 
@@ -64,7 +64,7 @@ public class ArrayImplWithQuicksort extends BaseArray implements Sortable, Rando
 algorithm quicksort(A, lo, hi) is
     if lo < hi then
         p := partition(A, lo, hi)
-        quicksort(A, lo, p – 1)
+        quicksort(A, lo, p ï¿½ 1)
         quicksort(A, p + 1, hi)
 
 algorithm partition(A, lo, hi) is

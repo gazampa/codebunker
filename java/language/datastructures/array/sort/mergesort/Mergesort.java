@@ -17,15 +17,16 @@ public class Mergesort {
 	private void mergesort(int low, int high, String order) {
 		String uniqueID = UUID.randomUUID().toString();
 		//System.out.println(uniqueID + "  -  entering mergesort call ... " + order + " : " + low +  " < " + high);
-		// check if low is smaller then high, if not then the array is sorted
+		// split array by index
+		// check if low is smaller then high, then chunk of array is greater than one element
 		if (low < high) {
 			// Get the index of the element which is in the middle
 			int middle = low + (high - low) / 2;
-			// Sort the left side of the array
+			// continue to split up left side of array by index
 			mergesort(low, middle, "LOW");
-			// Sort the right side of the array
+			// continue to split up right side of array by index
 			mergesort(middle + 1, high, "HIGH");
-			// Combine them both
+			// put the pieces back together in sorted order
 			merge(low, middle, high, uniqueID);
 		}
 		//System.out.println(uniqueID + "  -  exiting mergesort call ... " + order + " : "  + low +  " < " + high);
