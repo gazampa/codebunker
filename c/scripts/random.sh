@@ -4,7 +4,8 @@ echo running...
 # todo : add unicode to charset to increase complexity, lower compatibility a little
 alnum=( {a..z} {A..Z} {0..9} )
 punct=('!' '"' '#' '\' '$' '%' '&' '(' ')' '*' '+' ',' '-' '.' '/' ':' ';' '<' '=' '>' '?' '@' '[' ']' '^' '_' '{' '|' '}' '~' '`' )
-unicode=($'\u00A0' $'\u00A1' $'\u00A2' $'\u00A3' $'\u00A4' $'\u00A5')
+unicode=($'\u00A0' $'\u00A9' $'\u00AE' $'\u00B5' $'\u00BF' $'\u00C2' $'\u00FA' $'\u00FB' $'\u1BA8' $'\u1D8AF' $'\u1F60E' $'\u1F606' \
+          $'\u00A0' $'\u00A9' $'\u00AE' $'\u00B5' $'\u00BF' $'\u00A0' $'\u00A9' $'\u00AE' $'\u00B5' $'\u00BF' )
 result=()
 chars=( "${alnum[@]}" "${punct[@]}" "${unicode[@]}")
 sz=${#chars[@]}
