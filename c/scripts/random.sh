@@ -7,8 +7,8 @@ punct=('!' '"' '#' '\' '$' '%' '&' '(' ')' '*' '+' ',' '-' '.' '/' ':' ';' '<' '
 unicode=($'\u00A0' $'\u00A9' $'\u00AE' $'\u00B5' $'\u00BF' $'\u00C2' $'\u00FA' $'\u00FB' $'\u1BA8' $'\u1D8AF' $'\u1F60E' $'\u1F606' $'\u1F606' \
           $'\u00A0' $'\u00A9' $'\u00AE' $'\u00B5' $'\u00BF' $'\u00A0' $'\u00A9' $'\u00AE' $'\u00B5' $'\u00BF' $'\u00AE' $'\u00B5' $'\u1F606' \
           $'\u00AE' $'\u00B5' $'\u00BF'$'\u00AE' $'\u00B5' $'\u00BF'$'\u00AE' $'\u00B5' $'\u00BF'$'\u00AE' $'\u00B5' $'\u00BF' )
-result=()
 chars=( "${alnum[@]}" "${punct[@]}" "${unicode[@]}")
+result=()
 sz=${#chars[@]}
 echo $sz
 printf '%s' "${chars[@]}";echo
