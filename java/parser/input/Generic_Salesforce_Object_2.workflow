@@ -13,7 +13,7 @@
     </alerts>
     <alerts>
         <fullName>Admin_Training_Reminder</fullName>
-        <ccEmails>admin@kcura.com</ccEmails>
+        <ccEmails>admin@general.com</ccEmails>
         <description>Admin Training Reminder</description>
         <protected>false</protected>
         <recipients>
@@ -25,7 +25,7 @@
     </alerts>
     <alerts>
         <fullName>Admin_Training_Reminder_Chicago_Sales</fullName>
-        <ccEmails>sales@kcura.com</ccEmails>
+        <ccEmails>sales@general.com</ccEmails>
         <description>Admin Training Reminder Chicago-Sales</description>
         <protected>false</protected>
         <senderType>CurrentUser</senderType>
@@ -33,7 +33,7 @@
     </alerts>
     <alerts>
         <fullName>Analytics_Training_Reminder</fullName>
-        <ccEmails>admin@kcura.com</ccEmails>
+        <ccEmails>admin@general.com</ccEmails>
         <description>Analytics Training Reminder</description>
         <protected>false</protected>
         <recipients>
@@ -56,14 +56,14 @@
     </alerts>
     <alerts>
         <fullName>Ask_The_Expert_Training_has_Ended</fullName>
-        <ccEmails>Training@kcura.com</ccEmails>
+        <ccEmails>Training@general.com</ccEmails>
         <description>Ask The Expert Training has Ended</description>
         <protected>false</protected>
         <recipients>
-            <recipient>dmckay@kcura.com</recipient>
+            <recipient>dmckay@general.com</recipient>
             <type>user</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Automated_Training_Emails/Ask_The_Expert_Training_Ended</template>
     </alerts>
@@ -75,13 +75,13 @@
             <field>Team_Teaching__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Automated_Training_Emails/ICS_Invite_2_Day_Training_for_Co_Trainer</template>
     </alerts>
     <alerts>
         <fullName>Emai_to_Internal_Sales_for_Closed_Training_Session_Scheduled</fullName>
-        <ccEmails>internalsales@kcura.com</ccEmails>
+        <ccEmails>internalsales@general.com</ccEmails>
         <description>Emai to Internal Sales for Closed Training Session Scheduled</description>
         <protected>false</protected>
         <senderType>CurrentUser</senderType>
@@ -104,11 +104,11 @@
             <type>role</type>
         </recipients>
         <recipients>
-            <recipient>gorr@kcura.com</recipient>
+            <recipient>gorr@general.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>rmerholz@kcura.com</recipient>
+            <recipient>rmerholz@general.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -131,11 +131,11 @@
             <type>role</type>
         </recipients>
         <recipients>
-            <recipient>gorr@kcura.com</recipient>
+            <recipient>gorr@general.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>rmerholz@kcura.com</recipient>
+            <recipient>rmerholz@general.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -146,15 +146,15 @@
         <description>Email Sent to Sales and CS that Training has been scheduled</description>
         <protected>false</protected>
         <recipients>
-            <recipient>egorny@kcura.com</recipient>
+            <recipient>egorny@general.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>eperkins@kcura.com</recipient>
+            <recipient>eperkins@general.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>stanzman@kcura.com</recipient>
+            <recipient>stanzman@general.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -165,15 +165,15 @@
         <description>Email Sent to Sales and CS that Training has been scheduled - Chicago</description>
         <protected>false</protected>
         <recipients>
-            <recipient>egorny@kcura.com</recipient>
+            <recipient>egorny@general.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>eperkins@kcura.com</recipient>
+            <recipient>eperkins@general.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>stanzman@kcura.com</recipient>
+            <recipient>stanzman@general.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -184,18 +184,18 @@
         <description>Email Reminder to KIE for Infrastructure training</description>
         <protected>false</protected>
         <recipients>
-            <recipient>mkolek@kcura.com</recipient>
+            <recipient>mkolek@general.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>rflint@kcura.com</recipient>
+            <recipient>rflint@general.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>sellis@kcura.com</recipient>
+            <recipient>sellis@general.com</recipient>
             <type>user</type>
         </recipients>
-        <senderAddress>support@kcura.com</senderAddress>
+        <senderAddress>support@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Automated_Training_Emails/Upcoming_training_reminder_062311</template>
     </alerts>
@@ -215,7 +215,7 @@
         <description>Email to KIE that Infrastructure Training has been Scheduled</description>
         <protected>false</protected>
         <recipients>
-            <recipient>rflint@kcura.com</recipient>
+            <recipient>rflint@general.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -223,10 +223,10 @@
     </alerts>
     <alerts>
         <fullName>Email_to_revert_VM</fullName>
-        <ccEmails>Training@kcura.com</ccEmails>
+        <ccEmails>Training@general.com</ccEmails>
         <description>Email to revert Q &amp; A Webinar VM</description>
         <protected>false</protected>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>RCA/Revert_RCA_Q_A_webinar_vm</template>
     </alerts>
@@ -235,10 +235,10 @@
         <description>Email to sales for open training seat</description>
         <protected>false</protected>
         <recipients>
-            <recipient>egorny@kcura.com</recipient>
+            <recipient>egorny@general.com</recipient>
             <type>user</type>
         </recipients>
-        <senderAddress>support@kcura.com</senderAddress>
+        <senderAddress>support@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Sales/Spot_Opened_for_Training_070711</template>
     </alerts>
@@ -250,20 +250,20 @@
             <field>Trainer__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Training/ICS_Attachment_All_Day</template>
     </alerts>
     <alerts>
         <fullName>Email_to_trainer_about_new_training_scheduled_webinar</fullName>
-        <ccEmails>CS-WebinarRoom@kcura.com</ccEmails>
+        <ccEmails>CS-WebinarRoom@general.com</ccEmails>
         <description>Notification to Trainer of new session 062911 With Calendar Invite- Webinar</description>
         <protected>false</protected>
         <recipients>
             <field>Trainer__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Training/ICS_Attachment</template>
     </alerts>
@@ -286,31 +286,31 @@
             <field>Trainer__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>support@kcura.com</senderAddress>
+        <senderAddress>support@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Training/Facility_Feedback_Survey</template>
     </alerts>
     <alerts>
         <fullName>IT_Requirements_not_met_7_days_before</fullName>
-        <ccEmails>training@kcura.com</ccEmails>
+        <ccEmails>training@general.com</ccEmails>
         <description>IT Requirements not met 7 days before</description>
         <protected>false</protected>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Training/IT_Requirements_not_met</template>
     </alerts>
     <alerts>
         <fullName>IT_Training_Reminder</fullName>
-        <ccEmails>itsupport@kcura.com</ccEmails>
+        <ccEmails>itsupport@general.com</ccEmails>
         <description>IT Training Reminder</description>
         <protected>false</protected>
-        <senderAddress>support@kcura.com</senderAddress>
+        <senderAddress>support@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>IT/Upcoming_training_reminder_IT</template>
     </alerts>
     <alerts>
         <fullName>Infrastructure_Training_Reminder</fullName>
-        <ccEmails>admin@kcura.com</ccEmails>
+        <ccEmails>admin@general.com</ccEmails>
         <description>Infrastructure Training Reminder</description>
         <protected>false</protected>
         <recipients>
@@ -339,13 +339,13 @@
             <field>Trainer__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>support@kcura.com</senderAddress>
+        <senderAddress>support@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Automated_Training_Emails/Reminder_to_trainer_to_send_drink_email_070711</template>
     </alerts>
     <alerts>
         <fullName>Method_Training_Reminder</fullName>
-        <ccEmails>admin@kcura.com</ccEmails>
+        <ccEmails>admin@general.com</ccEmails>
         <description>Legal Hold Training Reminder</description>
         <protected>false</protected>
         <recipients>
@@ -368,7 +368,7 @@
     </alerts>
     <alerts>
         <fullName>Method_Training_Requested_Scheduled_Sales</fullName>
-        <ccEmails>sales@kcura.com</ccEmails>
+        <ccEmails>sales@general.com</ccEmails>
         <description>Method Training Requested/Scheduled Sales</description>
         <protected>false</protected>
         <senderType>CurrentUser</senderType>
@@ -382,7 +382,7 @@
             <field>Trainer__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Automated_Training_Emails/Method_Training_Reminder_Email</template>
     </alerts>
@@ -394,13 +394,13 @@
             <field>Team_Teaching__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Automated_Training_Emails/ICS_Attachment_All_Day_Co_Proctor</template>
     </alerts>
     <alerts>
         <fullName>Notification_to_Finance_that_Training_Class_is_Completed</fullName>
-        <ccEmails>finance@kcura.com</ccEmails>
+        <ccEmails>finance@general.com</ccEmails>
         <description>Notification to Finance that Training Class is Completed</description>
         <protected>false</protected>
         <senderType>CurrentUser</senderType>
@@ -414,7 +414,7 @@
             <field>Team_Teaching__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Training_Survey_Results_Templates/ICS_Attachment2</template>
     </alerts>
@@ -426,7 +426,7 @@
             <field>Team_Teacher_2__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Automated_Training_Emails/ICS_Attachment_All_Day_Co_Proctor</template>
     </alerts>
@@ -438,7 +438,7 @@
             <field>Team_Teacher_2__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Training_Survey_Results_Templates/ICS_Attachment2</template>
     </alerts>
@@ -450,7 +450,7 @@
             <field>Training_Evaluator__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Training/ICS_Attachment_All_Day_Evaluator</template>
     </alerts>
@@ -462,7 +462,7 @@
             <field>Training_Evaluator__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Training/ICS_Attachment_for_Evaluator</template>
     </alerts>
@@ -473,7 +473,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>sales@kcura.com</senderAddress>
+        <senderAddress>sales@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Sales/Reminder_to_Close_Sales_Training</template>
     </alerts>
@@ -496,7 +496,7 @@
             <field>Team_Teacher_2__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Automated_Training_Emails/ICS_Invite_2_Day_Training_for_Co_Trainer</template>
     </alerts>
@@ -508,20 +508,20 @@
             <field>Trainer__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Training/ICS_Attachment_Two_Day</template>
     </alerts>
     <alerts>
         <fullName>Training_Reminder</fullName>
-        <ccEmails>admin@kcura.com,</ccEmails>
+        <ccEmails>admin@general.com,</ccEmails>
         <description>Training Reminder</description>
         <protected>false</protected>
         <recipients>
             <field>Trainer__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>support@kcura.com</senderAddress>
+        <senderAddress>support@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Automated_Training_Emails/Upcoming_training_reminder_062311</template>
     </alerts>
@@ -533,13 +533,13 @@
             <field>Trainer__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>support@kcura.com</senderAddress>
+        <senderAddress>support@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Automated_Training_Emails/Upcoming_training_reminder_062311</template>
     </alerts>
     <alerts>
         <fullName>Training_class_is_full</fullName>
-        <ccEmails>marketing@kcura.com</ccEmails>
+        <ccEmails>marketing@general.com</ccEmails>
         <description>Training class is full</description>
         <protected>false</protected>
         <senderType>CurrentUser</senderType>
@@ -547,7 +547,7 @@
     </alerts>
     <alerts>
         <fullName>Turn_Off_VMs_for_Custom_Class_trainings</fullName>
-        <ccEmails>training@kcura.com</ccEmails>
+        <ccEmails>training@general.com</ccEmails>
         <description>Turn Off VMs for Custom Class trainings</description>
         <protected>false</protected>
         <senderType>CurrentUser</senderType>
@@ -555,7 +555,7 @@
     </alerts>
     <alerts>
         <fullName>Turn_On_Vms_for_Custom_Class</fullName>
-        <ccEmails>training@kcura.com</ccEmails>
+        <ccEmails>training@general.com</ccEmails>
         <description>Turn On Vms for Custom Class</description>
         <protected>false</protected>
         <senderType>CurrentUser</senderType>
@@ -574,73 +574,73 @@
     </alerts>
     <alerts>
         <fullName>X1_hour_reminder_after_webinar_training</fullName>
-        <ccEmails>education@kcura.com</ccEmails>
+        <ccEmails>education@general.com</ccEmails>
         <description>1 hour reminder after webinar training</description>
         <protected>false</protected>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Training/X1_hr_after_webinar</template>
     </alerts>
     <alerts>
         <fullName>X5_hours_after_reminder_for_analytics_or_Method_training</fullName>
-        <ccEmails>education@kcura.com</ccEmails>
+        <ccEmails>education@general.com</ccEmails>
         <description>5 hours after reminder for analytics or Method training</description>
         <protected>false</protected>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Training/X5_hour_reminder_after_Training</template>
     </alerts>
     <alerts>
         <fullName>X5_hr_reminder_after_RAR_or_Processing_training</fullName>
-        <ccEmails>advice@kcura.com</ccEmails>
+        <ccEmails>advice@general.com</ccEmails>
         <description>5 hr reminder after RAR or Processing training</description>
         <protected>false</protected>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Training/X5_hour_reminder_after_Training</template>
     </alerts>
     <alerts>
         <fullName>X5_hr_reminder_after_infrastructure_training</fullName>
-        <ccEmails>training@kcura.com</ccEmails>
+        <ccEmails>training@general.com</ccEmails>
         <description>5 hr reminder after infrastructure training</description>
         <protected>false</protected>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Training/X5_hour_reminder_after_Training</template>
     </alerts>
     <alerts>
         <fullName>X96_hours_before_RAR_or_Processing_training</fullName>
-        <ccEmails>advice@kcura.com</ccEmails>
+        <ccEmails>advice@general.com</ccEmails>
         <description>96 hours before RAR or Processing training</description>
         <protected>false</protected>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Training/X96_hr_reminder_before_training</template>
     </alerts>
     <alerts>
         <fullName>X96_hours_before_infrastructure_training</fullName>
-        <ccEmails>Training@kcura.com</ccEmails>
+        <ccEmails>Training@general.com</ccEmails>
         <description>96 hours before infrastructure training</description>
         <protected>false</protected>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Training/X96_hr_reminder_before_training</template>
     </alerts>
     <alerts>
         <fullName>X96_hr_reminder_before_analytics_or_method_training</fullName>
-        <ccEmails>education@kcura.com</ccEmails>
+        <ccEmails>education@general.com</ccEmails>
         <description>96 hr reminder before analytics or method training</description>
         <protected>false</protected>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Training/X96_hr_reminder_before_training</template>
     </alerts>
     <alerts>
         <fullName>email_to_Finance_Cancelled_Closed_Training</fullName>
-        <ccEmails>Finance@kcura.com</ccEmails>
+        <ccEmails>Finance@general.com</ccEmails>
         <description>email to Finance, Cancelled Closed Training</description>
         <protected>false</protected>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Automated_Training_Emails/email_to_Finance_for_Cancelled_Closed_Training</template>
     </alerts>
@@ -1702,7 +1702,7 @@ ISPICKVAL( Type__c , &quot;Analytics&quot;))
     <rules>
         <fullName>Reminder for Infrastructure training</fullName>
         <active>true</active>
-        <description>Reminder for Infrastructure Training VM configurations. Goes to training@kcura.com.</description>
+        <description>Reminder for Infrastructure Training VM configurations. Goes to training@general.com.</description>
         <formula>AND( 	Training_Type__r.Training_Group__r.Name = &quot;Infrastructure&quot;, 	NOT(ISPICKVAL( Status__c , &quot;Cancelled&quot;)), 	CreatedDate &gt; DATETIMEVALUE(&quot;2013-03-01 00:00:00&quot;), NOT( Test_Workflow__c ) )</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
         <workflowTimeTriggers>
@@ -1851,7 +1851,7 @@ Test_Workflow__c
     <rules>
         <fullName>SFDC Reminder for Infrastructure training</fullName>
         <active>true</active>
-        <description>Reminder for Infrastructure Training VM configurations. Goes to training@kcura.com.</description>
+        <description>Reminder for Infrastructure Training VM configurations. Goes to training@general.com.</description>
         <formula>AND( 	Training_Type__r.Training_Group__r.Name = &quot;Infrastructure&quot;, 	NOT(ISPICKVAL( Status__c , &quot;Cancelled&quot;)), 	Start_Date__c &gt; DATETIMEVALUE(&quot;2013-03-01 00:00:00&quot;),
 	CreatedDate &lt; DATETIMEVALUE(&quot;2014-09-17 00:00:00&quot;),
 	Test_Workflow__c )</formula>

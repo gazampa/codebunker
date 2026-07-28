@@ -9314,7 +9314,7 @@ public class _case  extends com.sforce.soap.enterprise.sobject.SObject  implemen
      *
      * @return blonk_Email_Addresses__c
      */
-    public java.lang.String getKCura_Email_Addresses__c() {
+    public java.lang.String getgeneral_Email_Addresses__c() {
         return blonk_Email_Addresses__c;
     }
 
@@ -9324,7 +9324,7 @@ public class _case  extends com.sforce.soap.enterprise.sobject.SObject  implemen
      *
      * @param blonk_Email_Addresses__c
      */
-    public void setKCura_Email_Addresses__c(java.lang.String blonk_Email_Addresses__c) {
+    public void setgeneral_Email_Addresses__c(java.lang.String blonk_Email_Addresses__c) {
         this.blonk_Email_Addresses__c = blonk_Email_Addresses__c;
     }
 
@@ -10726,9 +10726,9 @@ public class _case  extends com.sforce.soap.enterprise.sobject.SObject  implemen
             ((this.dtSearch_Drive_Name__c==null && other.getDtSearch_Drive_Name__c()==null) ||
              (this.dtSearch_Drive_Name__c!=null &&
               this.dtSearch_Drive_Name__c.equals(other.getDtSearch_Drive_Name__c()))) &&
-            ((this.blonk_Email_Addresses__c==null && other.getKCura_Email_Addresses__c()==null) ||
+            ((this.blonk_Email_Addresses__c==null && other.getgeneral_Email_Addresses__c()==null) ||
              (this.blonk_Email_Addresses__c!=null &&
-              this.blonk_Email_Addresses__c.equals(other.getKCura_Email_Addresses__c()))) &&
+              this.blonk_Email_Addresses__c.equals(other.getgeneral_Email_Addresses__c()))) &&
             ((this.kIE_Age__c==null && other.getKIE_Age__c()==null) ||
              (this.kIE_Age__c!=null &&
               this.kIE_Age__c.equals(other.getKIE_Age__c()))) &&
@@ -12024,8 +12024,8 @@ public class _case  extends com.sforce.soap.enterprise.sobject.SObject  implemen
         if (getDtSearch_Drive_Name__c() != null) {
             _hashCode += getDtSearch_Drive_Name__c().hashCode();
         }
-        if (getKCura_Email_Addresses__c() != null) {
-            _hashCode += getKCura_Email_Addresses__c().hashCode();
+        if (getgeneral_Email_Addresses__c() != null) {
+            _hashCode += getgeneral_Email_Addresses__c().hashCode();
         }
         if (getKIE_Age__c() != null) {
             _hashCode += getKIE_Age__c().hashCode();
@@ -15010,7 +15010,7 @@ public class _case  extends com.sforce.soap.enterprise.sobject.SObject  implemen
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("KCura_Email_Addresses__c");
+        elemField.setFieldName("general_Email_Addresses__c");
         elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "blonk_Email_Addresses__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setMinOccurs(0);

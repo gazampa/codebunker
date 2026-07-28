@@ -3880,8 +3880,8 @@ All Rights Reserved
                         <element name="Download_Training_PPT__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
                         <element name="Drinks_Stocked_in_Fridge__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
                         <element name="Email_to_EG_to_Revert_Term_Server__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
-                        <element name="Email_training_kcura_com_to_revert_VMs__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
-                        <element name="Email_trainingentertainment_kcura_com__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
+                        <element name="Email_training_general_com_to_revert_VMs__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
+                        <element name="Email_trainingentertainment_general_com__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
                         <element name="Enable_Passwords_via_Articulate_site__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
                         <element name="Ensure_VMs_are_powered_on__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
                         <element name="Ensure_computers_are_logged_off_at_EOD__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
@@ -4020,7 +4020,7 @@ All Rights Reserved
                         <element name="System_Change__r" nillable="true" minOccurs="0" type="ens:System_Changes__c"/>
                         <element name="Term_Server_User_Numbers__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
                         <element name="Test_Access_To_VMs__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
-                        <element name="Test_methodtraining_kcura_com__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
+                        <element name="Test_methodtraining_general_com__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
                         <element name="Testing_Checklists_comp_for_VMs_Quiz__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
                         <element name="Thank_Everyone_for_Coming__c" nillable="true" minOccurs="0" type="xsd:boolean"/>
                         <element name="Ticket_Origin_Comment__c" nillable="true" minOccurs="0" type="xsd:string"/>
@@ -9061,7 +9061,7 @@ All Rights Reserved
                         <element name="ProcessInstances" nillable="true" minOccurs="0" type="tns:QueryResult"/>
                         <element name="ProcessSteps" nillable="true" minOccurs="0" type="tns:QueryResult"/>
                         <element name="SystemModstamp" nillable="true" minOccurs="0" type="xsd:dateTime"/>
-                        <element name="kcura_attendee__c" nillable="true" minOccurs="0" type="xsd:double"/>
+                        <element name="general_attendee__c" nillable="true" minOccurs="0" type="xsd:double"/>
                         </sequence>
                     </extension>
                 </complexContent>

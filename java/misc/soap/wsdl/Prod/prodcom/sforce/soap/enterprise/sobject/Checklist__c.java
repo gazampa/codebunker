@@ -238,9 +238,9 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
 
     private java.lang.Boolean email_to_EG_to_Revert_Term_Server__c;
 
-    private java.lang.Boolean email_training_kcura_com_to_revert_VMs__c;
+    private java.lang.Boolean email_training_general_com_to_revert_VMs__c;
 
-    private java.lang.Boolean email_trainingentertainment_kcura_com__c;
+    private java.lang.Boolean email_trainingentertainment_general_com__c;
 
     private java.lang.Boolean enable_Passwords_via_Articulate_site__c;
 
@@ -518,7 +518,7 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
 
     private java.lang.Boolean test_Access_To_VMs__c;
 
-    private java.lang.Boolean test_methodtraining_kcura_com__c;
+    private java.lang.Boolean test_methodtraining_general_com__c;
 
     private java.lang.Boolean testing_Checklists_comp_for_VMs_Quiz__c;
 
@@ -2890,42 +2890,42 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
 
 
     /**
-     * Gets the email_training_kcura_com_to_revert_VMs__c value for this Checklist__c.
+     * Gets the email_training_general_com_to_revert_VMs__c value for this Checklist__c.
      *
-     * @return email_training_kcura_com_to_revert_VMs__c
+     * @return email_training_general_com_to_revert_VMs__c
      */
-    public java.lang.Boolean getEmail_training_kcura_com_to_revert_VMs__c() {
-        return email_training_kcura_com_to_revert_VMs__c;
+    public java.lang.Boolean getEmail_training_general_com_to_revert_VMs__c() {
+        return email_training_general_com_to_revert_VMs__c;
     }
 
 
     /**
-     * Sets the email_training_kcura_com_to_revert_VMs__c value for this Checklist__c.
+     * Sets the email_training_general_com_to_revert_VMs__c value for this Checklist__c.
      *
-     * @param email_training_kcura_com_to_revert_VMs__c
+     * @param email_training_general_com_to_revert_VMs__c
      */
-    public void setEmail_training_kcura_com_to_revert_VMs__c(java.lang.Boolean email_training_kcura_com_to_revert_VMs__c) {
-        this.email_training_kcura_com_to_revert_VMs__c = email_training_kcura_com_to_revert_VMs__c;
+    public void setEmail_training_general_com_to_revert_VMs__c(java.lang.Boolean email_training_general_com_to_revert_VMs__c) {
+        this.email_training_general_com_to_revert_VMs__c = email_training_general_com_to_revert_VMs__c;
     }
 
 
     /**
-     * Gets the email_trainingentertainment_kcura_com__c value for this Checklist__c.
+     * Gets the email_trainingentertainment_general_com__c value for this Checklist__c.
      *
-     * @return email_trainingentertainment_kcura_com__c
+     * @return email_trainingentertainment_general_com__c
      */
-    public java.lang.Boolean getEmail_trainingentertainment_kcura_com__c() {
-        return email_trainingentertainment_kcura_com__c;
+    public java.lang.Boolean getEmail_trainingentertainment_general_com__c() {
+        return email_trainingentertainment_general_com__c;
     }
 
 
     /**
-     * Sets the email_trainingentertainment_kcura_com__c value for this Checklist__c.
+     * Sets the email_trainingentertainment_general_com__c value for this Checklist__c.
      *
-     * @param email_trainingentertainment_kcura_com__c
+     * @param email_trainingentertainment_general_com__c
      */
-    public void setEmail_trainingentertainment_kcura_com__c(java.lang.Boolean email_trainingentertainment_kcura_com__c) {
-        this.email_trainingentertainment_kcura_com__c = email_trainingentertainment_kcura_com__c;
+    public void setEmail_trainingentertainment_general_com__c(java.lang.Boolean email_trainingentertainment_general_com__c) {
+        this.email_trainingentertainment_general_com__c = email_trainingentertainment_general_com__c;
     }
 
 
@@ -5690,22 +5690,22 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
 
 
     /**
-     * Gets the test_methodtraining_kcura_com__c value for this Checklist__c.
+     * Gets the test_methodtraining_general_com__c value for this Checklist__c.
      *
-     * @return test_methodtraining_kcura_com__c
+     * @return test_methodtraining_general_com__c
      */
-    public java.lang.Boolean getTest_methodtraining_kcura_com__c() {
-        return test_methodtraining_kcura_com__c;
+    public java.lang.Boolean getTest_methodtraining_general_com__c() {
+        return test_methodtraining_general_com__c;
     }
 
 
     /**
-     * Sets the test_methodtraining_kcura_com__c value for this Checklist__c.
+     * Sets the test_methodtraining_general_com__c value for this Checklist__c.
      *
-     * @param test_methodtraining_kcura_com__c
+     * @param test_methodtraining_general_com__c
      */
-    public void setTest_methodtraining_kcura_com__c(java.lang.Boolean test_methodtraining_kcura_com__c) {
-        this.test_methodtraining_kcura_com__c = test_methodtraining_kcura_com__c;
+    public void setTest_methodtraining_general_com__c(java.lang.Boolean test_methodtraining_general_com__c) {
+        this.test_methodtraining_general_com__c = test_methodtraining_general_com__c;
     }
 
 
@@ -6725,12 +6725,12 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
             ((this.email_to_EG_to_Revert_Term_Server__c==null && other.getEmail_to_EG_to_Revert_Term_Server__c()==null) ||
              (this.email_to_EG_to_Revert_Term_Server__c!=null &&
               this.email_to_EG_to_Revert_Term_Server__c.equals(other.getEmail_to_EG_to_Revert_Term_Server__c()))) &&
-            ((this.email_training_kcura_com_to_revert_VMs__c==null && other.getEmail_training_kcura_com_to_revert_VMs__c()==null) ||
-             (this.email_training_kcura_com_to_revert_VMs__c!=null &&
-              this.email_training_kcura_com_to_revert_VMs__c.equals(other.getEmail_training_kcura_com_to_revert_VMs__c()))) &&
-            ((this.email_trainingentertainment_kcura_com__c==null && other.getEmail_trainingentertainment_kcura_com__c()==null) ||
-             (this.email_trainingentertainment_kcura_com__c!=null &&
-              this.email_trainingentertainment_kcura_com__c.equals(other.getEmail_trainingentertainment_kcura_com__c()))) &&
+            ((this.email_training_general_com_to_revert_VMs__c==null && other.getEmail_training_general_com_to_revert_VMs__c()==null) ||
+             (this.email_training_general_com_to_revert_VMs__c!=null &&
+              this.email_training_general_com_to_revert_VMs__c.equals(other.getEmail_training_general_com_to_revert_VMs__c()))) &&
+            ((this.email_trainingentertainment_general_com__c==null && other.getEmail_trainingentertainment_general_com__c()==null) ||
+             (this.email_trainingentertainment_general_com__c!=null &&
+              this.email_trainingentertainment_general_com__c.equals(other.getEmail_trainingentertainment_general_com__c()))) &&
             ((this.enable_Passwords_via_Articulate_site__c==null && other.getEnable_Passwords_via_Articulate_site__c()==null) ||
              (this.enable_Passwords_via_Articulate_site__c!=null &&
               this.enable_Passwords_via_Articulate_site__c.equals(other.getEnable_Passwords_via_Articulate_site__c()))) &&
@@ -7145,9 +7145,9 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
             ((this.test_Access_To_VMs__c==null && other.getTest_Access_To_VMs__c()==null) ||
              (this.test_Access_To_VMs__c!=null &&
               this.test_Access_To_VMs__c.equals(other.getTest_Access_To_VMs__c()))) &&
-            ((this.test_methodtraining_kcura_com__c==null && other.getTest_methodtraining_kcura_com__c()==null) ||
-             (this.test_methodtraining_kcura_com__c!=null &&
-              this.test_methodtraining_kcura_com__c.equals(other.getTest_methodtraining_kcura_com__c()))) &&
+            ((this.test_methodtraining_general_com__c==null && other.getTest_methodtraining_general_com__c()==null) ||
+             (this.test_methodtraining_general_com__c!=null &&
+              this.test_methodtraining_general_com__c.equals(other.getTest_methodtraining_general_com__c()))) &&
             ((this.testing_Checklists_comp_for_VMs_Quiz__c==null && other.getTesting_Checklists_comp_for_VMs_Quiz__c()==null) ||
              (this.testing_Checklists_comp_for_VMs_Quiz__c!=null &&
               this.testing_Checklists_comp_for_VMs_Quiz__c.equals(other.getTesting_Checklists_comp_for_VMs_Quiz__c()))) &&
@@ -7603,11 +7603,11 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
         if (getEmail_to_EG_to_Revert_Term_Server__c() != null) {
             _hashCode += getEmail_to_EG_to_Revert_Term_Server__c().hashCode();
         }
-        if (getEmail_training_kcura_com_to_revert_VMs__c() != null) {
-            _hashCode += getEmail_training_kcura_com_to_revert_VMs__c().hashCode();
+        if (getEmail_training_general_com_to_revert_VMs__c() != null) {
+            _hashCode += getEmail_training_general_com_to_revert_VMs__c().hashCode();
         }
-        if (getEmail_trainingentertainment_kcura_com__c() != null) {
-            _hashCode += getEmail_trainingentertainment_kcura_com__c().hashCode();
+        if (getEmail_trainingentertainment_general_com__c() != null) {
+            _hashCode += getEmail_trainingentertainment_general_com__c().hashCode();
         }
         if (getEnable_Passwords_via_Articulate_site__c() != null) {
             _hashCode += getEnable_Passwords_via_Articulate_site__c().hashCode();
@@ -8023,8 +8023,8 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
         if (getTest_Access_To_VMs__c() != null) {
             _hashCode += getTest_Access_To_VMs__c().hashCode();
         }
-        if (getTest_methodtraining_kcura_com__c() != null) {
-            _hashCode += getTest_methodtraining_kcura_com__c().hashCode();
+        if (getTest_methodtraining_general_com__c() != null) {
+            _hashCode += getTest_methodtraining_general_com__c().hashCode();
         }
         if (getTesting_Checklists_comp_for_VMs_Quiz__c() != null) {
             _hashCode += getTesting_Checklists_comp_for_VMs_Quiz__c().hashCode();
@@ -8941,15 +8941,15 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("email_training_kcura_com_to_revert_VMs__c");
-        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Email_training_kcura_com_to_revert_VMs__c"));
+        elemField.setFieldName("email_training_general_com_to_revert_VMs__c");
+        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Email_training_general_com_to_revert_VMs__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("email_trainingentertainment_kcura_com__c");
-        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Email_trainingentertainment_kcura_com__c"));
+        elemField.setFieldName("email_trainingentertainment_general_com__c");
+        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Email_trainingentertainment_general_com__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);
@@ -9921,8 +9921,8 @@ public class Checklist__c  extends com.sforce.soap.enterprise.sobject.SObject  i
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("test_methodtraining_kcura_com__c");
-        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Test_methodtraining_kcura_com__c"));
+        elemField.setFieldName("test_methodtraining_general_com__c");
+        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Test_methodtraining_general_com__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);

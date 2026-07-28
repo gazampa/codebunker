@@ -4301,7 +4301,7 @@ public class Contact  extends com.sforce.soap.enterprise.sobject.SObject  implem
      * 
      * @return blonk_News_and_Press__c
      */
-    public java.lang.String getKCura_News_and_Press__c() {
+    public java.lang.String getgeneral_News_and_Press__c() {
         return blonk_News_and_Press__c;
     }
 
@@ -4311,7 +4311,7 @@ public class Contact  extends com.sforce.soap.enterprise.sobject.SObject  implem
      * 
      * @param blonk_News_and_Press__c
      */
-    public void setKCura_News_and_Press__c(java.lang.String blonk_News_and_Press__c) {
+    public void setgeneral_News_and_Press__c(java.lang.String blonk_News_and_Press__c) {
         this.blonk_News_and_Press__c = blonk_News_and_Press__c;
     }
 
@@ -4861,9 +4861,9 @@ public class Contact  extends com.sforce.soap.enterprise.sobject.SObject  implem
             ((this.trainings__r==null && other.getTrainings__r()==null) || 
              (this.trainings__r!=null &&
               this.trainings__r.equals(other.getTrainings__r()))) &&
-            ((this.blonk_News_and_Press__c==null && other.getKCura_News_and_Press__c()==null) || 
+            ((this.blonk_News_and_Press__c==null && other.getgeneral_News_and_Press__c()==null) || 
              (this.blonk_News_and_Press__c!=null &&
-              this.blonk_News_and_Press__c.equals(other.getKCura_News_and_Press__c())));
+              this.blonk_News_and_Press__c.equals(other.getgeneral_News_and_Press__c())));
         __equalsCalc = null;
         return _equals;
     }
@@ -5409,8 +5409,8 @@ public class Contact  extends com.sforce.soap.enterprise.sobject.SObject  implem
         if (getTrainings__r() != null) {
             _hashCode += getTrainings__r().hashCode();
         }
-        if (getKCura_News_and_Press__c() != null) {
-            _hashCode += getKCura_News_and_Press__c().hashCode();
+        if (getgeneral_News_and_Press__c() != null) {
+            _hashCode += getgeneral_News_and_Press__c().hashCode();
         }
         __hashCodeCalc = false;
         return _hashCode;
@@ -6669,7 +6669,7 @@ public class Contact  extends com.sforce.soap.enterprise.sobject.SObject  implem
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("KCura_News_and_Press__c");
+        elemField.setFieldName("general_News_and_Press__c");
         elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "blonk_News_and_Press__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setMinOccurs(0);

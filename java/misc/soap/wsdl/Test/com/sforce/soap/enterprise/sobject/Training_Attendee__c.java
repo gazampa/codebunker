@@ -1229,7 +1229,7 @@ public class Training_Attendee__c  extends com.sforce.soap.enterprise.sobject.SO
      * 
      * @return blonk__c
      */
-    public java.lang.Double getKCura__c() {
+    public java.lang.Double getgeneral__c() {
         return blonk__c;
     }
 
@@ -1239,7 +1239,7 @@ public class Training_Attendee__c  extends com.sforce.soap.enterprise.sobject.SO
      * 
      * @param blonk__c
      */
-    public void setKCura__c(java.lang.Double blonk__c) {
+    public void setgeneral__c(java.lang.Double blonk__c) {
         this.blonk__c = blonk__c;
     }
 
@@ -1405,9 +1405,9 @@ public class Training_Attendee__c  extends com.sforce.soap.enterprise.sobject.SO
             ((this.waitlist__c==null && other.getWaitlist__c()==null) || 
              (this.waitlist__c!=null &&
               this.waitlist__c.equals(other.getWaitlist__c()))) &&
-            ((this.blonk__c==null && other.getKCura__c()==null) || 
+            ((this.blonk__c==null && other.getgeneral__c()==null) || 
              (this.blonk__c!=null &&
-              this.blonk__c.equals(other.getKCura__c())));
+              this.blonk__c.equals(other.getgeneral__c())));
         __equalsCalc = null;
         return _equals;
     }
@@ -1569,8 +1569,8 @@ public class Training_Attendee__c  extends com.sforce.soap.enterprise.sobject.SO
         if (getWaitlist__c() != null) {
             _hashCode += getWaitlist__c().hashCode();
         }
-        if (getKCura__c() != null) {
-            _hashCode += getKCura__c().hashCode();
+        if (getgeneral__c() != null) {
+            _hashCode += getgeneral__c().hashCode();
         }
         __hashCodeCalc = false;
         return _hashCode;
@@ -1933,7 +1933,7 @@ public class Training_Attendee__c  extends com.sforce.soap.enterprise.sobject.SO
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("KCura__c");
+        elemField.setFieldName("general__c");
         elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "blonk__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
         elemField.setMinOccurs(0);

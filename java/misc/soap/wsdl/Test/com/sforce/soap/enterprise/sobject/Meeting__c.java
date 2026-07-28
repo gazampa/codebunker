@@ -1301,7 +1301,7 @@ public class Meeting__c  extends com.sforce.soap.enterprise.sobject.SObject  imp
      * 
      * @return blonk_Attendee__c
      */
-    public java.lang.Boolean getKCura_Attendee__c() {
+    public java.lang.Boolean getgeneral_Attendee__c() {
         return blonk_Attendee__c;
     }
 
@@ -1311,7 +1311,7 @@ public class Meeting__c  extends com.sforce.soap.enterprise.sobject.SObject  imp
      * 
      * @param blonk_Attendee__c
      */
-    public void setKCura_Attendee__c(java.lang.Boolean blonk_Attendee__c) {
+    public void setgeneral_Attendee__c(java.lang.Boolean blonk_Attendee__c) {
         this.blonk_Attendee__c = blonk_Attendee__c;
     }
 
@@ -1486,9 +1486,9 @@ public class Meeting__c  extends com.sforce.soap.enterprise.sobject.SObject  imp
             ((this.type__c==null && other.getType__c()==null) || 
              (this.type__c!=null &&
               this.type__c.equals(other.getType__c()))) &&
-            ((this.blonk_Attendee__c==null && other.getKCura_Attendee__c()==null) || 
+            ((this.blonk_Attendee__c==null && other.getgeneral_Attendee__c()==null) || 
              (this.blonk_Attendee__c!=null &&
-              this.blonk_Attendee__c.equals(other.getKCura_Attendee__c())));
+              this.blonk_Attendee__c.equals(other.getgeneral_Attendee__c())));
         __equalsCalc = null;
         return _equals;
     }
@@ -1659,8 +1659,8 @@ public class Meeting__c  extends com.sforce.soap.enterprise.sobject.SObject  imp
         if (getType__c() != null) {
             _hashCode += getType__c().hashCode();
         }
-        if (getKCura_Attendee__c() != null) {
-            _hashCode += getKCura_Attendee__c().hashCode();
+        if (getgeneral_Attendee__c() != null) {
+            _hashCode += getgeneral_Attendee__c().hashCode();
         }
         __hashCodeCalc = false;
         return _hashCode;
@@ -2044,7 +2044,7 @@ public class Meeting__c  extends com.sforce.soap.enterprise.sobject.SObject  imp
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("KCura_Attendee__c");
+        elemField.setFieldName("general_Attendee__c");
         elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "blonk_Attendee__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
         elemField.setMinOccurs(0);

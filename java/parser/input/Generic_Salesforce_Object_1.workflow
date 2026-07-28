@@ -8,20 +8,20 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/TEST_Admin_Analytics_INfra_Class_Completion_Notice_w_Survey</template>
     </alerts>
     <alerts>
         <fullName>Admin_Training_One_Week_Reminder_Laptop_Not_Provided</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Admin Training One Week Reminder Laptop Not Provided</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Admin_Training_Reminder_to_Client_Laptop_Not_Provided</template>
     </alerts>
@@ -34,7 +34,7 @@
             <type>contactLookup</type>
         </recipients>
         <recipients>
-            <recipient>tthomas@kcura.com</recipient>
+            <recipient>tthomas@general.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -42,40 +42,40 @@
     </alerts>
     <alerts>
         <fullName>Advanced_Searching_Webinar_Automated_Survey</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Advanced Searching Webinar Automated Survey</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Advanced_Searching_Webinar_Survey</template>
     </alerts>
     <alerts>
         <fullName>AnalyticsTraining_One_Week_Reminder_Laptop_Not_Provided</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>AnalyticsTraining One Week Reminder Laptop Not Provided</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Infra_and_Analytics_Training_Reminder_to_Client_Laptop_Not_Provided</template>
     </alerts>
     <alerts>
         <fullName>AnalyticsTraining_One_Week_Reminder_Laptop_Provided</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>AnalyticsTraining One Week Reminder Laptop Provided</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Infra_and_Analytics_Training_Reminder_to_Client_Laptop_Provided</template>
     </alerts>
@@ -87,59 +87,59 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/TEST_Analytics_Class_Completion_Notice_w_Survey</template>
     </alerts>
     <alerts>
         <fullName>Applications_Class_Training_Survey</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Applications Class Training Survey</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Training_Applications_Class_Completion_Notice_w_Survey</template>
     </alerts>
     <alerts>
         <fullName>Applications_Training_One_Week_Reminder_Laptop_Provided</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Applications Training One Week Reminder Laptop Provided</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Infra_and_Analytics_Training_Reminder_to_Client_Laptop_Provided</template>
     </alerts>
     <alerts>
         <fullName>Applications_Training_Registration_email</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Applications Training Registration email</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Training_Registration_Confirmation_Applications</template>
     </alerts>
     <alerts>
         <fullName>Ask_the_Expert_Survey_Email</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Ask the Expert Survey Email</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Ask_the_Expert_Training_Survey</template>
     </alerts>
@@ -151,241 +151,241 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/TEST_Assisted_Review_Class_Completion_Notice_w_Survey</template>
     </alerts>
     <alerts>
         <fullName>Chicago_Admin_Training_One_Week_Reminder_Laptop_Provided</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Chicago Admin Training One Week Reminder Laptop Provided</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Admin_Training_Reminder_to_Client_Laptop_Provided</template>
     </alerts>
     <alerts>
         <fullName>Chicago_Processing_Training_One_Week_Reminder</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Chicago Processing Training One Week Reminder</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Admin_Training_Reminder_to_Client_Laptop_Provided</template>
     </alerts>
     <alerts>
         <fullName>Closed_Training_One_Week_Reminder_Admin</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Closed Training One Week Reminder- Admin</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Closed_Training_One_Week_Reminder_Admin</template>
     </alerts>
     <alerts>
         <fullName>Closed_Training_One_Week_Reminder_Advice</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Closed Training One Week Reminder- Advice</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Closed_Training_One_Week_Reminder_Advice</template>
     </alerts>
     <alerts>
         <fullName>Closed_Training_One_Week_Reminder_Analytics</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Closed Training One Week Reminder- Analytics</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Closed_Training_One_Week_Reminder_Analytics</template>
     </alerts>
     <alerts>
         <fullName>Closed_Training_One_Week_Reminder_Assisted_Review</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Closed Training One Week Reminder- Assisted Review</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Closed_Training_One_Week_Reminder_Assisted_Review</template>
     </alerts>
     <alerts>
         <fullName>Closed_Training_One_Week_Reminder_Developer</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Closed Training One Week Reminder- Developer</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Closed_Training_One_Week_Reminder_Analytics</template>
     </alerts>
     <alerts>
         <fullName>Closed_Training_One_Week_Reminder_Infra</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Closed Training One Week Reminder- Infra</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Closed_Training_One_Week_Reminder_Infra</template>
     </alerts>
     <alerts>
         <fullName>Closed_Training_One_Week_Reminder_Method</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Closed Training One Week Reminder- Legal Hold</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Closed_Training_One_Week_Reminder_Method</template>
     </alerts>
     <alerts>
         <fullName>Closed_Training_One_Week_Reminder_Processing</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Closed Training One Week Reminder- Processing</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Closed_Training_One_Week_Reminder_Provessing</template>
     </alerts>
     <alerts>
         <fullName>Closed_Training_Registration_Confirmation_Admin</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Closed Training Registration Confirmation- Admin</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Closed_Training_Registration_Confirmation_Admin</template>
     </alerts>
     <alerts>
         <fullName>Closed_Training_Registration_Confirmation_Advice</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Closed Training Registration Confirmation- Advice</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Closed_Training_Registration_Confirmation_Advice</template>
     </alerts>
     <alerts>
         <fullName>Closed_Training_Registration_Confirmation_Analytics</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Closed Training Registration Confirmation- Analytics</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Closed_Training_Registration_Confirmation_Analytics</template>
     </alerts>
     <alerts>
         <fullName>Closed_Training_Registration_Confirmation_Assisted_Review</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Closed Training Registration Confirmation- Assisted Review</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Closed_Training_Registration_Confirmation_Assisted_Review</template>
     </alerts>
     <alerts>
         <fullName>Closed_Training_Registration_Confirmation_Developer</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Closed Training Registration Confirmation- Developer</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Closed_Training_Registration_Confirmation_Developer</template>
     </alerts>
     <alerts>
         <fullName>Closed_Training_Registration_Confirmation_Infra</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Closed Training Registration Confirmation- Infra</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Closed_Training_Registration_Confirmation_Infra</template>
     </alerts>
     <alerts>
         <fullName>Closed_Training_Registration_Confirmation_Method</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Closed Training Registration Confirmation- Legal Hold</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Closed_Training_Registration_Confirmation_Legal_Hold</template>
     </alerts>
     <alerts>
         <fullName>Closed_Training_Registration_Confirmation_Processing</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Closed Training Registration Confirmation- Processing</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Closed_Training_Registration_Confirmation_Processing</template>
     </alerts>
@@ -394,53 +394,53 @@
         <description>Deloitte In Class Registration</description>
         <protected>false</protected>
         <recipients>
-            <recipient>dbalogh@kcura.com</recipient>
+            <recipient>dbalogh@general.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>tmatarelli@kcura.com</recipient>
+            <recipient>tmatarelli@general.com</recipient>
             <type>user</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Sales/Deloitte_In_Class_Registration</template>
     </alerts>
     <alerts>
         <fullName>Developer_Class_Training_Survey</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Developer Class Training Survey</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Training_Developer_Class_Completion_Notice_w_Survey</template>
     </alerts>
     <alerts>
         <fullName>Developer_Training_One_Week_Reminder_Laptop_Not_Provided</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Developer Training One Week Reminder Laptop Not Provided</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Infra_and_Analytics_Training_Reminder_to_Client_Laptop_Not_Provided</template>
     </alerts>
     <alerts>
         <fullName>Developer_Training_One_Week_Reminder_Laptop_Provided</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Developer Training One Week Reminder Laptop Provided</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Infra_and_Analytics_Training_Reminder_to_Client_Laptop_Provided</template>
     </alerts>
@@ -452,98 +452,98 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Training_Developer_Webinar_Completion_Notice_w_Survey</template>
     </alerts>
     <alerts>
         <fullName>Email_to_trainee_confirming_registration_2_Day_session</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Email to trainee confirming registration - 2 Day session</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Training_Registration_Confirmation_Admin</template>
     </alerts>
     <alerts>
         <fullName>Email_to_trainee_confirming_registration_Analytics</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Email to trainee confirming registration - Analytics</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Training_Registration_Confirmation_Analytics</template>
     </alerts>
     <alerts>
         <fullName>Email_to_trainee_confirming_registration_Infrastructure</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Email to trainee confirming registration - Infrastructure</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Training_Registration_Confirmation_Infrastructure</template>
     </alerts>
     <alerts>
         <fullName>Email_to_trainee_confirming_registration_Legal_Hold</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Email to trainee confirming registration - Legal Hold</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Training_Registration_Confirmation_Legal_Hold</template>
     </alerts>
     <alerts>
         <fullName>Email_to_trainee_confirming_registration_RAR</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Email to trainee confirming registration - RAR</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Training_Registration_Confirmation_RAR</template>
     </alerts>
     <alerts>
         <fullName>Email_to_trainee_confirming_registration_Study_Session</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Email to trainee confirming registration - Study Session</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>certification@kcura.com</senderAddress>
+        <senderAddress>certification@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Training/Study_Session_Registration_Confirmation_Study_Session</template>
     </alerts>
     <alerts>
         <fullName>Email_to_training_attendee_for_drinks_after_admin_session</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Email to training attendee for drinks after admin session</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Client_Services_Support/Admin_training_drink_invitation_062311</template>
     </alerts>
@@ -555,137 +555,137 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/TEST_Infrastructure_Class_Completion_Notice_w_Survey</template>
     </alerts>
     <alerts>
         <fullName>InfrastructureTraining_One_Week_Reminder_Laptop_Not_Provided</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>InfrastructureTraining One Week Reminder Laptop Not Provided</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Infra_and_Analytics_Training_Reminder_to_Client_Laptop_Not_Provided</template>
     </alerts>
     <alerts>
         <fullName>InfrastructureTraining_One_Week_Reminder_Laptop_Provided</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>InfrastructureTraining One Week Reminder Laptop Provided</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Infra_and_Analytics_Training_Reminder_to_Client_Laptop_Provided</template>
     </alerts>
     <alerts>
         <fullName>Internal_One_Week_Reminder_Admin</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Internal - One Week Reminder- Admin</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Internal_Training_One_Week_Reminder_Admin</template>
     </alerts>
     <alerts>
         <fullName>Internal_One_Week_Reminder_Analytics</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Internal - One Week Reminder- Analytics</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Internal_Training_One_Week_Reminder_Analytics</template>
     </alerts>
     <alerts>
         <fullName>Internal_One_Week_Reminder_Assisted_Review</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Internal - One Week Reminder- Assisted Review</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Internal_Training_One_Week_Reminder_Assisted_Review</template>
     </alerts>
     <alerts>
         <fullName>Internal_One_Week_Reminder_Infra</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Internal - One Week Reminder- Infra</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Internal_Training_One_Week_Reminder_Infra</template>
     </alerts>
     <alerts>
         <fullName>Internal_One_Week_Reminder_Processing</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Internal - One Week Reminder- Processing</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Internal_Training_One_Week_Reminder_Processing</template>
     </alerts>
     <alerts>
         <fullName>Internal_Training_One_Week_Reminder_Developer</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Internal Training One Week Reminder- Developer</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Internal_Training_One_Week_Reminder_Analytics</template>
     </alerts>
     <alerts>
         <fullName>MethodTraining_One_Week_Reminder_Laptop_Not_Provided</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>MethodTraining One Week Reminder Laptop Not Provided</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Method_Training_Reminder_to_Client_Laptop_Not_Provided</template>
     </alerts>
     <alerts>
         <fullName>Method_Training_One_Week_Reminder_Laptop_Provided</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Legal Hold Training One Week Reminder Laptop Provided</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Method_Training_Reminder_to_Client_Laptop_Provided</template>
     </alerts>
@@ -697,7 +697,7 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Method_Webinar_Completion_Notice_w_Survey_New</template>
     </alerts>
@@ -709,20 +709,20 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Method_Class_Completion_Notice_w_Survey_New</template>
     </alerts>
     <alerts>
         <fullName>One_Week_Reminder</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>One-Week Reminder</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>VF_Email_Templates/Training_Reminder</template>
     </alerts>
@@ -734,7 +734,7 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Training_Pre_Release_Webinar_Sub_Completion_Notice_w_Survey1</template>
     </alerts>
@@ -746,7 +746,7 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Training_Pre_Release_Webinar_Completion_Notice_w_Survey1</template>
     </alerts>
@@ -758,7 +758,7 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/TEST_Processing_Class_Completion_Notice_w_Survey</template>
     </alerts>
@@ -770,7 +770,7 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Training_RAR_RAR_Best_Practices_Relativity_Reviewer_Webinar_Automated_Survey</template>
     </alerts>
@@ -782,33 +782,33 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/TEST_RAR_and_Searching_Class_Completion_Notice_w_Survey_New</template>
     </alerts>
     <alerts>
         <fullName>RAR_Training_One_Week_Reminder_Laptop_Not_Provided</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>RAR Training One Week Reminder Laptop Not Provided</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Infra_and_Analytics_Training_Reminder_to_Client_Laptop_Not_Provided</template>
     </alerts>
     <alerts>
         <fullName>RAR_Training_One_Week_Reminder_Laptop_Provided</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>RAR Training One Week Reminder Laptop Provided</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Infra_and_Analytics_Training_Reminder_to_Client_Laptop_Provided</template>
     </alerts>
@@ -820,59 +820,59 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Webinar_Completion_Notice_w_Survey_New</template>
     </alerts>
     <alerts>
         <fullName>Relativity_Applications_Webinar_Automated_Survey</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Relativity Applications Webinar Automated Survey</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Applications_Webinar_Survey</template>
     </alerts>
     <alerts>
         <fullName>Relativity_Assisted_Review_for_Admins_Webinar_Automated_Survey</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Relativity Assisted Review for Admins Webinar Automated Survey</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Assisted_Review_for_Admins_Webinar_Survey</template>
     </alerts>
     <alerts>
         <fullName>Relativity_Collection_Webinar_Automated_Survey</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Relativity Collection Webinar Automated Survey</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/TEST_Collection_Webinar_Survey</template>
     </alerts>
     <alerts>
         <fullName>Relativity_Reviewer_Webinar_Automated_Survey</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Relativity Reviewer Webinar Automated Survey</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/TEST_Reviewer_Webinar_Survey</template>
     </alerts>
@@ -884,7 +884,7 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Assisted_Review_for_End_Users_Webinar_Survey</template>
     </alerts>
@@ -896,7 +896,7 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Automated_Training_Emails/Removed_from_Waitlist_Training_Attendee</template>
     </alerts>
@@ -908,46 +908,46 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Training_RAR_RAR_Best_Practices_Relativity_Reviewer_Webinar_Automated_Survey</template>
     </alerts>
     <alerts>
         <fullName>Self_Registered_Attendee_Waitlisted</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Registered Attendee Waitlisted</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Automated_Training_Emails/Self_Registered_Attendee_Waitlisted</template>
     </alerts>
     <alerts>
         <fullName>Training_Registration_Confirmation_Developer</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Training Registration Confirmation - Developer</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Training_Registration_Confirmation_Developer</template>
     </alerts>
     <alerts>
         <fullName>Training_Registration_Confirmation_Processing</fullName>
-        <ccEmails>noreply@kcura.com</ccEmails>
+        <ccEmails>noreply@general.com</ccEmails>
         <description>Training Registration Confirmation - Processing</description>
         <protected>false</protected>
         <recipients>
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>training@kcura.com</senderAddress>
+        <senderAddress>training@general.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>zDEPRECATED_with_VF_Templates/Training_Registration_Confirmation_Processing</template>
     </alerts>

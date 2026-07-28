@@ -1848,7 +1848,7 @@ public class Instance__c  extends com.sforce.soap.enterprise.sobject.SObject  im
      *
      * @return blonk_Internal__c
      */
-    public java.lang.Boolean getKCura_Internal__c() {
+    public java.lang.Boolean getgeneral_Internal__c() {
         return blonk_Internal__c;
     }
 
@@ -1858,7 +1858,7 @@ public class Instance__c  extends com.sforce.soap.enterprise.sobject.SObject  im
      *
      * @param blonk_Internal__c
      */
-    public void setKCura_Internal__c(java.lang.Boolean blonk_Internal__c) {
+    public void setgeneral_Internal__c(java.lang.Boolean blonk_Internal__c) {
         this.blonk_Internal__c = blonk_Internal__c;
     }
 
@@ -1868,7 +1868,7 @@ public class Instance__c  extends com.sforce.soap.enterprise.sobject.SObject  im
      *
      * @return blonk_Login_Account__c
      */
-    public java.lang.String getKCura_Login_Account__c() {
+    public java.lang.String getgeneral_Login_Account__c() {
         return blonk_Login_Account__c;
     }
 
@@ -1878,7 +1878,7 @@ public class Instance__c  extends com.sforce.soap.enterprise.sobject.SObject  im
      *
      * @param blonk_Login_Account__c
      */
-    public void setKCura_Login_Account__c(java.lang.String blonk_Login_Account__c) {
+    public void setgeneral_Login_Account__c(java.lang.String blonk_Login_Account__c) {
         this.blonk_Login_Account__c = blonk_Login_Account__c;
     }
 
@@ -1888,7 +1888,7 @@ public class Instance__c  extends com.sforce.soap.enterprise.sobject.SObject  im
      *
      * @return blonk_Login_Password__c
      */
-    public java.lang.String getKCura_Login_Password__c() {
+    public java.lang.String getgeneral_Login_Password__c() {
         return blonk_Login_Password__c;
     }
 
@@ -1898,7 +1898,7 @@ public class Instance__c  extends com.sforce.soap.enterprise.sobject.SObject  im
      *
      * @param blonk_Login_Password__c
      */
-    public void setKCura_Login_Password__c(java.lang.String blonk_Login_Password__c) {
+    public void setgeneral_Login_Password__c(java.lang.String blonk_Login_Password__c) {
         this.blonk_Login_Password__c = blonk_Login_Password__c;
     }
 
@@ -2163,15 +2163,15 @@ public class Instance__c  extends com.sforce.soap.enterprise.sobject.SObject  im
             ((this.web_Service_URL__c==null && other.getWeb_Service_URL__c()==null) ||
              (this.web_Service_URL__c!=null &&
               this.web_Service_URL__c.equals(other.getWeb_Service_URL__c()))) &&
-            ((this.blonk_Internal__c==null && other.getKCura_Internal__c()==null) ||
+            ((this.blonk_Internal__c==null && other.getgeneral_Internal__c()==null) ||
              (this.blonk_Internal__c!=null &&
-              this.blonk_Internal__c.equals(other.getKCura_Internal__c()))) &&
-            ((this.blonk_Login_Account__c==null && other.getKCura_Login_Account__c()==null) ||
+              this.blonk_Internal__c.equals(other.getgeneral_Internal__c()))) &&
+            ((this.blonk_Login_Account__c==null && other.getgeneral_Login_Account__c()==null) ||
              (this.blonk_Login_Account__c!=null &&
-              this.blonk_Login_Account__c.equals(other.getKCura_Login_Account__c()))) &&
-            ((this.blonk_Login_Password__c==null && other.getKCura_Login_Password__c()==null) ||
+              this.blonk_Login_Account__c.equals(other.getgeneral_Login_Account__c()))) &&
+            ((this.blonk_Login_Password__c==null && other.getgeneral_Login_Password__c()==null) ||
              (this.blonk_Login_Password__c!=null &&
-              this.blonk_Login_Password__c.equals(other.getKCura_Login_Password__c())));
+              this.blonk_Login_Password__c.equals(other.getgeneral_Login_Password__c())));
         __equalsCalc = null;
         return _equals;
     }
@@ -2432,14 +2432,14 @@ public class Instance__c  extends com.sforce.soap.enterprise.sobject.SObject  im
         if (getWeb_Service_URL__c() != null) {
             _hashCode += getWeb_Service_URL__c().hashCode();
         }
-        if (getKCura_Internal__c() != null) {
-            _hashCode += getKCura_Internal__c().hashCode();
+        if (getgeneral_Internal__c() != null) {
+            _hashCode += getgeneral_Internal__c().hashCode();
         }
-        if (getKCura_Login_Account__c() != null) {
-            _hashCode += getKCura_Login_Account__c().hashCode();
+        if (getgeneral_Login_Account__c() != null) {
+            _hashCode += getgeneral_Login_Account__c().hashCode();
         }
-        if (getKCura_Login_Password__c() != null) {
-            _hashCode += getKCura_Login_Password__c().hashCode();
+        if (getgeneral_Login_Password__c() != null) {
+            _hashCode += getgeneral_Login_Password__c().hashCode();
         }
         __hashCodeCalc = false;
         return _hashCode;
@@ -3033,21 +3033,21 @@ public class Instance__c  extends com.sforce.soap.enterprise.sobject.SObject  im
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("KCura_Internal__c");
+        elemField.setFieldName("general_Internal__c");
         elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "blonk_Internal__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("KCura_Login_Account__c");
+        elemField.setFieldName("general_Login_Account__c");
         elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "blonk_Login_Account__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("KCura_Login_Password__c");
+        elemField.setFieldName("general_Login_Password__c");
         elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "blonk_Login_Password__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setMinOccurs(0);

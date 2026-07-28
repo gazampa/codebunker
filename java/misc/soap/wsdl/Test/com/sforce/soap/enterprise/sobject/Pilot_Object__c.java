@@ -873,7 +873,7 @@ public class Pilot_Object__c  extends com.sforce.soap.enterprise.sobject.SObject
      * 
      * @return blonk_Sales_Contact__c
      */
-    public java.lang.String getKCura_Sales_Contact__c() {
+    public java.lang.String getgeneral_Sales_Contact__c() {
         return blonk_Sales_Contact__c;
     }
 
@@ -883,7 +883,7 @@ public class Pilot_Object__c  extends com.sforce.soap.enterprise.sobject.SObject
      * 
      * @param blonk_Sales_Contact__c
      */
-    public void setKCura_Sales_Contact__c(java.lang.String blonk_Sales_Contact__c) {
+    public void setgeneral_Sales_Contact__c(java.lang.String blonk_Sales_Contact__c) {
         this.blonk_Sales_Contact__c = blonk_Sales_Contact__c;
     }
 
@@ -893,7 +893,7 @@ public class Pilot_Object__c  extends com.sforce.soap.enterprise.sobject.SObject
      * 
      * @return blonk_Sales_Contact__r
      */
-    public com.sforce.soap.enterprise.sobject.Contact getKCura_Sales_Contact__r() {
+    public com.sforce.soap.enterprise.sobject.Contact getgeneral_Sales_Contact__r() {
         return blonk_Sales_Contact__r;
     }
 
@@ -903,7 +903,7 @@ public class Pilot_Object__c  extends com.sforce.soap.enterprise.sobject.SObject
      * 
      * @param blonk_Sales_Contact__r
      */
-    public void setKCura_Sales_Contact__r(com.sforce.soap.enterprise.sobject.Contact blonk_Sales_Contact__r) {
+    public void setgeneral_Sales_Contact__r(com.sforce.soap.enterprise.sobject.Contact blonk_Sales_Contact__r) {
         this.blonk_Sales_Contact__r = blonk_Sales_Contact__r;
     }
 
@@ -1024,12 +1024,12 @@ public class Pilot_Object__c  extends com.sforce.soap.enterprise.sobject.SObject
             ((this.tasks==null && other.getTasks()==null) || 
              (this.tasks!=null &&
               this.tasks.equals(other.getTasks()))) &&
-            ((this.blonk_Sales_Contact__c==null && other.getKCura_Sales_Contact__c()==null) || 
+            ((this.blonk_Sales_Contact__c==null && other.getgeneral_Sales_Contact__c()==null) || 
              (this.blonk_Sales_Contact__c!=null &&
-              this.blonk_Sales_Contact__c.equals(other.getKCura_Sales_Contact__c()))) &&
-            ((this.blonk_Sales_Contact__r==null && other.getKCura_Sales_Contact__r()==null) || 
+              this.blonk_Sales_Contact__c.equals(other.getgeneral_Sales_Contact__c()))) &&
+            ((this.blonk_Sales_Contact__r==null && other.getgeneral_Sales_Contact__r()==null) || 
              (this.blonk_Sales_Contact__r!=null &&
-              this.blonk_Sales_Contact__r.equals(other.getKCura_Sales_Contact__r())));
+              this.blonk_Sales_Contact__r.equals(other.getgeneral_Sales_Contact__r())));
         __equalsCalc = null;
         return _equals;
     }
@@ -1146,11 +1146,11 @@ public class Pilot_Object__c  extends com.sforce.soap.enterprise.sobject.SObject
         if (getTasks() != null) {
             _hashCode += getTasks().hashCode();
         }
-        if (getKCura_Sales_Contact__c() != null) {
-            _hashCode += getKCura_Sales_Contact__c().hashCode();
+        if (getgeneral_Sales_Contact__c() != null) {
+            _hashCode += getgeneral_Sales_Contact__c().hashCode();
         }
-        if (getKCura_Sales_Contact__r() != null) {
-            _hashCode += getKCura_Sales_Contact__r().hashCode();
+        if (getgeneral_Sales_Contact__r() != null) {
+            _hashCode += getgeneral_Sales_Contact__r().hashCode();
         }
         __hashCodeCalc = false;
         return _hashCode;
@@ -1408,14 +1408,14 @@ public class Pilot_Object__c  extends com.sforce.soap.enterprise.sobject.SObject
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("KCura_Sales_Contact__c");
+        elemField.setFieldName("general_Sales_Contact__c");
         elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "blonk_Sales_Contact__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("KCura_Sales_Contact__r");
+        elemField.setFieldName("general_Sales_Contact__r");
         elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "blonk_Sales_Contact__r"));
         elemField.setXmlType(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "Contact"));
         elemField.setMinOccurs(0);

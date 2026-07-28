@@ -2337,7 +2337,7 @@ public class Lead  extends com.sforce.soap.enterprise.sobject.SObject  implement
      * 
      * @return blonk_News_and_Press__c
      */
-    public java.lang.String getKCura_News_and_Press__c() {
+    public java.lang.String getgeneral_News_and_Press__c() {
         return blonk_News_and_Press__c;
     }
 
@@ -2347,7 +2347,7 @@ public class Lead  extends com.sforce.soap.enterprise.sobject.SObject  implement
      * 
      * @param blonk_News_and_Press__c
      */
-    public void setKCura_News_and_Press__c(java.lang.String blonk_News_and_Press__c) {
+    public void setgeneral_News_and_Press__c(java.lang.String blonk_News_and_Press__c) {
         this.blonk_News_and_Press__c = blonk_News_and_Press__c;
     }
 
@@ -2671,9 +2671,9 @@ public class Lead  extends com.sforce.soap.enterprise.sobject.SObject  implement
             ((this.year_Established__c==null && other.getYear_Established__c()==null) || 
              (this.year_Established__c!=null &&
               this.year_Established__c.equals(other.getYear_Established__c()))) &&
-            ((this.blonk_News_and_Press__c==null && other.getKCura_News_and_Press__c()==null) || 
+            ((this.blonk_News_and_Press__c==null && other.getgeneral_News_and_Press__c()==null) || 
              (this.blonk_News_and_Press__c!=null &&
-              this.blonk_News_and_Press__c.equals(other.getKCura_News_and_Press__c()))) &&
+              this.blonk_News_and_Press__c.equals(other.getgeneral_News_and_Press__c()))) &&
             ((this.of_Attorneys__c==null && other.getOf_Attorneys__c()==null) || 
              (this.of_Attorneys__c!=null &&
               this.of_Attorneys__c.equals(other.getOf_Attorneys__c())));
@@ -2976,8 +2976,8 @@ public class Lead  extends com.sforce.soap.enterprise.sobject.SObject  implement
         if (getYear_Established__c() != null) {
             _hashCode += getYear_Established__c().hashCode();
         }
-        if (getKCura_News_and_Press__c() != null) {
-            _hashCode += getKCura_News_and_Press__c().hashCode();
+        if (getgeneral_News_and_Press__c() != null) {
+            _hashCode += getgeneral_News_and_Press__c().hashCode();
         }
         if (getOf_Attorneys__c() != null) {
             _hashCode += getOf_Attorneys__c().hashCode();
@@ -3665,7 +3665,7 @@ public class Lead  extends com.sforce.soap.enterprise.sobject.SObject  implement
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("KCura_News_and_Press__c");
+        elemField.setFieldName("general_News_and_Press__c");
         elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "blonk_News_and_Press__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setMinOccurs(0);

@@ -973,7 +973,7 @@ public class SFDC_Project__c  extends com.sforce.soap.enterprise.sobject.SObject
      * 
      * @return blonk_Priority__c
      */
-    public java.lang.String getKCura_Priority__c() {
+    public java.lang.String getgeneral_Priority__c() {
         return blonk_Priority__c;
     }
 
@@ -983,7 +983,7 @@ public class SFDC_Project__c  extends com.sforce.soap.enterprise.sobject.SObject
      * 
      * @param blonk_Priority__c
      */
-    public void setKCura_Priority__c(java.lang.String blonk_Priority__c) {
+    public void setgeneral_Priority__c(java.lang.String blonk_Priority__c) {
         this.blonk_Priority__c = blonk_Priority__c;
     }
 
@@ -993,7 +993,7 @@ public class SFDC_Project__c  extends com.sforce.soap.enterprise.sobject.SObject
      * 
      * @return blonk_Project_Contact__c
      */
-    public java.lang.String getKCura_Project_Contact__c() {
+    public java.lang.String getgeneral_Project_Contact__c() {
         return blonk_Project_Contact__c;
     }
 
@@ -1003,7 +1003,7 @@ public class SFDC_Project__c  extends com.sforce.soap.enterprise.sobject.SObject
      * 
      * @param blonk_Project_Contact__c
      */
-    public void setKCura_Project_Contact__c(java.lang.String blonk_Project_Contact__c) {
+    public void setgeneral_Project_Contact__c(java.lang.String blonk_Project_Contact__c) {
         this.blonk_Project_Contact__c = blonk_Project_Contact__c;
     }
 
@@ -1013,7 +1013,7 @@ public class SFDC_Project__c  extends com.sforce.soap.enterprise.sobject.SObject
      * 
      * @return blonk_Project_Contact__r
      */
-    public com.sforce.soap.enterprise.sobject.User getKCura_Project_Contact__r() {
+    public com.sforce.soap.enterprise.sobject.User getgeneral_Project_Contact__r() {
         return blonk_Project_Contact__r;
     }
 
@@ -1023,7 +1023,7 @@ public class SFDC_Project__c  extends com.sforce.soap.enterprise.sobject.SObject
      * 
      * @param blonk_Project_Contact__r
      */
-    public void setKCura_Project_Contact__r(com.sforce.soap.enterprise.sobject.User blonk_Project_Contact__r) {
+    public void setgeneral_Project_Contact__r(com.sforce.soap.enterprise.sobject.User blonk_Project_Contact__r) {
         this.blonk_Project_Contact__r = blonk_Project_Contact__r;
     }
 
@@ -1156,15 +1156,15 @@ public class SFDC_Project__c  extends com.sforce.soap.enterprise.sobject.SObject
             ((this.ticket__r==null && other.getTicket__r()==null) || 
              (this.ticket__r!=null &&
               this.ticket__r.equals(other.getTicket__r()))) &&
-            ((this.blonk_Priority__c==null && other.getKCura_Priority__c()==null) || 
+            ((this.blonk_Priority__c==null && other.getgeneral_Priority__c()==null) || 
              (this.blonk_Priority__c!=null &&
-              this.blonk_Priority__c.equals(other.getKCura_Priority__c()))) &&
-            ((this.blonk_Project_Contact__c==null && other.getKCura_Project_Contact__c()==null) || 
+              this.blonk_Priority__c.equals(other.getgeneral_Priority__c()))) &&
+            ((this.blonk_Project_Contact__c==null && other.getgeneral_Project_Contact__c()==null) || 
              (this.blonk_Project_Contact__c!=null &&
-              this.blonk_Project_Contact__c.equals(other.getKCura_Project_Contact__c()))) &&
-            ((this.blonk_Project_Contact__r==null && other.getKCura_Project_Contact__r()==null) || 
+              this.blonk_Project_Contact__c.equals(other.getgeneral_Project_Contact__c()))) &&
+            ((this.blonk_Project_Contact__r==null && other.getgeneral_Project_Contact__r()==null) || 
              (this.blonk_Project_Contact__r!=null &&
-              this.blonk_Project_Contact__r.equals(other.getKCura_Project_Contact__r())));
+              this.blonk_Project_Contact__r.equals(other.getgeneral_Project_Contact__r())));
         __equalsCalc = null;
         return _equals;
     }
@@ -1293,14 +1293,14 @@ public class SFDC_Project__c  extends com.sforce.soap.enterprise.sobject.SObject
         if (getTicket__r() != null) {
             _hashCode += getTicket__r().hashCode();
         }
-        if (getKCura_Priority__c() != null) {
-            _hashCode += getKCura_Priority__c().hashCode();
+        if (getgeneral_Priority__c() != null) {
+            _hashCode += getgeneral_Priority__c().hashCode();
         }
-        if (getKCura_Project_Contact__c() != null) {
-            _hashCode += getKCura_Project_Contact__c().hashCode();
+        if (getgeneral_Project_Contact__c() != null) {
+            _hashCode += getgeneral_Project_Contact__c().hashCode();
         }
-        if (getKCura_Project_Contact__r() != null) {
-            _hashCode += getKCura_Project_Contact__r().hashCode();
+        if (getgeneral_Project_Contact__r() != null) {
+            _hashCode += getgeneral_Project_Contact__r().hashCode();
         }
         __hashCodeCalc = false;
         return _hashCode;
@@ -1586,21 +1586,21 @@ public class SFDC_Project__c  extends com.sforce.soap.enterprise.sobject.SObject
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("KCura_Priority__c");
+        elemField.setFieldName("general_Priority__c");
         elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "blonk_Priority__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("KCura_Project_Contact__c");
+        elemField.setFieldName("general_Project_Contact__c");
         elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "blonk_Project_Contact__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("KCura_Project_Contact__r");
+        elemField.setFieldName("general_Project_Contact__r");
         elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "blonk_Project_Contact__r"));
         elemField.setXmlType(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "User"));
         elemField.setMinOccurs(0);

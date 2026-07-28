@@ -52,7 +52,7 @@ public class Meeting_Attendee__c  extends com.sforce.soap.enterprise.sobject.SOb
 
     private java.util.Calendar systemModstamp;
 
-    private java.lang.Double kcura_attendee__c;
+    private java.lang.Double general_attendee__c;
 
     public Meeting_Attendee__c() {
     }
@@ -82,7 +82,7 @@ public class Meeting_Attendee__c  extends com.sforce.soap.enterprise.sobject.SOb
            com.sforce.soap.enterprise.QueryResult processInstances,
            com.sforce.soap.enterprise.QueryResult processSteps,
            java.util.Calendar systemModstamp,
-           java.lang.Double kcura_attendee__c) {
+           java.lang.Double general_attendee__c) {
         super(
             fieldsToNull,
             id);
@@ -108,7 +108,7 @@ public class Meeting_Attendee__c  extends com.sforce.soap.enterprise.sobject.SOb
         this.processInstances = processInstances;
         this.processSteps = processSteps;
         this.systemModstamp = systemModstamp;
-        this.kcura_attendee__c = kcura_attendee__c;
+        this.general_attendee__c = general_attendee__c;
     }
 
 
@@ -553,22 +553,22 @@ public class Meeting_Attendee__c  extends com.sforce.soap.enterprise.sobject.SOb
 
 
     /**
-     * Gets the kcura_attendee__c value for this Meeting_Attendee__c.
+     * Gets the general_attendee__c value for this Meeting_Attendee__c.
      * 
-     * @return kcura_attendee__c
+     * @return general_attendee__c
      */
-    public java.lang.Double getKcura_attendee__c() {
-        return kcura_attendee__c;
+    public java.lang.Double getgeneral_attendee__c() {
+        return general_attendee__c;
     }
 
 
     /**
-     * Sets the kcura_attendee__c value for this Meeting_Attendee__c.
+     * Sets the general_attendee__c value for this Meeting_Attendee__c.
      * 
-     * @param kcura_attendee__c
+     * @param general_attendee__c
      */
-    public void setKcura_attendee__c(java.lang.Double kcura_attendee__c) {
-        this.kcura_attendee__c = kcura_attendee__c;
+    public void setgeneral_attendee__c(java.lang.Double general_attendee__c) {
+        this.general_attendee__c = general_attendee__c;
     }
 
     private java.lang.Object __equalsCalc = null;
@@ -649,9 +649,9 @@ public class Meeting_Attendee__c  extends com.sforce.soap.enterprise.sobject.SOb
             ((this.systemModstamp==null && other.getSystemModstamp()==null) || 
              (this.systemModstamp!=null &&
               this.systemModstamp.equals(other.getSystemModstamp()))) &&
-            ((this.kcura_attendee__c==null && other.getKcura_attendee__c()==null) || 
-             (this.kcura_attendee__c!=null &&
-              this.kcura_attendee__c.equals(other.getKcura_attendee__c())));
+            ((this.general_attendee__c==null && other.getgeneral_attendee__c()==null) || 
+             (this.general_attendee__c!=null &&
+              this.general_attendee__c.equals(other.getgeneral_attendee__c())));
         __equalsCalc = null;
         return _equals;
     }
@@ -729,8 +729,8 @@ public class Meeting_Attendee__c  extends com.sforce.soap.enterprise.sobject.SOb
         if (getSystemModstamp() != null) {
             _hashCode += getSystemModstamp().hashCode();
         }
-        if (getKcura_attendee__c() != null) {
-            _hashCode += getKcura_attendee__c().hashCode();
+        if (getgeneral_attendee__c() != null) {
+            _hashCode += getgeneral_attendee__c().hashCode();
         }
         __hashCodeCalc = false;
         return _hashCode;
@@ -897,8 +897,8 @@ public class Meeting_Attendee__c  extends com.sforce.soap.enterprise.sobject.SOb
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("kcura_attendee__c");
-        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "kcura_attendee__c"));
+        elemField.setFieldName("general_attendee__c");
+        elemField.setXmlName(new javax.xml.namespace.QName("urn:sobject.enterprise.soap.sforce.com", "general_attendee__c"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "double"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);
