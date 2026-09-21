@@ -1,0 +1,4 @@
+name: "Codebunker CodeQL Configuration"
+
+paths-ignore:
+  - java/misc/soap/**
