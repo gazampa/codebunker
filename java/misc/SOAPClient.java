@@ -434,7 +434,7 @@ class SOAPClient{
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:reg="http://soap.sforce.com/schemas/class/registerExamSOAP">
    <soapenv:Header>
       <reg:SessionHeader>
-         <reg:sessionId>00DP0000000DKUI!AQEAQD7HezU0Ci3NIZJViLlgLzLCvgQ4UPfVkDtDeU0U8BQSqZXq9nrzDY.4OHurR05hyokrBNOmI9XJaROGDyszoipSLB0Y</reg:sessionId>
+         <reg:sessionId></reg:sessionId>
       </reg:SessionHeader>
    <reg:CallOptions><reg:client/></reg:CallOptions>
  </soapenv:Header>
