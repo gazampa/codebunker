@@ -2,3 +2,5 @@ name: "Codebunker CodeQL Configuration"
 
 paths-ignore:
   - java/misc/soap/**
+  - java/etc/**
+  - javascript/nodejs/**
