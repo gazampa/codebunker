@@ -37,7 +37,7 @@ class MainMethod{
 		public static void main(String args[]){
 
 			/**  Figure out the environment **/
-			String environment="https://cs13.salesforce.com/services/data" /*apexrest/Account/001W0000004ZXKQ*/, code="", grant_type="authorization_code", clientSecret = "1711390793153965553", redirectUri = "https://test.salesforce.com/services/oauth2/authorize/success" , clientId = "3MVG982oBBDdwyHg.khs.6lurHpDgw2blVBLYKqwrvWRf8VHBgu3JlG9bMpt9CaALyL1CpcJXa.1MDt5_lFF2";
+			String environment="https://cs13.salesforce.com/services/data" /*apexrest/Account//, code="", grant_type="authorization_code", clientSecret = "", redirectUri = "https://test.salesforce.com/services/oauth2/authorize/success" , clientId = "";
 			String authenvironment = "https://cs13.salesforce.com/services/oauth2/authorize";
 			String soapService = "https://cs13-api.salesforce.com/services/Soap/class/OnlineDeveloperSOAP";
 			InputStream instream = System.in;

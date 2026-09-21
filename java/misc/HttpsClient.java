@@ -26,7 +26,7 @@ public class HttpsClient{
 
 	     url = new URL(https_url);
 	     HttpsURLConnection con = (HttpsURLConnection)url.openConnection();
-		 con.setRequestProperty("Authorization", "OAuth " + "client_id:3MVG982oBBDdwyHg.khs.6lurHpDgw2blVBLYKqwrvWRf8VHBgu3JlG9bMpt9CaALyL1CpcJXa.1MDt5_lFF2" );
+		 con.setRequestProperty("Authorization", "OAuth " + "client_id:" );
          con.setDoOutput(true);
          con.setInstanceFollowRedirects(false);
          con.setRequestProperty("Content-Type", "application/xml");
