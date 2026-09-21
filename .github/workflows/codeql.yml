@@ -1,0 +1,6 @@
+- name: Initialize CodeQL
+  uses: github/codeql-action/init@v3
+  with:
+    languages: ${{ matrix.language }}
+    # Link to your custom configuration file here:
+    config-file: .github/codeql/codeql-config.yml
