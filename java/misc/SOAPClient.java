@@ -8,6 +8,7 @@ import java.net.URL;
 import java.util.*;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
+import javax.xml.XMLConstants;
 import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
@@ -59,9 +60,11 @@ class SOAPClient{
 			/**  Get the Response and figure out what to do  **/
 				HttpEntity entity = response.getEntity();
 				SAXParserFactory spf = SAXParserFactory.newInstance();
+				spf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
 				spf.setNamespaceAware(true);
+				spf.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
 				SAXParser saxParser = spf.newSAXParser();
-
+ 				saxParser.setProperty("jdk.xml.entityExpansionLimit", "5000");
 				LoginResponseParser parser = new LoginResponseParser();
 				saxParser.parse(entity.getContent( ), parser);
 
