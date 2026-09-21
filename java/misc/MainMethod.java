@@ -123,8 +123,8 @@ class MainMethod{
 		}
 
     static final String LOGIN_ENDPOINT = "https://test.salesforce.com";
-    private static final String USER_NAME = "usagedata@general.com.uat";//"bmurphy@general.com.bmurphy";
-    private static final String PASSWORD = "test1ngserv1cesqcCcQJVsURwQaj4uaPdYFRy6";//"blonk*";
+    private static final String USER_NAME = "";//
+    private static final String PASSWORD = "";//"blonk*";
 
     private static final String SERVICES_SOAP_PARTNER_ENDPOINT = "/services/Soap/u/22.0/";
 

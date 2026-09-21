@@ -113,8 +113,8 @@ public class BasicDataSourceExample {
     public static DataSource setupDataSource(String connectURI) {
         BasicDataSource ds = new BasicDataSource();
         ds.setDriverClassName("oracle.jdbc.driver.OracleDriver");
-        ds.setUsername("scott");
-        ds.setPassword("tiger");
+        ds.setUsername("");
+        ds.setPassword("");
         ds.setUrl(connectURI);
         return ds;
     }

@@ -43,11 +43,11 @@ class RESTClient{
 
 			/**  The Environment **/
 			URIBuilder builder = new URIBuilder();
-			builder.setScheme("https").setHost("api.citrixonline.com").setPath("/G2W/rest/organizers/2932712/webinars/756285440/attendees");//sessions");///361450665/355603145,351435129"); //"/G2M/rest/meetings");///351435129");
+			builder.setScheme("https").setHost("api.citrixonline.com").setPath("");//sessions");//
 //			builder.setParameter("scheduled", "false");
-			//builder.setParameter("startDate","2014-05-21T09:00:00Z");
-			//builder.setParameter("endDate","2014-07-31T09:00:00Z");
-			//String servicePath = "/G2M/rest/meetings/351435129";
+			//builder.setParameter("startDate","");
+			//builder.setParameter("endDate","");
+			//String servicePath = "";
 
 			/**  Build  a Client - Post Method **/
 			HttpClient httpclient = new DefaultHttpClient();
@@ -59,7 +59,7 @@ class RESTClient{
 				HttpGet loginrequest = new HttpGet(uri);
 				loginrequest.addHeader("Accept", "application/json");
 				loginrequest.addHeader("Content-Type","application/json;charset=UTF-8");
-				loginrequest.addHeader("Authorization","q197DAEFvOLEYgKoaupzVFemc1sn");
+				loginrequest.addHeader("Authorization","");
 				System.out.println(" ...sending Login Request... " + loginrequest.getRequestLine() );
 				Header[] reqHeaders = loginrequest.getAllHeaders();
 				for (Header headr : reqHeaders){
@@ -122,7 +122,7 @@ redirect_uri=https%3A%2F%2Fwww.mysite.com%2Fcode_callback.jsp
 
 */
 
-//String environment="https://cs13.salesforce.com/services/data" /*apexrest/launchpartyform/001W0000004ZXKQ*/, code="", grant_type="password", clientSecret = "1711390793153965553", redirectUri = "https://test.salesforce.com/services/oauth2/authorize/success" , clientId = "3MVG982oBBDdwyHg.khs.6lurHpDgw2blVBLYKqwrvWRf8VHBgu3JlG9bMpt9CaALyL1CpcJXa.1MDt5_lFF2";
+//String environment="https://cs13.salesforce.com/services/data" /*apexrest/launchpartyform/001W0000004ZXKQ*/, code="", grant_type="password", clientSecret = "", redirectUri = "https://test.salesforce.com/services/oauth2/authorize/success" , clientId = "";
 //String authenvironment = "https://cs13.salesforce.com/services/oauth2/authorize";
 
 /**
@@ -150,8 +150,8 @@ Map<String, String> oauthLoginResponse = (Map<String, String>)
 	System.out.println(stringParams.toString());
 
     private static final String LOGIN_ENDPOINT = "https://test.salesforce.com";
-    private static final String USER_NAME = "blink@blonk.com.uat";
-    private static final String PASSWORD = "test1ngserv1cesqcCcQJVsURwQaj4uaPdYFRy6";
+    private static final String USER_NAME = "";
+    private static final String PASSWORD = "";
     private static final String SERVICES_SOAP_PARTNER_ENDPOINT = "/services/Soap/u/22.0/";
 
 	private class AuthenticationRequest extends HttpPost{
@@ -182,10 +182,10 @@ Map<String, String> oauthLoginResponse = (Map<String, String>)
 			ArrayList<NameValuePair> namevalue = new ArrayList<NameValuePair>();
 
 			namevalue.add(new BasicNameValuePair("grant_type", "password"));
-			namevalue.add(new BasicNameValuePair("username","blink@blonk.com.bmurphy"));
-			namevalue.add(new BasicNameValuePair("password","blonk!nTxJDYvSWnW9iWyHQVyOnWUu"));
-			namevalue.add(new BasicNameValuePair("client_id", "	3MVG982oBBDdwyHg.khs.6lurHiLvyiYxZNwiXbAlJXHEgvD3JRk3gjF3sdcGrv_W3eQUyzCE21wPDv7FvEen"));
-			namevalue.add(new BasicNameValuePair("client_secret", "4743202023810632782"));
+			namevalue.add(new BasicNameValuePair("username",""));
+			namevalue.add(new BasicNameValuePair("password",""));
+			namevalue.add(new BasicNameValuePair("client_id", ""));
+			namevalue.add(new BasicNameValuePair("client_secret", ""));
 
 			try{
 				formEntity = new UrlEncodedFormEntity(namevalue);
