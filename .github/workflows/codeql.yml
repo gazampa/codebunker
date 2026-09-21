@@ -8,14 +8,26 @@ on:
   schedule:
 
 jobs:
+
   analyze:
     name: Analyze Code
     runs-on: ubuntu-latest
 
+    strategy:
+      fail-fast: false
+      
     steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
         # Link to your custom configuration file here:
         config-file: .github/codeql/codeql-config.yml
+    
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v3
+      with:
+        category: "/language:${{matrix.language}}"
