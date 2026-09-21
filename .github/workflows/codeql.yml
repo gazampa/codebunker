@@ -1,6 +1,14 @@
-- name: Initialize CodeQL
-  uses: github/codeql-action/init@v3
-  with:
-    languages: ${{ matrix.language }}
-    # Link to your custom configuration file here:
-    config-file: .github/codeql/codeql-config.yml
+name: "CodeQL Analysis"
+
+jobs:
+  analyze:
+    name: Analyze Code
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v3
+      with:
+        languages: ${{ matrix.language }}
+        # Link to your custom configuration file here:
+        config-file: .github/codeql/codeql-config.yml
