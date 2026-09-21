@@ -8,10 +8,6 @@ on:
 
 jobs:
 
-  analyze:
-    name: Analyze Code
-    runs-on: ubuntu-latest
-
     strategy:
       fail-fast: false
 
