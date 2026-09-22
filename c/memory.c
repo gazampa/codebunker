@@ -16,11 +16,11 @@ void func(){
 	double *d = ( double * ) malloc( sizeof(double) );
 
 	printf("%u\n", sizeof(xStack));
-	rintf("%u\n", sizeof(xArr));
+	rintf("%zu\n", sizeof(xArr));
 	printf("%p\n", (void *)(i));
-	printf("%u\n", sizeof(i));
+	printf("%zu\n", sizeof(i));
 	printf("%p\n", (void *)(d));
-	printf("%u\n", sizeof(d));
+	printf("%zu\n", sizeof(d));
 
 	free(i);
 	free(d);
