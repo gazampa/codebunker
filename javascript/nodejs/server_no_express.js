@@ -1,7 +1,8 @@
 ﻿var http = require('http');
 var fs = require('fs');
+var path = require('path');
 var url = require('url');
-
+const BASE_DIR = path.resolve('./');
 // Create a server
 http.createServer( function (request, response) {
    // set cors headers - allow access from html file on local disk
@@ -52,8 +53,9 @@ http.createServer( function (request, response) {
                     pdata = JSON.parse(body);
                     team = pdata.team;
                     console.log('request looking for : ' + team);
-                    var filepath = './json/' + team + '.json';
-                    getPlayersAndWriteResponse(filepath, writeResponse, response);
+                    var filepath = 'json' + team + '.json';
+                    const safePath = getSafePath(BASE_DIR, filepath);
+                    getPlayersAndWriteResponse(safePath, writeResponse, response);
                     console.log(' no you cant ');
             })()
         }).on('error', function(err) {
@@ -119,8 +121,9 @@ function getPlayers(fileName){
 // read the file for a given parameter
 function getPlayersAndWriteResponse(fileName, callback, response){
     var result;
-    console.log(' doing this ' + fileName);
-    fs.readFile(fileName, function (err, data) {
+    const safePath = getSafePath(BASE_DIR, fileName);
+    console.log(' doing this ' + safePath);
+    fs.readFile(safePath, function (err, data) {
         if (err) {
             console.log(' doing this err' );
             console.log(err);
@@ -170,7 +173,23 @@ Array.prototype.contains = function(obj) {
     return false;
 }
 
+function getSafePath(baseDir, pathInput) {
+   
+    // 1. Reject bad characters
+    if (pathInput.includes('\0')) {
+        throw new Error('Invalid path characters');
+    }    
 
+    // 2. Resolve to an absolute path
+    const safePath = path.resolve(baseDir, relativeInput);
+
+    // 3. Verify the path stays inside the base directory
+    if (!safePath.startsWith(path.resolve(baseDir))) {
+        throw new Error('Access Denied: Invalid path');
+    }
+
+    return safePath;
+}
 function getFile(name, format, callback) {
     var self = this;
 
