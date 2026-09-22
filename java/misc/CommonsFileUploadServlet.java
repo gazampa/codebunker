@@ -65,13 +65,15 @@ public class CommonsFileUploadServlet extends HttpServlet {
 				 * Handle Form Fields.
 				 */
 				if(item.isFormField()) {
-					out.println("Field Name = "+item.getFieldName()+", Value = "+item.getString());
+					out.println("\"" + "Field Name = "+item.getFieldName()+", Value = "+item.getString()+  "\"");
 				} else {
 					//Handle Uploaded files.
-					out.println("Field Name = "+item.getFieldName()+
-						", File Name = "+item.getName()+
-						", Content type = "+item.getContentType()+
-						", File Size = "+item.getSize());
+					
+					String metaFields = "Field Name = "+item.getFieldName()+
+										", File Name = "+item.getName()+
+										", Content type = "+item.getContentType()+
+										", File Size = "+item.getSize();
+					out.println("\"" + metaFields +  "\"");
 					/*
 					 * Write file to the ultimate location.
 					 */
