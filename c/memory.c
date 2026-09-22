@@ -15,7 +15,7 @@ void func(){
 	int *i = ( int * ) malloc( sizeof(int) );
 	double *d = ( double * ) malloc( sizeof(double) );
 
-	printf("%u\n", sizeof(xStack));
+	printf("%zu\n", sizeof(xStack));
 	rintf("%zu\n", sizeof(xArr));
 	printf("%p\n", (void *)(i));
 	printf("%zu\n", sizeof(i));
