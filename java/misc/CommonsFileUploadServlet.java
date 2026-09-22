@@ -14,7 +14,7 @@ import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
-
+import org.owasp.encoder.Encode;
 
 public class CommonsFileUploadServlet extends HttpServlet {
 	private static final String TMP_DIR_PATH = "C:\\Users\\bmurphy\\ktemp";
@@ -65,7 +65,9 @@ public class CommonsFileUploadServlet extends HttpServlet {
 				 * Handle Form Fields.
 				 */
 				if(item.isFormField()) {
-					out.println("\"" + "Field Name = "+item.getFieldName()+", Value = "+item.getString()+  "\"");
+					String formFields = "Field Name = "+item.getFieldName()+", Value = "+item.getString();
+					String safeFields = Encode.forHTML(formFields);
+					out.println( safeFields );
 				} else {
 					//Handle Uploaded files.
 					
@@ -73,7 +75,9 @@ public class CommonsFileUploadServlet extends HttpServlet {
 										", File Name = "+item.getName()+
 										", Content type = "+item.getContentType()+
 										", File Size = "+item.getSize();
-					out.println("\"" + metaFields +  "\"");
+					
+					String safeMetaFields = Encode.forHTML(metaFields);
+					out.println( safeMetaFields );
 					/*
 					 * Write file to the ultimate location.
 					 */
