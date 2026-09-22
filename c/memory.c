@@ -15,12 +15,12 @@ void func(){
 	int *i = ( int * ) malloc( sizeof(int) );
 	double *d = ( double * ) malloc( sizeof(double) );
 
-	printf("%d\n", sizeof(xStack));
-	rintf("%d\n", sizeof(xArr));
+	printf("%u\n", sizeof(xStack));
+	rintf("%u\n", sizeof(xArr));
 	printf("%p\n", (void *)(i));
-	printf("%d\n", sizeof(i));
+	printf("%u\n", sizeof(i));
 	printf("%p\n", (void *)(d));
-	printf("%d\n", sizeof(d));
+	printf("%u\n", sizeof(d));
 
 	free(i);
 	free(d);

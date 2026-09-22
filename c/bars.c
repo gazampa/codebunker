@@ -71,7 +71,7 @@ int main() {
 
     printf(" x :%d + y:%d + line:%d + struct:%d", vinfo.xres, vinfo.yres,
                                                     line_size, finfo.line_length );
-    printf(" screen:%d \n", buffer_size);
+    printf(" screen:%ld \n", buffer_size);
 
     draw();
 
