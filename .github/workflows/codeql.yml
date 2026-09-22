@@ -2,6 +2,8 @@ name: "CodeQL Analysis"
 
 permissions:
   actions: read
+  contents: read
+  security-events: write # Required for all repositories to upload CodeQL SARIF scan results 
 
 on:
   push:
