@@ -4,3 +4,4 @@ paths-ignore:
   - codebunker/java/misc/soap/**
   - codebunker/java/etc/**
   - codebunker/javascript/nodejs/**
+  - codebunker/apex
