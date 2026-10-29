@@ -3,7 +3,7 @@ public class LimitStockCommand implements Command{
 
 	private final String name = "LIMIT";
 
-	public void execute(){
+	public void action(){
 		System.out.println("LIMIT STOCK");
 	}
 

@@ -14,7 +14,7 @@ public class Agent{
 		
 		// execute the commands without a conditional
 		while( !orders.isEmpty() ){ 
-			commands.getCommands().get(orders.poll()).execute();
+			commands.getCommands().get(orders.poll()).action();
 		}
 
 	}

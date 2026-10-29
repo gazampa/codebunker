@@ -1,5 +1,6 @@
 package com.devmurph.demo;
 import java.util.HashMap;
+
 public class StockCommands{
 
 	HashMap<String, Command> commands = new HashMap<String, Command>();

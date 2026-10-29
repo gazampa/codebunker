@@ -3,7 +3,7 @@ public class BuyStockCommand implements Command{
 
 	private final String name = "BUY";
 
-	public void execute(){
+	public void action(){
 		System.out.println("BUY STOCK");
 	}
 
