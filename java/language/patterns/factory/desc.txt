@@ -1,2 +1,0 @@
- - define an interface for creating an object without having to specify the exact class.
- - its an abstraction of a contructor.
